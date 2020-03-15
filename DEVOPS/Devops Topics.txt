@@ -1,0 +1,108 @@
+
+=> DEVOPS:
+==========
+
+. Hi, Good morning. 
+. MY Name is **** 
+. I have 3+ years of experience in IT Industry,and Around 2 years of experience in Devops and AWS(cloud).
+. Currently working in Sonata Software Limited as a DevOps Engineer.
+. As a part of my role, I'm responsible to setup & manage Devops CI/CD pipelines
+. and
+
+-> DEVOPS Topics
+   ------------------
+       > Remote commandline Terminals -> Gitbash,Putty
+       > SDLC
+       > Source Code Management          -> Git/GitHub-(optional: Bitbucket,Mercurial,perforce,Subversion) for Version Controlling
+       > Contineous Integration              -> JENKINS   -(optional: Bamboo, CircleCi,Team City)
+                                
+                                             Multiple steps involves C I:
+                                              .Unit Testing- Junit,Nunit(Plugins)
+                                              .Code Build- MAVEN,ANT,Gradle(plugin & setup)
+                                              .Code Analysis- Veracode,Sonar Qube( "  "   )
+                                              .Code Artifacts-Nexus,Artifactory(  "	"  )    
+
+       > Contineous Deploymenet-> ANSIBLE-(optional: puppet,chef,urboncode,Jenkins)
+       >      "     Infrasructure     -> Docker -(optional: ) for containerization
+       > Contineous Monitoring   -> NagiOS -(optional:Zabbix,Promotheus)
+                                            -> Kubernates - for Container Archestration
+       > Ticketing system           -> JIRA, remedy etc.....
+
+-> AWS Topics
+   ----------
+       > Amazon Compute Services : EC2, Lambda,(optional: Auto scalling)
+       > Amazon Storage Services   : s3, EBS,       (optional: EFS,Glacier)
+       > Amazon Network Services  : VPC,Route53,(optional: ELB,CloudFront)
+       > Amazon Database Services : RDS,            (optional: DynamoDB)
+       > Other Services                  : IAM,            (optional: SNS,VPN,Certificate Manager)
+       > Amazon Analytics Services :
+       > Amazon Application Services :
+       > Amazon Web Service Resources :
+       > Management Tools :                                 (optional: Cloud watch, Cloud Trail, Trusted Advisor, Cloud Formation)
+     
+
+-> LINUX
+   -----
+       > Shell Scripting,
+       > Python scripting
+
+. This DevOps environment is running on AWS cloud which was setup by me according to our Devops Architect Plan.
+. Then Explain Previous experience.and roles and ressponsilities
+. explain every tool in devops brefly
+      
+       
+       
+Roles AND Responsibilities:-
+---------------------------
+GIT:-
+----
+The Git is used for version controling system
+Its Enabling branching strategies like Dev ,QA,Preprod, Prod,branches we create
+Managing Git repositories using various git commands like Push,Pull,merge,clone,branch,rebase etc.
+Managing git user access specific repositores, specific branches to secure our code,
+This are the high level activities,which we can do in git
+
+Jenkins:-
+--------
+Jenkins we are used to create our CI and CD jobs 
+Setting jenkins server
+master and slave configurations
+Managing Jenkins Plugins  and 
+Integration other DevOps tools like Git, Maven, Ansible, SonarQube, Nexus etc
+This are major activities which we can do in Jenkins
+
+Ansible:-
+--------
+Setting up ansible control server nothing but master
+Writing playbooks and roles
+Managing ansible hosts
+This are major activities which we can do in Ansible
+
+Docker:-
+-------
+Setup Docker Environment
+writing Docker files
+Creating Custom Images
+Setting up private Docker registry
+Creating and Managing Containers
+This are major activities which we can do in Docker
+
+Kubernetes:-
+-----------
+Setup Kubernetes environment on AWS or on-premises
+Writing deployment files and service files
+Managing containers on pods
+Managing Kubernetes nodes
+This are major activities which we can do in Kubernetes
+
+. This is according to my current job roles and responsibilities
+
+
+
+
+
+       
+
+
+
+

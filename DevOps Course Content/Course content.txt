@@ -1,0 +1,158 @@
+
+=>DevOps Course Content:
+================ 
+
+Index :
+====
+
+- Git & GitHub
+- Jenkins
+- Ansible
+- Docker
+- Kubernetes
+- Maven
+- NPM
+- SonarQube
+- Nexus
+- Apache Tomcat
+- Nagios
+- Monit
+- Apache
+- Nginx
+- Grafana
+- AWS ( EC2, s3,VPC, RDS )
+- Linux ( for DevOps Scripting Level )
+
+
+
+->Projects & Real Time Scenarios:
+-------------------------------------
+- Going to setup End-to-End CI/CD pipeline with GitHub, Maven, Jenkins, Ansible and Docker with JenkinsFile, DockerFile, Shell-Scripts    and Ansible-Playbooks.
+- Monitoring Remote Server CPU, Memory, Networking etc... with Grafana, InfluxDB by using Python Scripting.
+- Server, Networking, Database setup from AWS for CI/CD setup. It includes EC2, VPC and RDS services.
+- JAVA, NodeJS, HTML & CSS based project deployments on Dev, Stage and Production environments and Troubleshooting.
+- Apache/Nginx reverse proxy load balancing and High Availability.
+
+
+
+1. GitHub:
+-----------
+- GitHub Overview
+- Centralized Vs Distributed Version Control System
+- GitHub Account Creation and Installation
+- Organization and Repository Creation
+- Life Cycle
+- Branch’s Creation
+- Forking& Webhooks
+- SSH creation and config setup
+- Pulling/Pushing/Merging/Stash/logs/etc.
+- User Administration&Maintenance
+- Issue Creation & Tracking with GitHub (As a Ticketing Tool)
+- Wiki Page Creation
+- Import Repository & New Gist
+- Tag Creations
+- Git Rebasing
+
+2. Jenkins:
+------------
+- Jenkins Overview
+- Installation and Configuration
+- User Administration
+- Plugin Management
+- Backup & Maintenance
+- Master/Slave Concept
+- Integration with multiple tools
+- Job Creation
+- Deployments with Pipeline Code
+. With Groovy Script
+. With Pipeline Code
+- Email Alert setup
+- Java &NodeJs Deployments
+
+3. Ansible:
+-----------
+- Ansible Overview
+- Installation and Configuration
+- Adhoc Mode with all commands
+- Ansible-Playbook (Loops, Notify-Handlers, Conditions etc..)
+- Ansible Rolls
+- Ansible Galaxy
+
+4. Docker:
+----------
+- Overview
+- VMWare Vs Docker
+- Installation and Configuration
+- Basic Commands of Docker
+- Docker file Creation
+- Docker Image Creation
+- Container creation
+- Docker Compose
+- Docker Volume
+- Docker Swarm
+- Docker Networking
+- Docker Hub Creation/Org & Repo Creation
+- Pulling and Pushing Images to Docker Hub via Jenkins pipeline
+
+5. Maven
+---------
+- Overview
+- Installation and Integration with Jenkins
+- Maven Life Cycle Phase explanation with Example
+- Artifacts Generation and Deployment
+- Java Code Deployments with Apache-Tomcat, Maven and Jenkins
+- Maven Local and Central Repository
+- Maven Report generation
+
+6. NPM/Node
+--------------
+- Overview
+- Installation
+- Deployments with Forever Process
+- Sample Application Deployment
+- Integration with Jenkins, NPM and Docker
+
+7. Monit/Nagios:
+------------------
+- Overview
+- Installation
+- Monitoring of all Server Health and Servers/Services health check
+- Configuration file setup
+- Email Setup
+
+8. Nexus:
+----------
+- Overview
+- Installation
+- War/jar/rar file storage
+- Docker Image Storage
+- Integrate with Jenkins, Docker
+- User Creation and Administration.
+
+9. Apache/Nginx
+-----------------
+- Installation and Configuration
+- Reverse Proxy Setup
+- Website Deployments
+
+10. ApacheTomcat
+--------------------
+- Installation & Configuration
+- User administration and configuration changes
+- Deployment of Java Application
+
+11. SonarQube
+----------------
+- Installation and Configuration
+- Integration with MySQL and Jenkins
+- Project Creation
+- Code scanning & analysis
+- Report Generation
+
+12. Kubernetes
+----------------
+- Overview & Architecture
+- Docker Swarm Vs Kubernetes
+- Installation and Configuration
+- Cluster Creation and initial setup
+- Pods/Service/NameSpace/Volume Creation - Services, Load Balancing, and Networking - Project end to end setup and Deployment.

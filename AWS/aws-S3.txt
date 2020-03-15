@@ -1,0 +1,20 @@
+What is S3?
+--------------
+S3 is a safe place to store the files.
+It is Object-based storage, i.e., you can store the images, word files, pdf files, etc.
+The files which are stored in S3 can be from 0 Bytes to 5 TB.
+It has unlimited storage means that you can store the data as much you want.
+Files are stored in Bucket. A bucket is like a folder available in S3 that stores the files.
+S3 is a universal namespace, i.e., the names must be unique globally. Bucket contains a DNS address. Therefore, the bucket must contain a unique name to generate a unique DNS address.
+If you create a bucket, URL look like:
+
+AWS S3
+If you upload a file to S3 bucket, then you will receive an HTTP 200 code means that the uploading of a file is successful.
+
+Advantages of Amazon S3:
+----------------------------
+>Create Buckets
+>Storing data in buckets
+>Download data
+>Permissions
+>Security

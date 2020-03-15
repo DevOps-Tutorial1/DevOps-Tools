@@ -1,0 +1,19 @@
+
+previously Asked Interview Ques
+===============================
+Company -1:
+----------
+1.Tell me about yourself?
+2.Can you please Explain what your doing in current org?
+3.Diff b/w SVN and GIT
+4.What are the concept of Brnaching and Master of GIT? Master is compelsary Have in git? if without Master is Possible?
+5.is there credentials to give all users ?
+6.can you expalin Architecture of Maven? and it will work?
+7.what is the role of setting.xml in maven?8.In AWS i created i AMI? Take snapshot of and i delete it ? But the AMI work on that instance?
+9.what is EC2?
+10.Iam merging two Barnches?Iam getting merging conflict error ?How i trobleshoot it ?
+11.In ansible we have multiple nodes having different version of python ?so what steps you follow single snapshot?
+12.What is JVM?
+13.Can we have two different middlewares Tomcat and Webscr to install on single linux machine is possible?
+14.how to find running files in perticular userid?
+

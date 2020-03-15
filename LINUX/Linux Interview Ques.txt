@@ -1,0 +1,196 @@
+
+=> Linux Interview Questions:-
+==================
+
+6.Find a word in a specific file ?
+
+    # grep -Rw '<filename>' -e 'word'       (: r- Read, w- Write)
+                   (or)
+    # ack 'word' /path/to/file.txt
+
+7.We have lot of files inside a /root folder. Find a file which is containig a perticular word??
+    
+    # grep -Rw /root/ -e 'word'
+
+8. Replace a word in a pericular file ??
+   
+    # sed 's/word1/word2/g' <filename>       (: 'i'-in place, 's'-subtitute command, 'g'-global)
+
+9. Replace a word with first occurence in a file ?
+
+    # sed -i 's/original/new/1' <filename>
+
+10. Find a perticular file in folder-inside-folder ??
+
+     # grep -Rw /home/reddredd/ -e "apk update"
+
+11. Find a file with less than 2mb size && greter than 5mb size??
+
+     # find / -size -2M -size +5M
+
+12. find files that have a modification time of a day ago ??
+
+     # find / -mtime -1
+
+13. Find a Directory with a specific name ??
+
+    # find / -type d -name "kadapa"
+
+14. How to add a line of code in the exit file (No need to effect the existing code in the same file) ?? 
+
+    # echo "add a line of code " >> filename
+              (or)
+    # cat >> filename
+ 
+15. List out top 5 CPU consuming proesses ??
+
+    # ps -Ao user,pcpu,pid,uid,%mem --sort=-%mem |head -n 5
+              (or)
+    # ps -Ao user,uid,comm,pcpu,tty --sort=-pcpu | head -n 5
+
+16.Check the process is running howmuch long??
+
+    # ps -ef | grep "nginx"
+
+17. diff b/w $* and $& ??
+
+     $* - holds list of all arguments passed to the script.
+     $& - is not a single token/special variable, it is simply $ and &.
+
+18.Exclude a String in a file and print ??
+
+    # grep -v "word" <filename>
+
+19. zip and tar a file ?? unzip a zip/tar file??
+
+     # tar -cvf etc.tar /etc/                   (: etc => filename,   c- compress, vf - verbos forcefully)
+     # gzip etc.tar etc.tar.gz
+
+     # gunzip etc.tar.gz
+
+20.Find the modified files in specified time ??
+
+    # find /root/ -type f -newermt '2020-10-10' ! -newermt '2020-02-14'
+
+21. Count number lines a file??
+
+    # cat <filename> wc | -l   (or)  # wc -l <filename>
+
+22. Find the last 10 recent logs ??
+
+    # tail -n 10 /etc/sudoers   (or) tail -n 10 <filename>
+
+23. Print second word of every line ??
+
+    # cat <filename> | awk '{print $2}' 
+
+24. Find number of CPU cores present in Servers ??? 
+
+     #cat /proc/cpuinfo     (or)   # nproc   (or) lscpu  (or)  
+
+25. Diff between softkink and hardlink ??
+
+      Soft link :- 1. Size of the original file is equal to no.of characters in the name of original file
+                      2. can be created across the partition
+                      3. Inode no.of source & link file is difficult
+                      4. If original file is deleted , the link is broken and data is lost
+                      5. Shotcut file
+      
+      Hard link:- 1. Size of both files same
+                      2. Can't be created across the partition
+                      3. Inode no.of both files is same
+                      4. If original file deleted then also link will contain data
+                      5. Backup file
+
+26. How to find version of Linux ??
+
+     # cat /etc/os-release (or)  # lsb_release -a (or)  # hostnamectl (or)  # uname -r  (or)  # cat /proc/version  
+
+27. How to restart iptables ??
+
+      # service iptables restart
+
+28. How to open particular port in VM(Virtual Machine) ??
+
+    #Goto VM->select USER -> goto  SETTINGS -> click NETWORK -> choose ADAPTER -> click ADVANCED -> click PORT FORWARDING
+
+29. Inode means??
+
+    > An inode is a data structure on a filesystem on Linux
+    > Every Linux file or directory has an inode, and this inode contains all of the file’s metadata.
+
+30. How to start the service automatically when the server got reboot ??
+
+     # /etc/init.d  == > place original file here
+     # /etc/rc3.d   == > Create a shortcut here
+
+31. Cron scheduler command helps you to execute the task on every Monday at 5 AM. This command is helpful for doing weekly tasks       like system clean-up. ??
+     
+     # 0 5 * * mon  /scripts/script.sh  
+
+32 . Write a script to filter the log files and find the maximum number of hits from a specific IP ??
+
+33 . Write a script to read a file line-by-line ??
+
+34. IP Tables ?
+
+     . Iptables is a Linux command line firewall that allows system administrators to manage incoming and outgoing traffic via a set of             configurable table rules.
+
+     . Iptables uses a set of tables which have chains that contain set of built-in or user defined rules.
+     Ex:-
+     ---
+          #iptables --table TABLE -A/-C/-D... CHAIN rule --jump Target
+
+         Tables: Filter, Nat, Mangle, Raw, Security
+         Chains: Input, output, Forword, Pre Routing, Post Routing
+         Options: -A (append), -C(check), -D(delete)
+      
+35. Run levels in Booting procedure ??
+
+    # BIOS, MBR, GRUB, Kernel, Init, Runlevel(run level 0,1,2,3,4,5,6)
+			
+36. Stateless & Statefull security group ??
+
+Stateless Protocol is a network protocol in which Client send request to the server and server response back as per the given state. 
+Ex:- HTTP, UDP, DNS
+Stateful Protocol is a network protocol in which if client send a request to the server then it expects some kind of response, in case of no response then it resend the request.
+Ex:- FTP, Telnet
+
+37.Multi leyer docker ?? or How to reduce the docker image size ??
+
+     Tip #1?—?Use a smaller base image
+     Tip #2?—?Don’t install debug tools like vim/curl
+     Tip #3?—?Minimize Layers
+     Tip #4 Use?—?no-install-recommends on apt-get install
+     Tip #5 Add rm -rf /var/lib/apt/lists/* to same layer as apt-get installs
+     Tip #6 Use FromLatest.io
+
+38.NameSpaces & Ingeress/Ingress controller??
+
+39. Ponethsis Grafana ??
+
+
+PORT NUMBERS:
+------------------
+
+-> Port numbers range=>  0-65535
+
+- TCP     -6
+- UDP    -17
+- FTP     -20/21
+- ssh     -22
+- Telnet -23
+- smtp   -25
+- DNS    -53
+- DHCP   -68
+- http     -80
+- https    -443
+- SQL ser-1433
+- Oracle  -1521
+- NFS     -2049
+- Monit   -2812
+- MySQL -3306
+- jenkins/Apache TomCat- 8080
+- Nexus -8081
+
+
