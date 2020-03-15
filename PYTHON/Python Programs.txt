@@ -1,0 +1,204 @@
+
+
+--LIST-------------------------------
+
+a=2345
+b="HELLO"
+c=20.67
+print(type(a))
+print(type(b))
+print(type(c))
+----------------
+
+list=[502,"Shaik","Bagalore"]
+print(list)
+print("Id: %d, Name: %s, State: %s"% (list[0],list[1],list[2]))
+list[0]=503
+print(list)
+list[1]="valli"
+print(list)
+list[2]="Hydrabad"
+print(list)
+print("Id: %d, Name: %s, State: %s"% (list[0],list[1],list[2]))
+----------------------------------------------------------------
+
+l=[1,2,3,4,5]
+print(l)
+del l[4]
+print(l)
+del l[3]
+print(l)
+del l[2]
+print(l)
+del l[1]
+print(l)
+----------
+
+l1=[0,1,2,3,4]
+l2=[5,6,7,8,9]
+l3=["shaik","sha","valli"]
+
+print(l1)
+print(l2)
+print(l1*2)
+print(l1+l2)
+print(2 in l1)
+for i in l3:
+    print(i)
+for j in l2:
+    if(j%2==0):
+        print(j)
+print(len(l1))
+---------------------------------
+
+l=[2,3,3,4,5,6,7,3,8,9,3]
+l2=[2,4,7,9]
+l.append(5)
+print(l)
+
+c=l.count(3)
+print(c)
+
+l.extend(l2)
+print(l)
+
+i=l.index(4)
+print(i)
+
+l.insert(2,0)
+print(l)
+
+l.reverse()
+print(l)
+
+l.sort()
+print(l)
+
+-TUPLE---------------------------------
+
+tuple=(1,"SHAIK",4,"VALLI",5)
+for i in tuple:
+     print(i)
+print(type(tuple))
+
+print(tuple[1])
+print(tuple[2])
+
+print(max(tuple))
+
+print(min(tuple))
+
+print(len(tuple))
+
+---SET--------------------------------------------
+
+set={"D","Shaik","Sha","Valli"}
+for i in set:
+    print(i)
+print(type(set))
+
+set.add("Bangalore")
+print(set)
+
+set.update("hyderabad")
+print(set)
+
+set.discard("D")
+print(set)
+
+set.pop()
+print(set)
+
+set.remove("D")
+print(set)
+
+set.clear()
+print(set)
+
+a={1,2,3,4}
+b={5,6,7,8}
+print(a.union(b))
+print(a|b)
+
+a={1,2,3,4}
+b={5.6,3,4,5}
+c={3,7,8,9}
+
+print(a&b)
+
+a.intersection_update(b,c)
+print(a)
+
+print(a-b)
+print(a.difference(b))
+
+print(a>b)
+print(b<c)
+print(b==c)
+
+---DICTIONARY------------------------------
+
+dict={"Id":502,"Name":"Valli","Age":27}
+for i in dict:
+    print(i)
+
+print(dict)
+
+print(dict.keys())
+
+print(dict.values())
+
+print(dict.items())
+
+dict.update({"Other":"SHAIK"})
+print(dict)
+
+for i,j in dict.items():
+    print(i,j)
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+PROGRAMS:
+========
+
+n1=20
+n2=15
+sum=n1+n2
+print("sum of {0} and {1} is {2}".format(n1,n2,sum))
+
+
+p=10000
+t=12
+r=2
+SI=(p*t*r)/100
+print("Simple Intrest is:",SI)
+sum= p+SI
+print(sum)
+
+
+def Findarea(r):
+    PI=3.14
+    return PI*(r*r)
+print("Area is %6f" %Findarea(5))
+
+
+num=int(input("Enter Multiplication no:"))
+num=12
+for i in range(1,11):
+    print(num, 'x',i, '=', num*i)
+
+
+import calendar
+yy=2020
+mm=10
+print(calendar.month(yy,mm))
+
+
+
+def Fib(12):
+    a,b=0,1
+    while a>12:
+        print(a)
+        a,b=b,a+b
+print(Fib())
+

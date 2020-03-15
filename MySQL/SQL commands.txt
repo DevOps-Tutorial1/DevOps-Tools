@@ -1,0 +1,365 @@
+USER NAME  : SCOTT
+PASSWORD  : TIGER
+
+            SQL>create table student1(sno number(4),sname varchar2(10),class varchar1(10),address varchar(10));altertrun;
+            \\ table is created.//
+           SQL> insert into student1 values(&sno,'&sname',&class','&address');
+
+            Enter value for sno        :1001,1002,1003,1004,1005
+            Enter value for sname   :SHAIK,SHA,VALLI,SHAREEF,BABA
+            Enter value for class     :BTECh,DIPLOMA,ITI,INTER,SSC
+            Enter value for address:HYD,BANG,CHENNAI,JMD,PUNE.
+       
+              \\ row is created.//
+
+               SQL>  save D:\SQL 
+              \\ created file D:\SQL.sql //
+
+              SQL>  get D:\SQL
+              \\  1* select * from student1 //
+
+               SQL>  run  D:\SQL (or) @ D:\SQL
+              \\ 1* select * from student1 //
+
+                   sno              sname              class            address
+                  ------           -----------         ---------      ----------       
+                  1001             SHAIK               BTECH            HYD
+                  1002             SHA                 DIPLOMA          BANG
+                  1003             VALLI               ITI              CHENNAI
+                  1004             SHAREEF             INTER            JMD
+                  1005             BABA                SSC              PUNE
+        
+-->DDL :-( Data Deffinition Language)
+   -----
+             1. Create   (C)
+             2. Alter    (A) :- add, modify, rename, drop
+             3. Rename   (R)
+             4. Truncate (T)
+             5. Drop     (D)
+          1.Create:-SQL> create table student1 (sno number(4),sname varchar2(10),class varchar(10),address varachar(10));
+
+          2.Alter :- 
+              add       :-  SQL> alter table student1 add    phno  number(10);
+              modify    :-  SQL> alter table student1 modify phno number(10);(before  10 .aftr change 15.)
+              rename    :-  SQL> alter table student1 rename column class to sclass;
+              drop      :-  SQL> alter table student1 drop   column  sphoneno;
+
+          3.Rename   :- SQL> rename student1 to student2;    ( table is rename student2 to student1)
+
+          4.Truncate :- SQL> truncate table student1;                 (......... It is used to remove the all rows from the table..........)
+
+          5.Drop     :- SQL> drop table student1 [purge];          (.........It is used to remove the table permanently.................)
+
+                        //* sql> flash back table student to before drop *//(...... It is used to  before  table data will come .....)
+
+-->DML:-(Data Manipulation Language):It is used to manipulate the data into database objects.
+   -----       1.Insert   
+               2.Update
+               3.Delete
+               4.Insert all 
+               5.Merge  
+          
+             1.Insert:  These are two types
+                 a.Conventional Insert
+                 b.Direct path Insert
+                  SQL> insert into student1 values(&sno,'&sname',&class','&address');
+                    Enter value for sno        :1001,1002,1003,1004,1005
+                   Enter value for sname   :SHAIK,SHA,VALLI,SHAREEF,BABA
+                  Enter value for class     :BTECh,DIPLOMA,ITI,INTER,SSC
+                 Enter value for address:HYD,BANG,CHENNAI,JMD,PUNE.
+              2.Update: SQL> update emp detailes set sal=sal+100 where deptno=20;
+                       \\ 5 rows updated. //rollback;\\
+             3.Delete: SQL> delete from emp detailes where sal>2450 and deptno=20;
+                      // 3 rows deleted\\ rollback;
+            4.insert all:
+            5.Merge:
+
+-->DCL:- (Data Control Language):
+    -----
+             1.Grant  statement
+             2.Revoke statement
+
+-->TCL:- (Transaction control language):
+    -----
+              1.Commit
+              2.Rollback
+              3.Save point
+-->DRL/DQL:-(Data Retrieval language)/(Data query language):
+     ----------
+              1.Select:
+                   SQL> select * from student1
+                      :
+                      :
+--> OPERATORS:-
+-------------------
+                        1.Arithmetic operator
+                        2.concatenation operator
+                        3.Logical  operator
+       1.Arithmetic  operator:(add,sub,mul,div)
+           
+             SQL> select empno,empname,sal,12*sal+100 from emp;
+                      
+                    EMPNO ENAME            SAL 12*SAL+100
+                    ----- ----------    - --------- ----------
+                    7369 SMITH             800       9700
+                    7499 ALLEN            1600      19300
+                    7521 WARD             1250      15100
+                    7566 JONES            2975      35800
+                    7654 MARTIN           1250      15100
+                    7698 BLAKE            2850      34300
+                    7782 CLARK            2450      29500
+                    7788 SCOTT            3000      36100
+                    7839 KING             5000      60100
+                    7844 TURNER           1500      18100
+                   7876 ADAMS            1100      13300
+
+                EMPNO ENAME             SAL 12*SAL+100
+                ------- ----------       ---------- ----------
+                 7900 JAMES             950      11500
+                 7902 FORD             3000      36100
+                 7934 MILLER           1300      15700
+
+                 14     rows selected.
+       Null:
+            SQL>select ename,job,sal,comm from emp detailes;
+    2.concatenation operator:
+           SQL> select  empno||ename from emp detailes;
+
+    3.Logical operator:(and ,or ,not)
+            And: SQL> select  ename,sal,job emp detailes where(sal>=1500 and sal>=5000)and job='manager';
+            Or:  SQL>select empno,ename,job,sal,from emp where not ename='smith';
+           Not: SQL>select empno,ename,job,deptno from emp where (deptno=10 or deptno=20)or job='manager';
+
+-->SQL*PLUS OPERATOR:-
+---------------------------
+         SQL>select empno,ename,comm from emp where comm between 500 and 1000;
+
+-->LIKE OPERATOR:-
+----------------------
+         SQL> select empno,ename from emp where ename like 'm%';
+
+-->NOT LIKE OPERATOR:-
+-----------------------------
+SQL> select empno,ename,comm from emp where ename not  like 'm%';
+
+-->NULL OPERATOR:-
+------------------------
+SQL> select empno,ename,deptno,comm from emp where comm is null;
+
+SQL> select empno,ename,deptno,comm from emp where comm is NOT null;
+
+-->ORDER BY CLAUSE:-
+--------------------------
+SQL> select ename,job,sal,deptno from emp order by sal;
+SQL> select ename,job,sal,deptno from emp where job='clerk' order by sal;
+SQL>select ename,job,sal,deptno form emp where sal>=2000 order by deptno,ename desc;
+SQL>select ename,job,sal,sal*12  annsal from emp order by annsal;
+
+-->LOWER FUNCTION:-
+-------------------------
+SQL>select lower('DURGASOFT')from dual;
+
+-->UPPER FUNCTION:-
+------------------------
+SQL>select upper ('durgasoft')from dual;
+
+-->CONCAT FUNCTION:-
+---------------------------
+SQL>select concat('oracle','durgasoft')from emp;
+
+-->INITCAP FUNCTION:-
+--------------------------
+
+SQL>select initcap(ename)from emp;
+SQL>select initcap ('DURGASOFT')from dual;
+SQL>select 'the job title for'||initcap(ename)||'is'||lower(job)details from emp;
+
+-->SUB STRING FUNCTION:-
+-----------------------------
+SQL>select substr('siva rama krishna',1,4)from dual;
+SQL>select substr('siva rama krishna',6,4)from dual;
+SQL>select ename,job from emp where substr(job,6)==upper('man');
+SQL>select contact(initcap(ename),contact('is a',contact(initcap(substr(job,1,3)),'eater.')))from emp where substr(job,4,3)=upper('age');
+
+-->LENGTH FUNCTIONS:-
+--------------------------
+SQL> select length('e.f codd')from dual;
+SQL>select length(ename)||'characters exists in '||initcap(ename)||'"s name.'as "names and lengths"from emp where substr(job,4,length(substr(job,4,3)))='age';
+
+-->INSTRING FUNCTION:-
+-----------------------------
+SQL> select instr('shaik sha valli','a',1,1)from dual;
+SQL>select instr(job,'a',1,2)from emp where job='manager';
+
+-->LPAD FUNCTION:-
+--------------------------
+SQL> select lpad('page 1',20,'*')from dual;
+SQL>select lpad(ename,20,'@')from emp where deptno=10;
+
+-->RPAD FUNCTION:-
+-----------------------
+SQL> select rpad('page 1'20'*')from dual;
+-->LTRIM FUNCTION:-
+------------------------
+SQL> select ltrim('xyxyoracle','xy')from dual;
+
+-->RTRIM FUNCTION:-
+--------------------------
+SQL>select rtim (' krishna aaa','a')from dual;
+
+-->TRIM FUNCTIONS:-
+------------------------
+SQL>select trim('s' from 'mithss')from dual;
+
+-->REPLACE FUNCTION:-
+-------------------
+SQL>select replace('Led','l','r')from dual;
+SQL>select job,replace(job,'p')from emp where job='president';
+
+-->TRANSLATE FUNCTION:- 
+----------------------
+SQL>select translate(job,'p','')from emp where Job='President';
+SQL>select translate(Job,'MN','DM')from emp where Job='MANAGER';
+
+-->CHR FUNCTION:-
+----------------
+SQL>select chr(75)||chr(82)||chr(73)||chr(83)||chr(72)||chr(78)||chr(65) Name from Dual;
+
+--> NULL and NOT NULL FUNCTION:-
+-------------------------------
+SQL> select empno,ename,comm from emp where comm is NULL;
+SQL> select empno,ename,comm from emp where comm is NOT NULL;
+
+-->ORDER BY CLAUSE:-
+------------------
+SQL> select ename,job,sal,deptno from emp order by sal;
+SQL> select ename,job,sal,deptno from emp order by sal DESC;
+SQL> select ename,job,sal,deptno from emp where job='CLERK' order by sal;
+
+-->Single row Functions:-
+-----------------------
+1.Character function: SQL> select lower('durgasoft')from dual;
+                      SQL> select Ename,job,lower('my data')from emp;
+                      SQL> select ename,lower(ename from emp where deptno=10;
+                      SQL> select 'the'||'s designation is'||job from emp where lower(job)='manager'
+
+2.Upper Function:
+3.INITCAP Function:
+4.CONCAT Function:
+5.Substring Function:
+
+-->Realtime scenario:-
+---------------------
+1.LENGTH Function
+2.INSTRING Function
+3.LPAD
+4.RPAD
+5.LTRIM
+6.RTRIM
+7.REPLACE
+8.TRANSLATE
+9.CHR
+10.ASCII   : SQL> select ascii('a')from dual;
+           : SQL> select Ename,Ascii('Ename')from dual;
+           : SQL> select Ascii('&name')from dual;
+
+11.NUMBER  : 
+12.ROUND   : SQL> select 19.637 Num1,Round(19.637,1)Rounded from dual;
+           : SQL> select 19.637 Num-,Round(19.637,-1)Rounded from dual;
+           : SQL> select 7843.637 Num1_,Round(7843.637,2)rounded,round(7843.637,-1)rounded,round(7843.637,-2)rounded from dual;
+13.TRUNCATE: SQL> select 19.637 Num1,trunc(19.637,1)truncate from dual;
+           : SQL> select 19.637 Num-,TRUNC(19.637,-1)Truncate from dual;
+14.CEIL    : SQL> select 19.637 Num1,CEIL(19.001)ceiled from dual;
+           : SQL> select 19.34 Num1,CEIL(19.32)ceiled,CEIL(19.2)ceiled,CEIL(19)ceiled,from Dual;
+
+
+15.FLOOR   : SQL> select 18.34 Num1,FLOOR(18.34) Floor,FLOOR(18.9) Floor,FLOOR(18) Floor from dual;
+
+16.MODULUS : SQL> select MOD(100,10) modulus,MOD(17,4)modulus from dual;
+17.POWER   : """                      """"                 """"
+18.SQUARE  : SQL> select SQRT(25) from dual;
+19.ABSOLUTE: SQL> select ABS(-100) from dual;
+20.SIGN    : SQL> select sign(-10),sign(10),sign(0) from dual;
+
+--> Working with DATES:
+-----------------------
+ SYSDATE:  SQL> select sysdate from dual;
+ DATE   :  SQL> select sysdate,sysdate+10 from dual;
+           SQL> select sysdate,sysdate+48/24 from dual;
+           SQL> select ename,hiredate,hiredate+10 from emp;
+           SQL> select ename,hiredate,hiredate-5  from emp;
+           SQL> select ename,hiredate,sysdate-hiredate"exofemps" from emp;
+           SQL> select ename,round(sysdate-hiredate)/7) weeks from emp;
+           SQL> select empno,hiredate,round(sysdate-hiredate)/365) from emp;
+Date Func: SQL> select sysdate,add-months(sysdate,1)from dual;
+           SQL> select ename,sal,hiredate,add_months(hiredate,1) from emp where deptno=30;
+           SQL> select ename,hiredate,round(months_between(sysdate,hiredate)/12)"experience in years" from emp;
+           SQL> select ename,hiredate,months_between(sysdate,hiredate)from emp where months_between(sysdate,hiredate)<320
+
+Next day Func: SQL> select Sysdate,Next_day(Sysdate,'thu')from dual;
+               SQL> select Sal,Hiredate,Next_day(Hiredate,'MONDAY')from emp;
+ 
+Last day Func: SQL> select Sysdate,Last_day(Sysdate)Last,Last_day(Sysdate)-Sysdate Daysleft from dual;
+               SQL> select Add_months(Last_day(Sysdate),-1)+1 from dual;
+Rounding dates:SQL> select Round(Sysdate,'day')from dual;
+               SQL> select Round(Sysdate,'MONTH')from dual;
+               SQL> select Round(Sysdate,'year')from dual;
+
+Truncating dates: SQL> select Round(Sysdate,'DAY'),Trunc(Sysdate,'DAY') from dual;
+                  SQL>      "               'MONTH'            "
+                  SQL>      "               'YEAR'             "
+
+--->CONVERSION FUNCTIONS: TO_CHAR FUNCTIONS
+-------------------------
+           1.Implicit function 
+           2.Explicit Function
+Decimal Indicator:-99D99
+           SQL> select 1234,TO_CHAR(1234,'9999D99')from dual;
+           SQL> select 1234,TO_CHAR(1234,'999D99')from dual;
+Group seperator:-
+           SQL> select TO_CHAR(1234567,'99G99G9999')from dual;
+Local currency Indicator:-
+           SQL> select 1234,TO_CHAR(1234,'L9999')from dual;
+           SQL> select Sal,TO_CHAR(Sal,'L999999')currency from emp where deptno=10;
+           SQL> select Sal,TO_CHAR(Sal,'L99G999D99','NLS_currency=IndRupees') Sal from emp where Deptno=20;
+Minus Indicator:-
+           SQL> select -10000,TO_CHAR(-10000,'L99G999D99MI')from dual;
+           SQL> select Sal,comm,comm-Sal,TO_CHAR(comm-Sal,'L99G999D99MI')from dual;
+
+Decimal Indicator:-
+           SQL> select 20000,TO_CHAR(20000,'L99,999.99')from dual;
+           SQL> select ename,sal,TO_CHAR(Sal,'L99,999.99')from dual;
+         
+Dollar Indicator:-
+           SQL> select 20000,TO_CHAR(20000,'$99,999.99')from dual;
+           SQL> select ename,sal,TO_CHAR(sal,'$99,999.99') from emp;
+
+Zero Indicator:-
+           SQL> select 1000,TO_CHAR(1000,'0999999'),TO_CHAR(1000,'09999990')from dual;
+           SQL> select ename,sal,TO_CHAR(sal,'$099,999.99')from emp;
+
+Digit Indicator:-
+           SQL> select 1000,600,TO_CHAR(1000-600,'99999'),TO_CHAR(600-1000,'99999')from dual;
+           SQL> select 20.25,20,TO_CHAR(20.55-20,'99999'),TO_CHAR(20.25-20,'99999')from dual;
+
+ISO currency Indicator:-
+           SQL> select 10000,TO_CHAR(1000,c9999.99')from dual;
+           SQL> select emame,sal,TO_CHAR(sal,'c9999.99')form emp;
+
+AD or BC Indicator:-
+           SQL> select Sysdate,TO_CHAR(Sysdate,'AD')from dual;
+           SQL> select TO_CHAR(Sysdate,'B.C.'),TO_CHAR(Sysdate,'A.D.')from dual;
+           SQL> select ename,sal,hiredate,TO_CHAR(hiredate,'A.D.')from emp;
+
+
+
+
+
+
+
+
+
+
+         
+            
+ 

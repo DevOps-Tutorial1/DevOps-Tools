@@ -1,0 +1,72 @@
+
+=> Linux Basic commands:
+-----------------------------
+
+1. Basics -(#ssh -i, #sudo -i, #man -h, $-user, #-rootuser, #history, #pwd, #time, #date, #cal, #uptime, #uname -a, #tree, #wc -l
+                #df -h, du -sh, #free, #top, #umstat, #cat etc/passwd, #cat etc/shadow, #cat proc/meminfo,
+                #poweroff, #reboot, #shutdown -h now (or) 09:00, #shutdown -h +10 "Please save your work" 
+
+2.TOUCH-(#touch filename
+               #touch filename{1..5}
+               #touch dir/file{1..5})
+   CAT     -(#cat > filename
+               #cat >>filename(edit existing file)
+               #cat filename)
+   ECHO   -(#echo "something" filename)
+   VI        -(#Vi filename
+
+3.MKDIR- (#mkdir dir
+               #mkdir -p Grandfather/Father/son/child
+               #mkdir -p Movies/{Telugu,English/{Action,comedy}}
+
+4.LIST -(#ls, #ls -l, #ls -a, #ls -ltr)
+
+5.COPY- (#cp Oldfile to Newfile
+              #cp Olddir to Newdir)
+
+6.MOVE- (#mv Oldfile to Newfile
+               #mv Olddir to Newdir)
+
+7.REMOVE-(#rm -rf file
+                 #rm -rf dir
+                 #rm file*
+
+8.RENAME-(mv oldfilename to Newfilename)
+               (mv olddirname to Newdirname)
+
+9.CHANGE DIRECTORY-(#cd directoryname
+                                  #cd ..
+                                  #cd .. /.. )
+
+10.VI & VIM -(#vi filename.txt,  (Command mode(yy,p,dd), Insert mode(i), Extend mode(Esc:wq!)
+                    #vim filename.txt
+
+11.LINKS- (Soft link-# ln -s filename linkfile.slink, 
+                Hard link-# ln filename linkfile.hlink)
+
+12.GREP- (#grep  - grep command 
+               # |      - Pipe command
+               #> >> - I/o Operations)
+
+13.FILTER-(#less filename, #more, #tail, #head, #sort, #cut, #Sed
+
+14.Find   -(# find -name filename, -inum,-user,-group,-type)
+  
+15.PERMISSIONS-(R=4,W=2,X=1---->#chmod 777 filename,---->chmod rwx filename
+
+16.USER,GROUP-(#user add username
+                         #group add groupname
+
+17.YUM & RPM -(#yum install filename -y)
+
+Shell Scripting:
+---------------
+>shell     -(#cat /etc/shells
+                #echo $bash
+                #which bash
+  
+>Save file-(#sh filename.sh
+                 #./ filename.sh
+
+>chmod  -(#chmod 777 filename.sh
+                #chmod +x filename.sh
