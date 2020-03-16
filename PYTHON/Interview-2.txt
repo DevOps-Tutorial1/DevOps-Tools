@@ -1,0 +1,158 @@
+﻿
+
+ ======================  PYTHON:  ========================
+ 
+ 1.[1,1,2,5,8,10]--missing values ?
+ 
+    sol) l=[1,1,2,5,8,10]
+         a=[]
+         for i in range(1,11):
+            if i not in s:
+	        t.append(a)
+         print(a)   
+	
+	output: [3,4,6,7,9]
+
+ 2.[1,2,3,4,5,0,-1]-- mIn and max values ?
+ 
+    sol) l=[1,2,3,4,5,0,-1]
+         l.sort()
+		 print(l[0])
+		 print(l[-1])
+		 
+	output: [-1]--> MIN value
+            [5] --> MAX value
+
+ 3.[1,1,5,5,8,10]--- duplicate values ?		
+    
+	sol) l=[1,1,5,5,8,10]               l=[1,1,5,5,8,10]--find first value ?
+	     a=[]                           a=[]
+		 b=[]                           b=[]
+		 for i in l:                    for i in l:
+		     if i not in a:                 if i not in a:
+			 a.append(i)                    a.append(i)
+			 b.append(i)                else:
+		 print(a)                           b.append(i)
+		 print(b)                       print(b[0])---------------> first value
+		                                print(b[1])---------------> second value
+										
+	output: [1,5]                    output: [1] ---------------> first value
+	                                         [5] ---------------> second value
+											 
+ 4. Reverse a string"flipkart"?
+    
+    sol) 1)  s="flipkart"                      2) s="flipkart"
+             print(s[::-1])   (or)                print(reverse(s)
+			 
+		 3)Usingextend :                       4)Using recurse:
+                                                      		 
+      		 def reverse(string):
+		         string = string[::-1]
+				 return string
+			 s = "reverse"
+			 print(s)
+           		   
+ 
+ 5. A=[-1,0,1,2,5,7,6,9]
+    B=4       find the next element of array list?
+   
+    sol) 5
+  
+ 6. new_array=[1,2,3,4,5]
+    {
+     var system.out.log
+	    :
+		:
+		:
+    }
+	sol) Hashing concept
+	
+
+				   
+ ======================  MYSQL    ========================
+ 
+ 1. Joins
+ 2. Group by, order by, having
+ 3. Aggregate function
+ 
+ 
+ ======================  SQL      ========================
+
+ 1.Print the ID of the customer who has salary > 20000 and DOJ between 05-08-2017 <-> 05-08-2018?
+   
+    sol)  sql >  ID          DOJ
+                -----      ----------
+                 501       05-08-2017
+				 502       10-12-2017
+				 503       15-06-2018
+				 504       04-08-2018
+				 
+2. Right join of table?
+   
+    > select New1.no,New2.name
+	  from New1
+	  RIGHT JOIN New2 ON New1.name=New2.no;
+  
+3. Write SQL querry To get 2 more salaries in Table?
+    
+    > select salary 
+      from emp
+      ORDERBY salary desc limit 0 2;
+
+4. Scheduling a job for every 5 minutes in table?
+  
+   ans. */5 * * * * *
+
+5. write a program for selecting the datato a sql query where the data like?
+   select name,number from emp  where elements in ('a','b','c','d') ?
+
+   ans.  I done with perl scripting but the interviewer told me unix command.
+
+6. Find the 2nd max, 3rd max and 4th max salary of an employee
+
+   ANS :  Write query using LIMIT
+	
+7.  Write query using CTE ?
+
+8.  Explain about SQL analytics?
+
+9.	What is join. How many types of joining are there?
+
+10.	What is self join. Explain with example.
+
+11.	How to join 3 different table .
+
+12.	In delete and Truncate which are faster and why.
+
+13.	Cluster index and non cluster index ?
+
+14.	What is foreign key. How to create foreign key constraint in a table. Explain with example.
+
+15.	How to modify the structure of a table .
+
+16.	Delete the duplicate row.
+   
+	
+	
+ ======================  UNIX    ========================
+ 
+ 
+1. Grep command
+2. sed command
+3. cp
+4. ch mod
+5. search for pattern
+6. replace for pattern
+ 
+1. I want to know the filename which contains “flipkart” pattern.
+
+   ( ANS : grep –l “flipkart” * ) 
+
+2. In a “ . “  directory many txt files are available. Then I want to know all the filename which contains “.csv” pattern. 
+
+3.I want to find out the file which are maximum in size in a “/home” directory.
+
+   (ANS :  cd /home , Ls –S|sort –nr|head -1)
+
+4. Write a shell scripts to reverse a string ( Suppose the string is “BANGALORE” then it gives the output “EROLAGNAB” )
+

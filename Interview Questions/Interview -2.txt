@@ -1,0 +1,222 @@
+Top 50 DevOps Interview Questions & Answers
+
+
+1) Explain what DevOps is?
+It is a newly emerging term in the IT field, which is nothing but a practice that emphasizes the collaboration and communication of both software developers and deployment(operations) team. It focuses on delivering software product faster and lowering the failure rate of releases.
+2) Mention what the key aspects or principle behind DevOps are?
+The key aspects or principle behind DevOps is
+•	Infrastructure as code
+•	Continuous deployment
+•	Automation
+•	Monitoring
+•	Security
+3) What are the core operations of DevOps with application development and with infrastructure?
+The core operations of DevOps are
+Application development
+•	Code building
+•	Code coverage
+•	Unit testing
+•	Packaging
+•	Deployment
+Infrastructure
+•	Provisioning
+•	Configuration
+•	Orchestration
+•	Deployment
+4) Explain how “Infrastructure code” is processed or executed in AWS?
+In AWS,
+•	The code for infrastructure will be in simple JSON format
+•	This JSON code will be organized into files called templates
+•	This templates can be deployed on AWS devops and then managed as stacks
+•	Later the CloudFormation service will do the Creating, deleting, updating, etc. operation in the stack
+5) Explain which scripting language is most important for a DevOps engineer?
+A simpler scripting language will be better for a DevOps engineer. Python seems to be very popular.
+ 
+6) Explain how DevOps is helpful to developers?
+DevOps can be helpful to developers to fix the bug and implement new features quickly.  It also helps for clearer communication between the team members.
+7) List out some popular tools for DevOps?
+Some of the popular tools for DevOps are
+•	Jenkins
+•	Nagios
+•	Monit
+•	ELK (Elasticsearch, Logstash, Kibana)
+•	Jenkins
+•	Docker
+•	Ansible
+•	Git
+8) Mention at what instance have you used the SSH?
+I have used SSH to log into a remote machine and work on the command line.  Beside this, I have also used it to tunnel into the system in order to facilitate secure encrypted communications between two untrusted hosts over an insecure network.
+9) Explain how you would handle revision (version) control?
+My approach to handling revision control would be to post the code on SourceForge or GitHub so everyone can view it.  Also, I will post the checklist from the last revision to make sure that any unsolved issues are resolved.
+10) What are the types of Http requests?
+The types of Http requests are
+•	GET
+•	HEAD
+•	PUT
+•	POST
+•	PATCH
+•	DELETE
+•	TRACE
+•	CONNECT
+•	OPTIONS
+11) Explain what you would check If a Linux-build-server suddenly starts getting slow?
+If a Linux-build-server suddenly starts getting slow, you will check for the following three things
+•	Application Level troubleshooting	RAM related issues, Disk I/O read-write issues, Disk Space related Issues, etc.
+•	System Level troubleshooting	Check for Application log file OR application server log file, system performance issues, Web Server Log – check HTTP, tomcat lo,  jboss, or WebLogic logs to see if the application server response/receive time is the issues for slowness, Memory Leak of any application
+•	Dependent Services troubleshooting	Antivirus related issues, Firewall related issues, Network issues, SMTP server response time issues, etc.
+12)What are the key components of DevOps?
+The most important components of DevOps are:
+•	Continuous Integration
+•	Continuous Testing
+•	Continuous Delivery
+•	Continuous Monitoring
+13) Name a few cloud platform which are used for DevOps Implementation
+Popular Cloud computing platform used for DevOps implementation are:
+1.	Google Cloud
+2.	Amazon Web Services
+3.	Microsoft Azure
+14) Give some benefits of using Version Control system
+•	The version Control system allows team members to work freely on any file at any time.
+•	All the past versions and variants are closely packed up inside the VCS.
+•	A distributed VCS like helps you to store the complete history of the project so in case of a breakdown in the central server you can use your team member’s local Git repository.
+•	Allows you to see what exact changes are made in the file’s content
+15) Explain Git Bisect
+Git bisect helps you to find the commit which introduced a bug using binary search.
+16) What is the build?
+A build is a method in which the source code is put together to check whether it works as a single unit.  In the build creation process, the source code will undergo compilation, inspection, testing, and deployment.
+17) What is Puppet?
+Puppet is a useful project management tool. It helps you to automate administration tasks.
+18) Explain two-factor authentication
+Two-factor authentication is a security method in which the user provides two ways of identification from separate categories.
+19) Explain the term ‘Canary Release’.
+A canary release is a pattern which reduces the risk of introducing a new version software into the production environment. It is done by making it available in a controlled manner to a subset of the user. Before making it available to the complete user set.
+20) What types of testing is important to ensure that new service is ready for production?
+You need to conduct continuous testing to ensure that the new service is ready for production.
+21) What is Vagrant?
+A vagrant is a tool which can create and manage virtualized environments for testing and developing software.
+22) What is the use of PTR in DNS?
+Pointer record which is also known as (PTR) is used for reverse DNS lookup.
+23) What is Chef?
+It is a powerful automation platform which transforms infrastructure into code.  In this tool, you can use write scripts that are used to automate processes.
+24) What are the prerequisites for the implementation of DevOps?
+Following are the useful prerequisites for DevOps Implementation:
+•	At least one Version Control Software
+•	Proper communication between the team members
+•	Automated testing
+•	Automated deployment
+25) Name some best practices which should be followed for DevOps success.
+Here, are essential best practices for DevOps implementation:
+•	The speed of delivery means time taken for any task to get them into the production environment.
+•	Track how many defects are found in the various
+•	It’s important to measure the actual or the average time that it takes to recover in case of a failure in the production environment.
+•	The number of bugs being reported by the customer also impact the quality of the application.
+26) Explain SubGIt tool
+SubGit helps you to migrate SVN to Git. It also allows you to build a writable Git mirror of a local or remote Subversion repository.
+27) Name some important network monitoring tools
+Some most prominent network monitoring tools are:
+•	Splunk
+•	Icinga 2
+•	Wireshark
+•	Nagios
+•	OpenNMS
+28) Whether your video card can run Unity how would you know?
+When you use a command
+ 
+1	/usr/lib/Linux/unity_support_test-p
+it will give detailed output about Unity’s requirements, and if they are met, then your video card can run unity.
+29) Explain how to enable startup sound in Ubuntu?
+To enable startup sound
+•	Click control gear and then click on Startup Applications
+•	In the Startup Application Preferences window, click Add to add an entry
+•	Then fill the information in comment boxes like Name, Command, and Comment
+ 
+1	/usr/bin/canberra-gtk-play—id= "desktop-login"—description= "play login sound"
+•	Logout and then login once you are done
+You can also open it with shortcut key Ctrl+Alt+T. 
+30) What is the quickest way to open an Ubuntu terminal in a particular directory?
+To open an Ubuntu terminal in a particular directory, you can use custom keyboard short cut.
+To do that, in the command field of a new custom keyboard, type genome – terminal – – working – directory = /path/to/dir.
+31) Explain how you can get the current color of the current screen on the Ubuntu desktop?
+You can open the background image in The Gimp (image editor) and then use the dropper tool to select the color on a specific point. It gives you the RGB value of the color at that point.
+32) Explain how you create launchers on a desktop in Ubuntu?
+To create launchers on a desktop in Ubuntu you can use
+ALT+F2 then type ” gnome-desktop-item-edit –create-new~/desktop,” it will launch the old GUI dialog and create a launcher on your desktop
+33) Explain what Memcached is?
+Memcached is a free and open source, high-performance, distributed memory object caching system. The primary objective of Memcached is to enhance the response time for data that can otherwise be recovered or constructed from some other source or database. It is used to avoid the need to operate SQL database or another source repetitively to fetch data for a concurrent request.
+Memcached can be used for
+•	 Social Networking->Profile Caching
+•	 Content Aggregation -> HTML/ Page Caching
+•	 Ad targeting -> Cookie/profile tracking
+•	 Relationship -> Session caching
+•	 E-commerce -> Session and HTML caching
+•	 Location-based services -> Database query scaling
+•	 Gaming and entertainment -> Session caching
+Memcache helps in
+•	 Speed up application processes
+•	 It determines what to store and what not to
+•	 Reduce the number of retrieval requests to the database
+•	 Cuts down the I/O ( Input/Output) access (hard disk)
+Drawback of Memcached is
+•	 It is not a persistent data store
+•	 Not a database
+•	 It is not an application specific
+•	 It cannot cache large object
+34) Mention some important features of Memcached?
+Important features of Memcached includes
+•	CAS Tokens: A CAS token is attached to an object retrieved from a cache. You can use that token to save your updated object.
+•	 Callbacks: It simplifies the code
+•	  getDelayed: It reduces the delay time of your script which is waiting for results to come back from a server
+•	  Binary protocol: You can use binary protocol instead of ASCII with the newer client
+•	 Igbinary: Previously, a client always used to do serialization of the value with complex data, but with Memcached, you can use igbinary option.
+35) Explain whether it is possible to share a single instance of a Memcache between multiple projects?
+Yes, it is possible to share a single instance of Memcache between multiple projects. Memcache is a memory store space, and you can run memcache on one or more servers. You can also configure your client to speak to a particular set of instances. So, you can run two different Memcache processes on the same host and yet they are completely independent. Unless, if you have partitioned your data, then it becomes necessary to know from which instance to get the data from or to put into.
+36) You are having multiple Memcache servers, in which one of the memcache servers fails, and it has your data, will it ever try to get key data from that one failed server?
+The data in the failed server won’t get removed, but there is a provision for auto-failure, which you can configure for multiple nodes. Fail-over can be triggered during any socket or Memcached server level errors and not during standard client errors like adding an existing key, etc.
+37) Explain how you can minimize the Memcached server outages?
+•	When one instance fails, several of them go down, and this will put a larger load on the database server when lost data is reloaded as a client make a request. To avoid this, if your code has been written to minimize cache stampedes then it will leave a minimal impact
+•	 Another way is to bring up an instance of Memcached on a new machine using the lost machines IP address
+•	The code is another option to minimize server outages as it gives you the liberty to change the Memcached server list with minimal work
+•	 Setting timeout value is another option that some Memcached clients implement for Memcached server outage. When your Memcached server goes down, the client will keep trying to send a request till the time-out limit is reached
+38) Explain how you can update Memcached when data changes?
+When data changes you can update Memcached by
+•	Clearing the Cache proactively: Clearing the cache when an insert or update is made
+•	 Resetting the Cache: It is similar to the first method but rather than just deleting the keys and waiting for the next request for the data to refresh the cache, reset the values after the insert or update.
+39) Explain what Dogpile effect is? How can you prevent this effect?
+Dogpile effect is referred to the event when a cache expires, and websites are hit by the multiple requests made by the client at the same time. This effect can be prevented by using a semaphore lock. In this system when value expires, the first process acquires the lock and starts generating new value.
+40) Explain how Memcached should not be used?
+•	 Memcached common misuse is to use it as a data store, and not as a cache
+•	 Never use Memcached as the only source of the information you need to run your application. Data should always be available through another source as well
+•	Memcached is just a key or value store and cannot perform a query over the data or iterate over the contents to extract information
+•	 Memcached does not offer any form of security either in encryption or authentication
+41) When a server gets shut down does data stored in Memcached is still available?
+Data stored in Memcached is not durable, so if a server is shut down or restarted, then all the data stored in Memcached is deleted.
+42) Mention what the difference between Memcache and Memcached?
+•	 Memcache: It is an extension that allows you to work through handy object-oriented (OOP’s) and procedural interfaces. It is designed to reduce database load in dynamic web applications.
+•	 Memcached: It is an extension that uses the libmemcached library to provide API for communicating with Memcached servers. It is used to increase the dynamic web applications by alleviating database load. It is the latest API.
+43) Explain Blue/Green Deployment Pattern
+Blue/Green coloring pattern addresses the most important challenges faced during the automatic deployment process.  In Blue/ Green Deployment approach, you need to ensure two identical production environment. However, only one among them is LIVE at any given point of time. The LIVE environment is called Blue environment.
+When the team prepares the next release of their software, they conduct their final stage of testing in an environment which is known as Green environment. Once verified, the traffic is routed to the Green environment.
+44) What are the containers?
+Containers are from of lightweight virtualization. They offer isolation among processes.
+45) What is post mortem meeting with reference to DevOps?
+Post mortem meeting is done to discuss what went wrong and what steps you need to take in order to avoid failures.
+46) What is the easiest method to build a small cloud?
+VMfres is one of the most effective options for making IaaS cloud from Virtual Box VMs in no time. However, if you want lightweight PaaS, then Dokku is a good option because bash script can be PaaS out of Dokku containers.
+47) Name two tools which are used for docker networking.
+For docker networking, you can use Kubernetes and Docker swarm.
+48)Name some of the areas where DevOps are Implemented
+DevOps are used for Production, IT operations, production feedback, and its software development.
+49) What is CBD’?
+CBD or Component-Based Development is a unique way to approach product development. In this method, developers always look for existing well defined, tested, and  verified components to compose and assemble them to a product instead of developing from scratch.
+50) Explain Pair Programming with reference to DevOps
+Pair programming is an engineering practice of Extreme Programming Rules. In this method, two programmers work on the same system, on the same design/algorithm/code.
+One programmer act as a “driver.” Other acts as an “observer” who continuously monitor the progress of a project to identify problems. The roles can be reversed at any point of time without any prior intimation.
+51) Explain Resilience Test
+Test that ensures recovery without data and functionality loss after a failure is called Resiliency tests.
+52) Name three important DevOps KPIs
+Three most common DevOps KPIs are:
+•	Meantime to failure recovery
+•	Deployment frequency
+•	Percentage of failed deployments
+
+

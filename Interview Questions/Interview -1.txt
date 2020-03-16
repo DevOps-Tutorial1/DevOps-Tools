@@ -1,0 +1,188 @@
+Aws DevOps Interview Questions – Top 50 
+
+1. What is Amazon Web Services in DevOps?
+Answer: AWS provides services that help you practice DevOps at your company and that are built first for use with AWS. These tools automate manual tasks, help teams manage complex environments at scale, and keep engineers in control of the high velocity that is enabled by DevOps.
+
+2. What is the role of AWS in DevOps?
+Answer: When asked this question in an interview, get straight to the point by explaining that AWS is a cloud-based service provided by Amazon that ensures scalability through unlimited computing power and storage. AWS empowers IT enterprises to develop and deliver sophisticated products and deploy applications on the cloud. Some of its key services include Amazon CloudFront, Amazon SimpleDB, Amazon Relational Database Service, and Amazon Elastic Computer Cloud. Discuss the various cloud platforms and emphasize any big data projects that you have handled in the past using cloud infrastructure.
+
+3. How Is Buffer Used In Amazon Web Services?
+Answer: Buffer is used to making the system more resilient to burst of traffic or load by synchronizing different components. The components always receive and process the requests in an unbalanced way. Buffer keeps the balance between different components and makes them work at the same speed to provide faster services.
+
+4. What is an AMI? How do we implement it?
+Answer:
+•	AMI stands for Amazon Machine Image. It is basically a copy of the root file system.
+•	Provides the data required to launch an instance, which means a copy of running an AMI server in the cloud. It’s easy to launch an instance from many different AMIs.
+•	Hardware servers that commodities bios which exactly point the master boot record of the first block on a disk. A disk image is created which can easily fit anywhere physically on a disk. Where Linux can boot from an arbitrary location on the EBS storage network.
+
+5. What is meant by Continuous Integration?
+Answer: I will advise you to begin this answer by giving a small definition of Continuous Integration (CI). It is a development practice that requires developers to integrate code into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early.
+I suggest that you explain how you have implemented it in your previous job.
+You can refer to the below-given example:
+•	Developers check out code into their private workspaces.
+•	When they are done with it they commit the changes to the shared repository (Version Control Repository).
+•	The CI server monitors the repository and checks out changes when they occur.
+•	The CI server then pulls these changes and builds the system and also runs unit and integration tests.
+•	The CI server will now inform the team of the successful build.
+•	If the build or tests fail, the CI server will alert the team.
+•	The team will try to fix the issue at the earliest opportunity.
+•	This process keeps on repeating.
+
+6. Why do you need a Continuous Integration of Dev & Testing?
+Answer: For this answer, you should focus on the need for Continuous Integration. My suggestion would be to mention the below explanation in your answer:
+Continuous Integration of Dev and Testing improves the quality of software and reduces the time taken to deliver it, by replacing the traditional practice of testing after completing all development. It allows the Dev team to easily detect and locate problems early because developers need to integrate code into a shared repository several times a day (more frequently). Each check-in is then automatically tested. 
+
+7. What is Continuous Testing?
+Answer: I will advise you to follow the below-mentioned explanation:
+Continuous Testing is the process of executing automated tests as part of the software delivery pipeline to obtain immediate feedback on the business risks associated with the latest build. In this way, each build is tested continuously, allowing Development teams to get fast feedback so that they can prevent those problems from progressing to the next stage of Software delivery life-cycle. This dramatically speeds up a developer’s workflow as there’s no need to manually rebuild the project and re-run all tests after making changes.
+8. How Do You Handle Continuous Integration And Continuous Delivery In Aws DevOps?
+Answer: The AWS Developer Tools help you securely store and version your application’s source code and automatically build, test, and deploy your application to AWS or your on-premises environment.
+Start with AWS Code Pipeline to build a continuous integration or continuous delivery workflow that uses AWS Code Build, AWS Code Deploy, and other tools, or use each service separately.
+9. What is AWS CodeBuild in AWS Devops?
+Answer: AWS Code Build is a fully managed build service that compiles source code, runs tests, and produces software packages that are ready to deploy. With Code Build, you don’t need to provision, manage, and scale your own build servers. Code Build scales continuously and processes multiple builds concurrently, so your builds are not left waiting in a queue.
+
+10. How is IaC implemented using AWS?
+Answer: Start by talking about the age-old mechanisms of writing commands onto script files and testing them in a separate environment before deployment and how this approach is being replaced by IaC. Similar to the codes written for other services, with the help of AWS, IaC allows developers to write, test, and maintain infrastructure entities in a descriptive manner, using formats such as JSON or YAML. This enables easier development and faster deployment of infrastructure changes.
+As a DevOps engineer, an in-depth knowledge of processes, tools, and relevant technology are essential. You must also have a holistic understanding of the products, services, and systems in place. If your answers matched the answers we’ve provided above, you’re in great shape for future DevOps interviews. Good luck! If you’re looking for answers to specific DevOps interview questions that aren’t addressed here, ask them in the comments below.
+11. Explain whether it is possible to share a single instance of a Memcache between multiple projects?
+Answer: Yes, it is possible to share a single instance of Memcache between multiple projects. Memcache is a memory store space, and you can run Memcache on one or more servers. You can also configure your client to speak to a particular set of instances. So, you can run two different Memcache processes on the same host and yet they are completely independent. Unless, if you have partitioned your data, then it becomes necessary to know from which instance to get the data from or to put into.
+
+12. What is AWS CodeStar in AWS DevOps?
+Answer: AWS Code Star enables you to quickly develop, build, and deploy applications on AWS. AWS Code Star provides a unified user interface, enabling you to easily manage your software development activities in one place. With AWS CodeStar, you can set up your entire continuous delivery toolchain in minutes, allowing you to start releasing code faster.
+
+13. What is Amazon RDS in AWS DevOps?
+Answer: Amazon Relational Database Service (Amazon RDS) makes it easy to set up, operate, and scale a relational database in the cloud.
+
+14. What is a building project in AWS DevOps?
+Answer: A building project is used to define how CodeBuild will run a build. It includes information such as where to get the source code, which builds the environment to use, the build commands to run, and where to store the build output. A build environment is the combination of the operating system, programming language runtime, and tools used by CodeBuild to run a build.
+
+15. Why AWS DevOps Matters?
+Answer: Software and the Internet have transformed the world and its industries, from shopping to entertainment to banking. Software no longer merely supports a business; rather it becomes an integral component of every part of a business.
+Companies interact with their customers through software delivered as online services or applications and on all sorts of devices. They also use software to increase operational efficiencies by transforming every part of the value chain, such as logistics, communications, and operations. 
+In a similar way that physical goods companies transformed how they design, build, and deliver products using industrial automation throughout the 20th century, companies in today’s world must transform how they build and deliver software.
+16. Is it possible to scale an Amazon instance vertically? How?
+Answer: Yes. This is an incredible characteristic of cloud virtualization and AWS. Spinup is a huge case when compared to the one which you are running. Let up the instance and separate the root EBS volume from this server and remove. Next, stop your live instance, remove its root volume. Note down the distinctive device ID and attach root volume to your new server and start it again. This is the way to scaling vertically in place.
+
+17. How is AWS OpsWorks different than AWS Cloud Formation?
+Answer: OpsWorks and Cloud Formation both support application modeling, deployment, configuration, management, and related activities. Both support a wide variety of architectural patterns, from simple web applications to highly complex applications. AWS OpsWorks and AWS Cloud Formation differ in abstraction level and areas of focus.
+AWS Cloud Formation is a building block service which enables the customer to manage almost any AWS resource via JSON-based domain-specific language. It provides foundational capabilities for the full breadth of AWS, without prescribing a particular model for development and operations.
+Customers define templates and use them to provision and manage AWS resources, operating systems and application code, In contrast, AWS OpsWorks is a higher level service that focuses on providing highly productive and reliable DevOps experiences for IT administrators and ops-minded developers.
+To do this, AWS OpsWorks employs a configuration management model based on concepts such as stacks and layers and provides integrated experiences for key activities like deployment, monitoring, auto-scaling, and automation.
+Compared to AWS CloudFormation, AWS OpsWorks supports a narrower range of application-oriented AWS resource types including Amazon EC2 instances, Amazon EBS volumes, Elastic IPs, and Amazon CloudWatch metrics.
+18. How is AWS Elastic Beanstalk different than AWS OpsWorks?
+Answer: AWS Elastic Beanstalk is an application management platform while OpsWorks is a configuration management platform. BeanStalk is an easy to use service which is used for deploying and scaling web applications developed with Java, .Net, PHP, Node.js, Python, Ruby, Go and Docker. Customers upload their code and Elastic Beanstalk automatically handles the deployment. The application will be ready to use without any infrastructure or resource configuration.
+
+19. How do I transfer my existing domain name registration to Amazon Route 53 without disrupting my existing web traffic?
+Answer: You will need to get a list of the DNS record data for your domain name first, it is generally available in the form of a “zone file” that you can get from your existing DNS provider. Once you receive the DNS record data, you can use Route 53’s Management Console or simple web-services interface to create a hosted zone that will store your DNS records for your domain name and follow its transfer process. It also includes steps such as updating the nameservers for your domain name to the ones associated with your hosted zone. For completing the process you have to contact the registrar with whom you registered your domain name and follow the transfer process.
+
+20. When should I use a Classic Load Balancer and when should I use an Application load balancer?
+Answer: A Classic Load Balancer is ideal for simple load balancing of traffic across multiple EC2 instances, while an Application Load Balancer is ideal for microservices or container-based architectures where there is a need to route traffic to multiple services or load balance across multiple ports on the same EC2 instance.
+
+21. What is the difference between Scalability and Elasticity?
+Answer: Scalability is the ability of a system to increase its hardware resources to handle the increase in demand. It can be done by increasing the hardware specifications or increasing the processing nodes.
+Elasticity is the ability of a system to handle the increase in the workload by adding additional hardware resources when the demand increases(same as scaling) but also rolling back the scaled resources when the resources are no longer needed. This is particularly helpful in Cloud environments, where a pay per use model is followed.
+22. How is Amazon RDS, DynamoDB and Redshift different?
+Answer: Amazon RDS is a database management service for relational databases, it manages patching, upgrading, backing up of data, etc. of databases for you without your intervention. RDS is a Db management service for structured data only.
+DynamoDB, on the other hand, is a NoSQL database service, NoSQL deals with unstructured data.
+Redshift is an entirely different service, it is a data warehouse product and is used in data analysis. (Aws DevOps Interview Questions)
+23. If my AWS Direct Connect fails, will I lose my connectivity?
+Answer: If a backup AWS Direct connect has been configured, in the event of a failure it will switch over to the second one. It is recommended to enable Bidirectional Forwarding Detection (BFD) when configuring your connections to ensure faster detection and failover. On the other hand, if you have configured a backup IPsec VPN connection
+instead, all VPC traffic will failover to the backup VPN connection automatically. Traffic to/from public resources such as Amazon S3 will be routed over the Internet.
+If you do not have a backup AWS Direct Connect link or an IPsec VPN link, then Amazon VPC traffic will be dropped in the event of a failure.
+24. How can you speed up data transfer in Snowball?
+Answer: The data transfer can be increased in the following way:
+By performing multiple copy operations at one time i.e. if the workstation is powerful enough, you can initiate multiple cp commands each from different terminals, on the same Snowball device.
+Copying from multiple workstations to the same snowball.
+Transferring large files or by creating a batch of small file, this will reduce the encryption overhead.
+Eliminating unnecessary hops i.e. make a setup where the source machine(s) and the snowball are the only machines active
+on the switch being used, this can hugely improve performance
+25. How does a Cookbook differ from a Recipe in Chef?
+Answer: The answer to this is pretty direct. You can simply say, “a Recipe is a collection of Resources, and primarily configures a software package or some piece of infrastructure. A Cookbook groups together Recipes and other information in a way that is more manageable than having just Recipes alone.” 
+26. Why do we use AWS for DevOps?
+Answer: There are many benefits of using AWS for DevOps, they are:
+Get Started Fast – Each AWS service is ready to use if you have an AWS account. There is no setup required or software to install.
+Fully Managed Services: These services can help you take advantage of AWS resources quicker. You can worry less about setting up, installing, and operating infrastructure on your own. This lets you focus on your core product.
+Built for Scale: You can manage a single instance or scale to thousands using AWS services. These services help you make the most of flexible compute resources by simplifying provisioning, configuration, and scaling.
+
+27. What is AWS Lambda in AWS DevOps?
+Answer: AWS Lambda lets you run code without provisioning or managing servers. With Lambda, you can run code for virtually any type of application or backend service – all with zero administration. Just upload your code and Lambda takes care of everything required to run and scale your code with high availability.
+
+28. What Are The Benefits Of Aws Code Deploy In Aws DevOps?
+Answer: AWS Code Deploy is a service that automates software deployments to a variety of computer services including Amazon EC2, AWS Lambda, and instances running on-premises.
+AWS Code Deploy makes it easier for you to rapidly release new features, helps you avoid downtime during application deployment, and handles the complexity of updating your applications.
+29. Explain The Function Of An Amazon Ec2 Instance Like Stopping, Starting And Terminating?
+Answer: Stopping and Starting an instance: When an instance is stopped, the instance performs a normal shutdown and then transitions to a stopped state. All of its Amazon EBS volumes remain attached, and you can start the instance again at a later time. You are not charged for additional instance hours while the instance is in a stopped state.
+Terminating an instance: When an instance is terminated, the instance performs a normal shutdown, then the attached Amazon EBS volumes are deleted unless the volume’s delete OnTermination attribute is set to false. The instance itself is also deleted, and you can’t start the instance again at a later time. Hope it would be very helpful to understand and crack the interview. 
+30. What is the importance of buffer in Amazon Web Services?
+Answer: A buffer will synchronize different components and makes the arrangement additional elastic to a burst of load or traffic. The components are prone to work in an unstable way of receiving and processing the requests. The buffer creates the equilibrium linking various apparatus and crafts them effort at the identical rate to supply more rapid services.
+31. What are the components involved in Amazon Web Services?
+Answer: There are 4 components involved and areas below.
+Amazon S3: With this, one can retrieve the key information which is occupied in creating cloud structural design and amount of produced information also can be stored in this component that is the consequence of the key specified. Amazon EC2: helpful to run a large distributed system on the Hadoop cluster. Automatic parallelization and job scheduling can be achieved by this component. Amazon SQS: this component acts as a mediator between different controllers. Also worn for cushioning requirements those are obtained by the manager of Amazon.Amazon SimpleDB: helps in storing the transitional position log and the errands executed by the consumers.
+32. Which automation gears can help with spinup services?
+Answer: The API tools can be used for spinup services and also for the written scripts. Those scripts could be coded in Perl, bash or other languages of your preference. There is one more option that is patterned administration and stipulating tools such as a dummy or improved descendant. A tool called Scalr can also be used and finally, we can go with a controlled explanation like a Rightscale.
+33. How would you explain the concept of “infrastructure as code” (IaC)?
+Answer: It is a good idea to talk about IaC as a concept, which is sometimes referred to as a programmable infrastructure, where infrastructure is perceived in the same way as any other code. Describe how the traditional approach to managing infrastructure is taking a back seat and how manual configurations, obsolete tools, and custom scripts are becoming less reliable. (Company) Next, accentuate the benefits of IaC and how changes to IT infrastructure can be implemented in a faster, safer and easier manner using IaC. Include the other benefits of IaC like applying regular unit testing and integration testing to infrastructure configurations, and maintaining up-to-date infrastructure documentation.
+If you have completed a certification on Amazon Web Services (AWS)
+34. What are the advantages of DevOps?
+Answer: For this answer, you can use your past experience and explain how DevOps helped you in your previous job. If you don’t have any such experience, then you can mention the below advantages.
+Technical benefits:
+•	Continuous software delivery
+•	Less complex problems to fix
+•	Faster resolution of problems
+Business benefits:
+•	Faster delivery of features
+•	More stable operating environments
+•	More time available to add value (rather than fix/maintain)
+35. Which VCS tool you are comfortable with?
+Answer: You can just mention the VCS tool that you have worked on like this: “I have worked on Git and one major advantage it has over other VCS tools like SVN is that it is a distributed version control system.”
+Distributed VCS tools do not necessarily rely on a central server to store all the versions of a project’s files. Instead, every developer “clones” a copy of a repository and has the full history of the project on their own hard drive. 
+36. What’s the background of your system?
+Answer: Some DevOps jobs require extensive systems knowledge, including server clustering and highly concurrent systems. As a DevOps engineer, you need to analyze system capabilities and implement upgrades for efficiency, scalability, and stability, or resilience. It is recommended that you have a solid knowledge of OSes and supporting technologies, like network security, virtual private networks, and proxy server configuration.
+DevOps relies on virtualization for rapid workload provisioning and allocating compute resources to new VMs to support the next rollout, so it is useful to have in-depth knowledge around popular hypervisors. This should ideally include backup, migration, and lifecycle management tactics to protect, optimize and eventually recover computing resources. Some environments may emphasize microservices software development tailored for virtual containers. Operations expertise must include extensive knowledge of systems management tools like Microsoft System Center, Puppet, Nagios and Chef.
+such as a card, and the other is typically something memorized, such as a security code.
+37. Explain how Memcached should not be used?
+Answer: Memcached common misuse is to use it as a data store, and not as a cache Never use Memcached as the only source of the information you need to run your application.
+Data should always be available through another source as well Memcached is just a key or value store and cannot perform query over the data or iterate over the contents to extract information.
+Memcached does not offer any form of security either in encryption or authentication
+38. Explain what is Dogpile effect? How can you prevent this effect?
+Answer: Dogpile effect is referred to the event when the cache expires, and websites are hit by the multiple requests made by the client at the same time. This effect can be prevented by using a semaphore lock. In this system when value expires, the first process acquires the lock and starts generating new value.
+39. Is continuous delivery related to the dev-ops movement? How so?
+Answer: Absolutely. In any organization where there is a separate operations department, and especially where there is an independent QA or testing function, we see that much of the pain in getting software delivered is caused by poor communication between these groups, exacerbated by an underlying cultural divide. Apps are measured according to throughput, and ops are measured according to stability. Testing gets it in the neck from both sides, and like release management, is often a political pawn in the fight between apps and ops. The point of dev-ops is that developers need to learn how to create high-quality, production-ready software, and ops need to learn that Agile techniques are actually powerful tools to enable effective, low-risk change management. Ultimately, we’re all trying to achieve the same thing – creating business value through software – but we need to get better at working together and focusing on this goal rather than trying to optimize our own domains. Unfortunately, many organizations aren’t set up in a way that rewards that kind of thinking. According to Forrester.
+40. What is the role of a DevOps engineer?
+Answer: There’s no formal career track for becoming a DevOps engineer. They are either developers who get interested in deployment and network operations, or sysadmins who have a passion for scripting and coding, and move into the development side where they can improve the planning of test and deployment.
+41. What happens when a build is run in CodeBuild in AWS Devops?
+Answer: CodeBuild will create a temporary compute container of the class defined in the building project, load it with the specified runtime environment, download the source code, execute the commands configured in the project, upload the generated artifact to an S3 bucket, and then destroy the compute container. During the build, CodeBuild will stream the build output to the service console and Amazon CloudWatch Logs.
+42. How to Adopt an AWS DevOps Model?
+Answer:
+•	Transitioning to DevOps requires a change in culture and mindset. At its simplest, DevOps is about removing the barriers between two traditionally siloed teams, development, and operations.
+•	In some organizations, there may not even be separate development and operations teams; engineers may do both. With DevOps, the two teams work together to optimize both the productivity of developers and the reliability of operations.
+•	They strive to communicate frequently, increase efficiencies, and improve the quality of services they provide to customers. They take full ownership for their services, often beyond where their stated roles or titles have traditionally been scoped by thinking about the end customer’s needs and how they can contribute to solving those needs.
+•	Quality assurance and security teams may also become tightly integrated with these teams. Organizations using a DevOps model, regardless of their organizational structure, have teams that view the entire development and infrastructure lifecycle as part of their responsibilities.
+43. Discuss your experience building bridges between IT Ops, QA, and development?
+Answer: DevOps is all about effective communication and collaboration. I’ve been able to deal with production issues from the development and operations sides, effectively straddling the two worlds. I’m less interested in finding blame or playing the hero than I am with ensuring that all of the moving parts come together.
+44. What Is Amazon Elastic Container Service In Aws DevOps?
+Answer: Amazon Elastic Container Service (ECS) is a highly scalable, high-performance container management service that supports Docker containers and allows you to easily run applications on a managed cluster of Amazon EC2 instances.
+45. What is Amazon S3 in AWS DevOps?
+Answer: Amazon Simple Storage Service (Amazon S3) is object storage with a simple web service interface to store and retrieve any amount of data from anywhere on the web.
+46. Which programming frameworks does CodeBuild support in AWS DevOps?
+Answer: Code Build provides pre-configured environments for supported versions of Java, Ruby, Python, Go, Node.js, Android, and Docker. You can also customize your own environment by creating a Docker image and uploading it to the Amazon EC2 Container Registry or the Docker Hub registry. You can then reference this custom image in your build project.
+47. What are microservices and why they have an impact on operations?
+Answer: Microservices is a product of software architecture and programming practices. Microservices architectures typically produce smaller, but more numerous artifacts that Operations is responsible for regularly deploying and managing. For this reason, microservices have an important impact on Operations. The term that describes the responsibilities of deploying microservices is micro deployments. So, what DevOps is really about is bridging the gap between microservices and micro deployments.
+48. Explain how DevOps is helpful to developers?
+Answer:
+•	DevOps brings faster and more frequent release cycles which allow developers to identify and resolve issues immediately as well as implementing new features quickly.
+•	Since DevOps is what makes people do better work by making them wear different hats, Developers who collaborate with Operations will create software that is easier to operate, more reliable, and ultimately better for the business.
+49. Mention the key components of AWS?
+Answer:
+The key components of AWS are as follows:
+Route 53: A DNS (Domain Name SERVER) web-based service platform.
+Simple E-mail Service: Sending of E-mail is done by using RESTFUL API call or via regular SMTP (Simple Mail
+Transfer Protocol).
+Identity and Access Management: Improvised security and Identity management are provided for AWS account.
+Simple Storage Device or (S3): It is a huge storage medium, widely used for AWS services.
+Elastic Compute Cloud (EC2): Allows on-demand computing resources for hosting applications and essentially useful for unpredictable workloads
+Elastic Block Store (EBS): Storage volumes which are being attached to EC2 and allows the data lifespan of a single EC2
+Cloud Watch: It is used to monitor AWS resources and it allows administrators to view and collect keys required.
+Access is provided so that one can set a notification alarm in case of trouble.
+50. What is the AWS Developer Tools?
+Answer: The AWS Developer Tools is a set of services designed to enable developers and IT operations professionals practicing DevOps to rapidly and safely deliver software.

@@ -1,0 +1,235 @@
+
+
+=>What is Cloud Computing?:-
+==========================
+ 
+ Cloud Computing can be defined as delivering computing power( CPU, RAM, Network Speeds, Storage OS software)
+ a service over a network (usually on the internet) rather than physically having the computing resources at 
+ the customer location.
+
+Example: AWS, Azure, Google Cloud
+
+Why Cloud Computing?:-
+---------------------
+With increase in computer and Mobile user’s, data storage has become a priority in all fields. Large and small 
+scale businesses today thrive on their data & they spent a huge amount of money to maintain this data. 
+It requires a strong IT support and a storage hub. Not all businesses can afford high cost of in-house 
+IT infrastructure and back up support services. For them Cloud Computing is a cheaper solution. 
+Perhaps its efficiency in storing data, computation and less maintenance cost has succeeded to attract 
+even bigger businesses as well.
+
+Benefits of Cloud Computing:
+---------------------------
+The potential for cost saving is the major reason of cloud services adoption by many organizations.  
+Cloud computing gives the freedom to use services as per the requirement and pay only for what you use. 
+Due to cloud computing it has become possible to run IT operations as a outsourced unit without much in-house 
+resources.
+
+Following are the benefits of cloud computing:
+
+1.Lower IT infrastructure and computer costs for users
+2.Improved performance
+3.Fewer Maintenance issues
+4.Instant software updates
+5.Improved compatibility between Operating systems
+6.Backup and recovery
+7.Performance and Scalability
+8.Increased storage capacity
+9.Increase data safety
+
+Disadvantages of Cloud Computing:
+--------------------------------
+There are various disadvantages of cloud computing technology. 
+The important disadvantages of cloud computing are given below.
+
+1) Require a constant Internet Connection:
+   Cloud computing is impossible without Internet connection. To access any applications and documents you need a 
+   constant Internet connection.
+
+2) Require High Speed Internet connection:
+   Similarly, a low-speed Internet connection makes cloud computing painful at best and often impossible. 
+   Web based apps often require a lot of bandwidth to download, as need to download large documents.
+
+3) Stored Data Might Not Be Secure:
+   With cloud computing, all your data is stored in the cloud. That's all well and good, but how secure is the cloud? 
+   Can't unauthorized users gain access to your confidential data?
+
+
+=>Types of Clouds:-
+==================
+There are four different cloud models that you can subscribe according to business needs:
+
+1.Private Cloud: Here, computing resources are deployed for one particular organization.  
+                 This method is more used for intra-business interactions.  
+			     Where the computing resources can be governed, owned and operated by the same organization.
+2.Community Cloud: Here, computing resources are provided for a community and organizations. 
+
+3.Public Cloud: This type of cloud is used usually for B2C (Business to Consumer) type interactions.  
+                Here the computing resource is owned, governed and operated by government, an academic or 
+		    	business organization. 
+4.Hybrid Cloud: This type of cloud can be used for both type of interactions -  B2B (Business to Business) or 
+                B2C ( Business to Consumer). This deployment method is called hybrid cloud as the computing resources 
+			    are bound together by different clouds.
+				
+=>Cloud Computing Services:-
+===========================
+
+The three major Cloud Computing Offerings are
+
+1.Software as a Service (SaaS)
+2.Platform as a Service (PaaS)
+3.Infrastructure as a Service (IaaS)
+
+1.SaaS (Software as a Service):
+-------------------------------
+SaaS or software as a service is a software distribution model in which applications are hosted by a vendor or 
+service provider and made available to customers over a network (internet). SaaS is becoming an increasingly 
+prevalent delivery model as underlying technologies that supports Service Oriented Architecture (SOA) or Web Services. 
+Through internet this service is available to users anywhere in the world. 
+
+Traditionaly, software application needed to be purchased upfront &then installed it onto your computer. 
+SaaS users on the other hand, instead of purchasing the software subscribes to it, usually on monthly basisvia 
+internet.
+
+Anyone who needs an access to a particular piece of software can be subscribe as a user, 
+whether it is one or two people or every thousands of employees in a corporation. 
+SaaS is compatible with all internet enabled devices.
+
+Many important tasks like accounting, sales, invoicing and planning all can be performed using SaaS.
+
+
+2.PaaS (Platform as a Service):
+-------------------------------
+Platform as a service, is referred as PaaS, it provides a platform and environment to allow developers to 
+build applications and services. This service is hosted in the cloud and accessed by the users via internet.
+
+To understand in a simple terms, let compare this with painting a picture, where you are provided with paint 
+colors, different paint brushes and paper by your school teacher and you just have to draw a beautiful picture 
+using those tools. 
+
+PaaS services are constantly updated & new features added. Software developers, web developers and business 
+can benefit from PaaS. It provides platform to support application development. It includes software support 
+and management services, storage, networking, deploying, testing, collaborating, hosting and maintaining applications.
+
+3.IaaS (Infrastructure as a Service):
+-----------------------------------
+IaaS (Infrastructure As A Service) is one of the fundamental service model of cloud computing alongside 
+PaaS( Platform as a Service). It provides access to computing resources in a virtualized environment “the cloud” 
+on internet.  It provides computing infrastructure like virtual server space, network connections, bandwidth, 
+load balancers and IP addresses. The pool of hardware resource is extracted from multiple servers and networks 
+usually distributed across numerous data centers.  This provides redundancy and reliability to IaaS.
+
+4.IaaS(Infrastructure as a service):
+-----------------------------------
+ is a complete package for computing. For small scale businesses who are looking for cutting cost on 
+ IT infrastructure, IaaS is one of the solutions. Annually a lot of money is spent in maintenance and 
+ buying new components like hard-drives, network connections, external storage device etc. which a business 
+ owner could have saved for other expenses by using IaaS.
+ 
+=>What is Cloud Computing Architecture?:
+=======================================
+Let’s have a look into Cloud Computing and see what Cloud Computing is made of. Cloud computing comprises 
+of two components front end and back end.  Front end consist client part of cloud computing system. 
+It comprise of interfaces and applications that are required to access the cloud computing platform.
+
+While back end refers to the cloud itself, it comprises of the resources that are required for cloud computing services.
+ It consists of virtual machines, servers, data storage, security mechanism etc. It is under providers control.
+
+Cloud computing distributes the file system that spreads over multiple hard disks and machines. 
+Data is never stored in one place only and in case one unit fails the other will take over automatically. 
+The user disk space is allocated on the distributed file system, while another important component is algorithm 
+for resource allocation. Cloud computing is a strong distributed environment and it heavily depends upon strong 
+algorithm. 
+
+=>Virtualization in Cloud Computing:
+====================================
+   Virtualization is the "creation of a virtual (rather than actual) version of something, such as a server, 
+   a desktop, a storage device, an operating system or network resources".
+
+   In other words, Virtualization is a technique, which allows to share a single physical instance of a resource 
+   or an application among multiple customers and organizations. It does by assigning a logical name to a 
+   physical storage and providing a pointer to that physical resource when demanded.
+   
+   
+Virtualization and Cloud Computing:-
+===================================
+
+The main enabling technology for Cloud Computing is Virtualization. Virtualization is a partitioning 
+of single physical server into multiple logical servers.  Once the physical server is divided, each logical 
+server behaves like a physical server and can run an operating system and applications independently.  
+Many popular companies’s like VmWare and Microsoft provide virtualization services, 
+where instead of using your personal PC for storage and computation, you use their virtual server. 
+They are fast, cost-effective and less time consuming.
+
+For software developers and testers virtualization comes very handy, as it allows developer 
+to write code that runs in many different environments and more importantly to test that code.
+
+
+ 
+Virtualization is mainly used for three main purposes 
+
+1) Network Virtualization 
+2) Server Virtualization  
+3) Storage Virtualization
+
+Network Virtualization:  It is a method of combining the available resources in a network by splitting up the 
+                         available bandwidth into channels, each of which is independent from the others and each 
+						 channel is independent of others and can be assigned to a specific server or device in 
+						 real time.
+
+Storage Virtualization: It is the pooling of physical storage from multiple network storage devices into what appears 
+                        to be a single storage device that is managed from a central console. 
+                        Storage virtualization is commonly used in storage area networks (SANs).
+
+Server Virtualization: Server virtualization is the masking of server resources like processors, RAM, 
+                       operating system etc, from server users. The intention of server virtualization is to 
+					   increase the resource sharing and reduce the burden and complexity of computation from users.
+
+Virtualization is the key to unlock the Cloud system, what makes virtualization so important for the cloud 
+is that it decouples the software from the hardware. For example, PC’s can use virtual memory to borrow 
+extra memory from the hard disk. Usually hard disk has a lot more space than memory. Although virtual disks 
+are slower than real memory, if managed properly the substitution works perfectly. Likewise, there is software 
+which can imitate an entire computer, which means 1 computer can perform the functions equals to 20 computers.
+
+
+Grid Computing Vs Cloud Computing:
+=================================
+When we switch on the fan or any electric device, we are less concern about the power supply from where it 
+comes and how it is generated. The power supply or electricity that we receives at our home travels through 
+a chain of network, which includes power stations, transformers, power lines and transmission stations. 
+These components together make a ‘Power Grid’. Likewise, ‘Grid Computing’ is an infrastructure that links 
+computing resources such as PCs, servers, workstations and storage elements and provides the mechanism required 
+to access them.
+
+
+Utility Computing Vs Cloud Computing:
+====================================
+In our previous conversation in “Grid Computing” we have seen how electricity is supplied to our house, 
+also we do know that to keep electricity supply we have to pay the bill. Utility Computing is just like that, 
+we use electricity at home as per our requirement and pay the bill accordingly likewise you will use the services 
+for the computing and pay as per the use this is known as ‘Utility computing’. Utility computing is a good source
+for small scale usage, it can be done in any server environment and requires Cloud Computing.
+
+
+Security concerns for Cloud Computing:
+======================================
+While using cloud computing, the major issue that concerns the users is about its security. 
+
+One concern is that cloud providers themselves may have access to customer’s unencrypted 
+data- whether it’s on disk, in memory or transmitted over the network. 
+
+
+Privacy Concern & Cloud Computing:
+=================================
+Privacy present a strong barrier for users to adapt into Cloud Computing systems
+
+There are certain measures which can improve privacy in cloud computing.
+
+The administrative staff of the cloud computing service could theoretically monitor the data moving in memory 
+before it is stored in disk.To keep the confidentiality of a data, administrative and legal controls should 
+prevent this from happening.
+The other way for increasing the privacy is to keep the data encrypted at the cloud storage site, preventing 
+unauthorized access through the internet; even cloud vendor can’t access the data either.
+
+
+
