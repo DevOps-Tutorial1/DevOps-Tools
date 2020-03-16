@@ -1,30 +1,4 @@
-<<<<<<< HEAD
-HOW TO UPLOAD FILES IN GITHUB
-======================
 
-1. git config --global user.name "DevOps-Tutorial1"
-    git config --global user.email "ssv11101992@gmail.com"
-    git config --list
-
-2. cd DevOpsGithub
-    ls
-
-3. cd DevOps-Tools  (:copy and paste the files in this folder)
-    ls -ltr
-
-4. git status (RED color)
-
-5. git add -A
-    git status( GREEN color)
-
-6. git commit -m "All files uploaded successfully"
-    (if not upload files you follow--- $git pull
-                                                  $git branch -r)
-
-7. git branch 
-
-8. git push origin master
-=======
 
 HOW TO UPLOAD the FILES IN GITHUB
 =================================
@@ -46,9 +20,11 @@ HOW TO UPLOAD the FILES IN GITHUB
 
 6. $git commit -m "All files uploaded successfully"
     (if not upload files you follow steps --- $git pull
-                                              $git branch -r)
-
+                                              $git add -A
+                                              $git status
+                                              $git commit -m "added success"
+                                              $git push orogin master))
 7. $git branch 
 
 8. $git push origin master
->>>>>>> dbf593a2eca3e034be59c766a4cf3830e2b8b83b
+
