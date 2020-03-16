@@ -2,6 +2,16 @@
 => Linux Interview Questions:-
 ==================
 
+1. Check If a Process is Running ?? If not Make it Run otherwise "Print Process is Running" ??
+ 
+2. Delete files older than 10 days using shell script in Unix [duplicate] ??
+ 
+3. Compress/ZIP older than 20 days logs of Apache ??
+ 
+4. What is the use of  $? , $* , $0 , $# , $@ , $$ , $! and expline with simple program.
+ 
+5. Write a shell scripting program to print biggest number in given three values. [a=3 , b =9, c=4]
+
 6.Find a word in a specific file ?
 
     # grep -Rw '<filename>' -e 'word'       (: r- Read, w- Write)
