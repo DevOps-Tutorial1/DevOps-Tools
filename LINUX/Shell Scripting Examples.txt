@@ -1,0 +1,479 @@
+
+=> SHELL SCRIPTING
+==============
+
+#vi helloworld.sh              (: Write script here)
+
+#chmod a+x helloworld.sh (:After saving the file you need to change the permissions) 
+#chmod 777 helloworld.sh
+
+#sh helloworld.sh (or) # ./ helloworld.sh (Run the script)
+
+1.HELLO WORLD ?
+-------------------
+#!/bin/bash
+echo "Hello World"
+
+2.Using echo to Print ?
+------------------------
+#!/bin/bash
+echo "Printing text"
+echo -n "Printing text without newline"
+echo -e "\nRemoving \t special \t characters\n"
+
+3.Using Comments ?
+----------------------
+#!/bin/bash
+
+# Adding two values
+((sum=25+35))
+
+#Print the result
+echo $sum
+
+4.Multi-line comments ?
+-------------------------
+#!/bin/bash
+: '
+This script calculates
+the square of 5.
+'
+((area=5*5))
+echo $area
+
+5. The While Loop ?
+---------------------
+
+#!/bin/bash
+i=0
+
+while [ $i -le 2 ]
+do
+echo Number: $i
+((i++))
+done
+
+6. The For Loop ?
+-------------------
+
+#!/bin/bash
+
+for (( counter=1; counter<=10; counter++ ))
+do
+echo -n "$counter "
+done
+
+printf "\n"
+
+7. Receive Input from User ?
+------------------------------
+
+#!/bin/bash
+
+echo -n "Enter Something:"
+read something
+
+echo "You Entered: $something"
+
+8.The If Statement ?
+----------------------
+
+#!/bin/bash
+
+echo -n "Enter a number: "
+read num
+
+if [[ $num -gt 10 ]]
+then
+echo "Number is greater than 10."
+fi
+
+9. More Control Using If Else ?
+---------------------------------
+
+#!/bin/bash
+
+read n
+if [ $n -lt 10 ];
+then
+echo "It is a one digit number"
+else
+echo "It is a two digit number"
+fi
+
+10. Using the AND Operator ?
+--------------------------------
+
+#!/bin/bash
+
+echo -n "Enter Number:"
+read num
+
+if [[ ( $num -lt 10 ) && ( $num%2 -eq 0 ) ]]; then
+echo "Even Number"
+else
+echo "Odd Number"
+fi
+
+11. Using the OR Operator ?
+-------------------------------
+
+#!/bin/bash
+
+echo -n "Enter any number:"
+read n
+
+if [[ ( $n -eq 15 || $n -eq 45 ) ]]
+then
+echo "You won"
+else
+echo "You lost!"
+fi
+
+12. Using Elif ?
+-----------------
+
+#!/bin/bash
+
+echo -n "Enter a number: "
+read num
+
+if [[ $num -gt 10 ]]
+then
+echo "Number is greater than 10."
+elif [[ $num -eq 10 ]]
+then
+echo "Number is equal to 10."
+else
+echo "Number is less than 10."
+fi
+
+13. The Switch Construct ?
+-----------------------------
+
+#!/bin/bash
+
+echo -n "Enter a number: "
+read num
+
+case $num in
+100)
+echo "Hundred!!" ;;
+200)
+echo "Double Hundred!!" ;;
+*)
+echo "Neither 100 nor 200" ;;
+esac
+
+14. Command Line Arguments ?   (note: Execute -> # ./test.sh Hey Howdy)
+-----------------------------------
+
+#!/bin/bash
+echo "Total arguments : $#"
+echo "First Argument = $1"
+echo "Second Argument = $2"
+
+15. Getting Arguments with Names?  (note: Execute -> # ./test.sh X=44 Y=100)
+--------------------------------------
+
+#!/bin/bash
+
+for arg in "$@"
+do
+index=$(echo $arg | cut -f1 -d=)
+val=$(echo $arg | cut -f2 -d=)
+case $index in
+X) x=$val;;
+Y) y=$val;;
+*)
+esac
+done
+((result=x+y))
+echo "X+Y=$result"
+
+16. Concatenating Strings ?
+------------------------------
+
+#!/bin/bash
+
+string1="Ubuntu"
+string2="Pit"
+string=$string1$string2
+echo "$string is a great resource for Linux beginners."
+
+17. Slicing Strings ?
+----------------------
+
+#!/bin/bash
+Str="Learn Bash Commands from UbuntuPit"
+subStr=${Str:0:20}
+echo $subStr
+
+18. Extracting Substrings Using Cut ?
+----------------------------------------
+
+#!/bin/bash
+Str="Learn Bash Commands from UbuntuPit"
+#subStr=${Str:0:20}
+
+subStr=$(echo $Str| cut -d ' ' -f 1-3)
+echo $subStr
+
+19. Adding Two Values ?
+---------------------------
+
+#!/bin/bash
+echo -n "Enter first number:"
+read x
+echo -n "Enter second number:"
+read y
+(( sum=x+y ))
+echo "The result of addition=$sum"
+
+20. Adding Multiple Values ?
+-------------------------------
+
+#!/bin/bash
+sum=0
+for (( counter=1; counter<5; counter++ ))
+do
+echo -n "Enter Your Number:"
+read n
+(( sum+=n ))
+#echo -n "$counter "
+done
+printf "\n"
+echo "Result is: $sum"
+
+21. Functions in Bash ?
+-------------------------
+
+#!/bin/bash
+function Add()
+{
+echo -n "Enter a Number: "
+read x
+echo -n "Enter another Number: "
+read y
+echo "Adiition is: $(( x+y ))"
+}
+Add
+
+22. Functions with Return Values ?
+-------------------------------------
+
+#!/bin/bash
+
+function Greet() {
+
+str="Hello $name, what brings you to UbuntuPit.com?"
+echo $str
+}
+
+echo "-> what's your name?"
+read name
+
+val=$(Greet)
+echo -e "-> $val"
+
+
+23. Creating Directories from Bash Scripts ?  ( note: you can pass the command eexcute brackets(`mkdir $newdir`)
+------------------------------------------------
+
+#!/bin/bash
+echo -n "Enter directory name ->"
+read newdir
+cmd="mkdir $newdir"
+eval $cmd
+
+24. Create a Directory after Confirming Existence ? (create folder name #dir .....if already have same dir name, its not working)
+------------------------------------------------------
+
+#!/bin/bash
+echo -n "Enter directory name ->"
+read dir
+if [ -d "$dir" ]
+then
+echo "Directory exists"
+else
+`mkdir $dir`
+echo "Directory created"
+fi
+
+25. Reading Files: ( create files :1. Vim 2. Emacs 3. ed 4. nano 5. Code)
+----------------------
+
+#!/bin/bash
+file='editors.txt'
+while read line; do
+echo $line
+done < $file
+
+26. Deleting Files ?
+---------------------
+
+#!/bin/bash
+echo -n "Enter filename ->"
+read name
+rm -i $name
+
+27. Appending to Files ?
+---------------------------
+
+#!/bin/bash
+echo "Before appending the file"
+cat editors.txt
+echo "6. NotePad++" >> editors.txt
+echo "After appending the file"
+cat editors.txt
+
+28. Test File Existence ?
+-------------------------
+
+#!/bin/bash
+filename=$1
+if [ -f "$filename" ]; then
+echo "File exists"
+else
+echo "File does not exist"
+fi
+
+29. Send Mails from Shell Scripts ?
+--------------------------------------
+
+#!/bin/bash
+recipient=”admin@example.com”
+subject=”Greetings”
+message=”Welcome to UbuntuPit”
+`mail -s $subject $recipient <<< $message`
+
+30. Parsing Date and Time ?
+-------------------------------
+
+#!/bin/bash
+year=`date +%Y`
+month=`date +%m`
+day=`date +%d`
+hour=`date +%H`
+minute=`date +%M`
+second=`date +%S`
+echo `date`
+echo "Current Date is: $day-$month-$year"
+echo "Current Time is: $hour:$minute:$second"
+
+31. The Sleep Command ?
+----------------------------
+
+#!/bin/bash
+echo "How long to wait?"
+read time
+sleep $time
+echo "Waited for $time seconds!"
+
+32. The Wait Command?
+--------------------------
+
+#!/bin/bash
+echo "Testing wait command"
+sleep 5 &
+pid=$!
+kill $pid
+wait $pid
+echo $pid was terminated
+
+33. Displaying the Last Updated File ?
+------------------------------------------
+
+#!/bin/bash
+ls -lrt | grep ^- | awk 'END{print $NF}'
+
+34. Adding Batch Extensions ?
+--------------------------------
+
+#!/bin/bash
+dir=$1
+for file in `ls $1/*`
+do
+mv $file $file.UP
+done
+
+35. Print Number of Files or Directories?
+--------------------------------------------
+
+#!/bin/bash
+
+if [ -d "$@" ]; then
+echo "Files found: $(find "$@" -type f | wc -l)"
+echo "Folders found: $(find "$@" -type d | wc -l)"
+else
+echo "[ERROR] Please retry with another folder."
+exit 1
+fi
+
+36. Cleaning Log Files?
+-------------------------
+
+#!/bin/bash
+LOG_DIR=/var/log
+cd $LOG_DIR
+
+cat /dev/null > messages
+cat /dev/null > wtmp
+echo "Logs cleaned up."
+
+37. Backup Script Using Bash?
+--------------------------------
+
+#!/bin/bash
+
+BACKUPFILE=backup-$(date +%m-%d-%Y)
+archive=${1:-$BACKUPFILE}
+
+find . -mtime -1 -type f -print0 | xargs -0 tar rvf "$archive.tar"
+echo "Directory $PWD backed up in archive file \"$archive.tar.gz\"."
+exit 0
+
+38. Check Whether You’re Root?
+-----------------------------------
+
+#!/bin/bash
+ROOT_UID=0
+
+if [ "$UID" -eq "$ROOT_UID" ]
+then
+echo "You are root."
+else
+echo "You are not root"
+fi
+exit 0
+
+39. Removing Duplicate Lines from Files?
+---------------------------------------------
+
+#! /bin/sh
+
+echo -n "Enter Filename-> "
+read filename
+if [ -f "$filename" ]; then
+sort $filename | uniq | tee sorted.txt
+else
+echo "No $filename in $pwd...try again"
+fi
+exit 0
+
+40. System Maintenance?
+---------------------------
+
+#!/bin/bash
+
+echo -e "\n$(date "+%d-%m-%Y --- %T") --- Starting work\n"
+
+apt-get update
+apt-get -y upgrade
+
+apt-get -y autoremove
+apt-get autoclean
+
+echo -e "\n$(date "+%T") \t Script Terminated"
+
+===================================================================================
