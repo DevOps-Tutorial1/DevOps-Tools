@@ -1,0 +1,221 @@
+
+=>JENKINS:- 
+========
+
+1. What is Jenkins?
+---------------------
+> Jenkins is a open source automation tool written in Java Programing Language that allows continuous Integration
+> Jenkins Builds and Tests software projects which continuously making easier for developers to integrate changes the project,
+   and making easier for users to obtain a fresh build.
+> Jenkins achieves contineous Integration with the help of plugins.
+   Plugins is used to allow the integration of various DevOps stages.
+   If we want to integrate a perticular tool we have to install plugins for that tools.
+   Example: Maven2, Git, HTML publisher, Amaon Ec2 etc. Jenkins supported by 400 above plugins
+
+ Install Jenkins?
+ -------------------------------
+To install Jenkins, you just need to follow these five steps:
+
+>Install Java Version 8                – Jenkins is a Java based application, hence Java is a must.
+>Install Apache Tomcat Version 9 – Tomcat is essential to deploy Jenkins war file.
+>Download Jenkins war File        – This war is must to install Jenkins.
+>Deploy Jenkins war File            – You deploy Jenkins war file using Tomcat to run Jenkins.
+>Install Suggested Plugins          – Install a list of plugins suggested by Jenkins.
+
+Once the installation is complete, you will be able to see the Jenkins dashboard.
+
+
+2.Explain what is continuous Integration?
+--------------------------------------------
+> Continuous integration is a process in which all development work is integrated as early as possible. 
+> The resulting artifacts are automatically created and tested.
+> This process allows to identify errors in an early stage of the project.
+
+
+3.What is the requirements using jenkins?
+---------------------------------------------
+> A source code repository which is accessible, for instance, a Git repository
+> A working build script, e.g., a Maven script, checked into the repository
+
+
+4.Jenkins features?
+--------------------
+> Easy installation on various operating systems.
+> Build Pipeline Support.
+> Test hardness built around JUnit.
+> Rapid release cycle.
+> Extensible with the use of third-party plugins.
+> Jenkins is a Opensource Tool
+> It is free of cost, Easily configurable, Easily to install
+> It is Build in Java & hence it is portable
+> Easy support, since it opensource and widly used
+> It is plateform independent
+> Jenkins also support cloud base architecture
+> It supports 1000 & more plugins to easy our work. It does not exist plugins, you can write the script for it and share with community.
+
+
+4.Advantages of Jenkins?
+---------------------------
+> At integration stage, build failures are cached
+> For each code commit changes an automatic build report notification generates
+> To notify developers about build report success or failure, it is integrated with LDAP mail server
+> Achieves continuous integration agile development and test driven development
+> With simple steps, maven release project is automated
+> Easy tracking of bugs at early stage in development environment than production
+
+
+5.Explain how can MOVE & COPY jenkins from one server to another?
+--------------------------------------------------------------------------
+> Move a job from one installation of Jenkins to another by simply copying the corresponding job directory.
+> Make a copy of an existing job by making a clone of a job directory by a different name.
+> Rename an existing job by renaming a directory. Note that if you change a job name you will need to change any other job that tries       to call the renamed job.
+
+
+6.what are the commands you can use to start Jenkins manually?.
+-----------------------------------------------------------------------
+To start Jenkins manually open Console/Command line, then go to your Jenkins installation directory. 
+Over there you can use the below commands:
+
+> Start Jenkins   : jenkins.exe start
+> Stop Jenkins   : jenkins.exe stop
+> Restart Jenkins: jenkins.exe restart
+
+
+7.some of the useful plugins in Jenkin?
+-------------------------------------------
+Some of the important plugins in Jenkin includes
+.Maven 2 project
+.Amazon EC2
+.HTML publisher
+.Copy artifact
+.Join
+.Green Balls
+
+8. Explain how you can deploy a custom build of a core plugin?
+--------------------------------------------------------------------
+
+To deploy a custom field of a core plugin, you have to do following things
+
+> Stop Jenkins
+> Copy the custom HPI to $Jenkins_Home/plugins
+> Delete the previously expanded plugin directory
+> Make an empty file called <plugin>.hpi.pinned
+> Start Jenkins
+
+9. Explain how can create a backup and copy files in Jenkins?
+--------------------------------------------------------------------
+
+Jenkins saves all the setting, build artifacts and logs in its home directory, to create a back-up of your Jenkins setup, just copy this directory. You can also copy a job directory to clone or replicate a job or rename the directory.
+
+10.Explain how you can clone a Git repository via Jenkins?
+---------------------------------------------------------------
+
+To clone a Git repository via Jenkins, you have to enter the e-mail and user name for your Jenkins system.  
+For that, you have to switch into your job directory and execute the “git config” command.
+
+11. Explain how you can set up Jenkins job?
+------------------------------------------------
+
+To create a project that is handled via jobs in Jenkins.  
+Select New item from the menu, once this done enter a name for the job and select free-style job. 
+Then click OK to create new job in Jenkins.  
+The next page enables you to configure your job.
+
+12. Mention what are the two components Jenkins is mainly integrated with?
+----------------------------------------------------------------------------------
+Jenkin is mainly integrated with two components
+
+>Version Control system like GIT, SVN
+>And build tools like Apache Maven.
+ 
+
+13.What is the use of Pipelines in Jenkins?
+-------------------------------------------
+The pipeline can be defined as the suite of plugins supporting the implementation and integration of continuous delivery pipelines in Jenkins.
+
+Types –
+-------
+>CI CD pipeline (Continuous Integration Continuous Delivery)
+>Scripted pipeline
+>Declarative pipeline
+
+Uses:-
+------
+Pipeline plugin is used in Jenkins for making the Jenkins Pipeline, which gives us the view of stages or tasks to perform one after the other in the pipeline form. 
+It models a series of related tasks. Pipelines help the teams to review, edit and iterate upon the tasks. 
+Pipelines are durable and it can optionally stop and wait for human approval as well to start the next task. 
+A pipeline is extensible and can perform work in parallel. It supports complex CD requirements.
+
+14.How will you secure Jenkins?
+--------------------------------
+The way I secure Jenkins is mentioned below if you have any other way to do it than mention that:
+
+>Make sure that the global security is on.
+>Check if Jenkins is integrated with my company’s user directory with an appropriate plugin.
+>Ensure that the matrix/Project matrix is enabled to fine-tune access.
+>Automate the process of setting rights/privileges in Jenkins with custom version controlled script.
+>Limit physical access to Jenkins data/folders.
+>Periodically run security audits on the same.
+
+
+15.Difference b/w Maven, Ant, Jenkins?
+------------------------------------------
+
+      Maven	                                                     Ant	                          Jenkins
+      -------                                                                 -----                                   ---------
+>It is a Build Automation Tool             Java Library/Command Line Tool       Continuous Integration Tool.
+
+>Defines how the software is built 
+  and describes the software                Drives build process                         Automates the software development process with 
+  dependencies.	                                                                                Continuous Integration and facilitates Continuous Deliver.           	                                                                                                                                     
+>Supports projects written in              Supports projects written in
+  C#,Ruby.                                        C and C++.                                    Supports version control tools like Git, AccuRev.
+
+>Executes Unit Tests as a part of         Supports single file execution            Can execute Apache Ant and Apache Maven
+   the normal build cycle.	              introduced with Java II.	
+
+
+16.Why should developers use Jenkins?
+-------------------------------------------
+
+>Easy to catch bugs early on.
+>An automated testing process.
+>Continuous integration.
+
+
+17.What is Automated Testing?
+---------------------------------
+Automated testing is when a certain program (framework) tests your developed programs (web applications) 
+without the need for human interference.
+
+This is amazing because of several reasons – a lot of money and time are saved, testing happens much faster, there’s no room for any human-made error.
+
+
+18.What are some of the most popular environment variables?
+-------------------------------------------------------------------
+Keeping in mind that question most likely relates to Jenkins to build jobs, there are a lot of elemental variables that you could choose from. Here are a few of the more well-known ones:
+
+$JOB_NAME
+$JOB_URL
+$WORKSPACE
+
+
+19.What is the programming language used to build Jenkins?
+------------------------------------------------------------------
+
+JAVA
+
+20.Can you write a simple Jenkins Pipeline Code for Java?
+---------------------------------------------------------------
+
+Jenkinsfile (Declarative Pipeline)
+pipeline {
+    agent { docker 'maven:3.3.3' }
+    stages {
+        stage('build') {
+            steps {
+                sh 'mvn --version'
+            }
+        }
+    }
+}

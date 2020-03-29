@@ -1,0 +1,46 @@
+
+
+=> Jenkins Installation(By ANAND)
+======================
+
+#cd /opt/
+#ls -ltr
+
+#cd /etc/yum.repos.d/
+yum.repos.d/#ls -ltr
+
+yum.repos.d/#yum install wget -y
+yum.repos.d/#sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+yum.repos.d/#sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+yum.repos.d/#ls -ltr
+
+yum.repos.d/#java -version(:Download java 1.8)
+yum.repos.d/#cd
+
+#yum install jenkins
+
+#service jenkins status
+#service jenkins start
+#service jenkins status
+
+#cd /var/lib/jenkins/
+jenkins#ls -ltr
+jenkins#cd secrets
+
+secrets#ls -ltr
+secrets#cat initialAdminPassword( copy entire password)
+
+->"13.53.75.73:8080" search on google. jenkins page will be displayed and then enter password below
+->Password:: fe3a251d071f4db9bddd9164bb2b4cd5
+->click "CONTINUE"
+->click "Install suggested plugins"- ITs automatically installed all plugins if you want see go gitbash and enter 
+jenkins# "tree plugins"(go goole see plugins "plugins.jenkins.io"--search what ever plugin you want--click "ARCHIEVE" and download it)
+-> create First Admin user"username,password,emailid" and click Save&continue button
+->click "start using jenkins" dashboard
+
+
+
+
+ 
+
+
