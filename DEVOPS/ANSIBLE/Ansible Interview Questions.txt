@@ -1,0 +1,311 @@
+
+=>ANSIBLE:
+========
+
+1.What is Ansible ?
+--------------------
+>Ansible is an open-source platform that facilitates configuration management, task automation, or application deployment. 
+  It is a   valuable DevOps tool. 
+  It was written in Python and powered by Red Hat. 
+  It uses SSH to deploy SSH without incurring any downtime.
+
+>Ansible is an open-source IT engine that automates application deployment, cloud provisioning, intra service orchestration, 
+  and other   IT tools.
+
+>Ansible is very easy to deploy because it does not use any agents or custom security infrastructure on the client-side, and by pushing   modules to the clients. 
+  These modules are executed locally on the client-side, and the output is pushed back to the Ansible server. 
+  It can easily connect to clients using SSH-Keys.
+
+
+2.Ansible USECASES ?
+------------------------
+>Provisioning
+>Orchestration
+>configuration management
+>Application deployment
+>Continuous Delivery
+>Security & Compliance
+
+
+3) What is Ansible Tower?
+----------------------------
+Ansible Tower is like Ansible at a more enterprise level. It is the web-based solution for managing your organization with an easy user interface that provides a dashboard with all of the state summaries of all the hosts. And allows quick deployments, and monitors all configurations.
+
+
+4) What is Ansible Modules?
+-------------------------------
+Ansible modules are discrete units of code which can be used from the command line or in a playbook task.
+The modules also referred to as task plugins or library plugins in the Ansible.
+Ansible ships with several modules that are called module library, which can be executed directly or remote hosts through the playbook.
+Users can also write their modules. These modules can control like services, system resources, files, or packages, etc. and handle executing system commands.
+
+
+5) What are Ad-hoc commands?
+-----------------------------------
+Ad-hoc commands are simple one-line commands which are used to perform a certain task. You can think of Ad-hoc commands as an alternative to writing playbooks. An example of an Ad-hoc command, as shown as follows:
+
+ansible host -m netscaler -a "nsc_host=nsc.example.com user=ansiuser password=ansipass"  
+
+The above Ad-hoc command accesses the NetScaler module to disable the server.
+
+
+6.7. What is Ansible role  and  What is Play book ?  how are they different from the playbook?
+--------------------------  ----  ---------------------   ---------------------------------------------
+>Ansible Roles is basically another level of abstraction used to organize playbooks. 
+  They provide a skeleton for an independent and reusable collection of variables, tasks, templates, files, and modules which can be     automatically loaded into the playbook. 
+  Playbooks   are a collection of roles. Every role has specific functionality.
+
+>Playbooks are the files where the Ansible code is written. 
+  Playbooks are written in YAML format. YAML means "Yet Another Markup Language," so there is not much syntax needed. 
+  Playbooks are one of the core features of Ansible and tell Ansible what to execute, and it is used in complex scenarios. 
+  They offer increased flexibility.
+  Playbooks contain the steps which the user wants to execute on a particular machine. And playbooks are run sequentially. 
+  Playbooks are the building blocks for all the use cases of Ansible.
+  Playbooks are 
+
+Let’s understand the difference between Ansible roles and playbook with an example.
+
+Suppose you want your playbook to perform 10 different tasks on 5 different systems, would you use a single playbook for this? No, using a single playbook can make it confusing and prone to blunders. Instead, you can create 10 different roles, where each role will perform one task. Then, all you need to do is, mention the name of the role inside the playbook to call them.
+
+
+8.Write a playbook for Apache installation & static code deployment?
+--------------------------------------------------------------------------
+---  
+   name: install and configure DB  
+   hosts: testServer  
+   become: yes  
+  
+   vars:   
+      oracle_db_port_value : 1521  
+     
+   tasks:  
+   -name: Install the Oracle DB  
+      yum: <code to install the DB>  
+      
+   -name: Ensure the installed service is enabled and running  
+   service:  
+      name: <your service name>  
+
+
+9.What is Notify Handler?
+---------------------------
+Handlers are just like regular tasks in an Ansible playbook (see Tasks), but are only run if the Task contains a “notify” directive and also indicates that it changed something. 
+For example, if a config file is changed then the task referencing the config file templating operation may notify a service restart handler.
+
+---
+- name: Application deployment into the remote appgroup servers
+  hosts: dbgroup 
+  gather_facts: True 
+  
+  tasks:
+  - name: Apache installation
+    yum: name=httpd state=latest
+
+  - name: copy the file
+    copy: src=/home/centos/index.html  dest=/var/www/html
+    notify:
+    - restart apache
+  
+  - name: copy the testfile
+    copy: src=/etc/passwd dest=/home
+    notify:
+    - passwd_file copied
+    
+  handlers:
+  - name: restart apache
+    service: name=httpd state=restarted
+
+  - name: passwd_file copied
+    shell: echo "success"
+
+
+10.Write a loop in Ansible -playbook?
+------------------------------------------
+
+## Loops
+
+Loops can do one task on multiple things, such as create a lot of users, install a
+lot of packages, or repeat a polling step until a certain result is reached.
+
+- yum:
+  name: "{{ item }}"
+  state: latest
+  with_items:
+    - httpd
+    - mod_wsgi
+    
+## Tags
+  Tags are useful to be able to run a subset of a playbook on-demand.
+ 
+## Blocks
+Blocks cut down on repetitive task directives, allow for logical grouping of tasks
+and even in play error handling
+
+
+11.Explain the Ansible -Role Scheliton?
+------------------------------------------
+
+
+12. How to get Remote Server infirmation?
+-----------------------------------------------
+Ans: After completing the basic setup, one has to make sure to find out the module called “setup” module. 
+Using this setup module, you will be able to find out a lot of information.
+
+#less /proc/cpuinfo
+#lscpu
+#cat /proc/cpuinfo
+
+
+13.Write Conditions with playbook?
+--------------------------------------
+When condition:
+-----------------
+- name: When_Condition example
+  hosts: all
+  become: True
+  gather_facts: True
+  tasks:
+  - name: Apache Uninstall
+    yum: name=httpd state=absent
+  - name: Apapche iNstallation on Ubuntu
+    apt: name=apache2 state=latest
+    when: ansible_distribution == 'Ubuntu'
+
+
+- hosts: localhost
+  gather_facts: no
+  connection: local
+  tasks:
+   - debug: msg="one"
+   - meta: end_play
+     when: True
+   - debug: msg="two"
+
+
+14.Explain Ansible Facts?
+---------------------------
+Ansible facts are system properties that are collected by Ansible when it executes on a remote system. 
+The facts contain useful details such as storage and network configuration about a target system
+
+Using Facts on Playbook:
+Update the playbook with ansible variable using a conditional check. “ansible_os_family” is one of the ansible variables from “setup” module. By default, ansible playbook gathers facts and then executes the tasks
+
+Fact gathering in organizations involves following four steps:
+.Collect information on the situation requiring a decision. Ask questions such as. ...
+.Talk to the people involved. ...
+.Use other resources available. ...
+.Organize information as your gather it.
+
+You can think of ansible facts as a way for ansible to get information about a host and store them in variables for easy access. This information stored in predefined variables are available for use in the playbook. To generate facts, ansible runs the setup module.
+
+$$$$$$$ ansible- m setup hostname
+
+Once this statement is executed, it will print out a dictionary of all the facts that are available for that particular host. This is the best way to access the list of Ansible_variables.
+
+You can see all the facts via:
+
+$$$$$$$$$$$$ ansible all- m setup
+
+So if you want to extract only certain part of the information then you can use “setup” module where you will have an option to filter out the output and just get hold of the fact that you are in need of.
+
+
+15. How can you see all variables for  host?
+-----------------------------------------------
+You can see all the variables using the host vary variable. It stores host variables with the hostname as key. For example, to look at the variables defined for localhost, you can run the following command, such as:
+
+syntax: $ansible -m debug -a "var=hostvars[inventory_hostname]"
+
+
+16. compile Ansible playbook and execute it in Dry Run mode?
+---------------------------------------------------------------------
+
+
+17.What is Ansible  playbook VVV ?
+--------------------------------------
+
+
+18. What are the advantages of using Ansible?
+---------------------------------------------------
+Ans: The main three advantages of using this tool is,i.e. Ansible
+
+.Agentless
+.Very low overhead.
+.Good performance
+
+ 
+-difference b/w Ansible and Puppeet
+Ansible                                                                   Puppet
+ -------                                                                   ------- 
+Simplest Technology 	                           Complex Technology 
+Written in YAML language	                            Written in Ruby language
+Automated workflow for Continuous Delivery	Visualization and reporting
+Agent-less install and deploy	                            Easy install
+No support for Windows	                            Support for all major OS’s
+Good GUI	                                                       GUI - work under progress
+CLI accepts commands in almost any language	Must learn the Puppet DSL
+
+
+19. Explain Ansible Architecture?
+------------------------------------
+
+
+20. Can you build your own modules using Ansible?
+---------------------------------------------------------
+Ans: Yes, we can create or own modules within Ansible.
+It is an open source tool which primarily works on Python. 
+If you are good at programming in Python you can start creating your own modules in few hours from scratch and you don't need to have any prior knowledge of the same.
+
+
+21.What is ask_pass in ansible?
+-----------------------------------
+Ans: The ask_pass is a control in Ansible Playbook.
+This controls whether ansible playbook to prompt a password by default. Usually, the default behavior is no:
+
+It is always set to ask_pass=True
+
+If you are using SSH keys for authentication purposes then you really don’t have to change this setting at all.
+
+Explain What is ask_sudo_pass:
+-----------------------------------
+Ans: This control is very similar to ask_pass
+The ask_sudo_pass controls the Ansible Playbook to prompt a sudo password. Usually, the default behavior is no: 
+
+ask_sudo_pass= True
+
+One has to make sure and change this setting where the sudo passwords are enabled most of the time.
+
+Explain what is ask_vault_pass:
+-----------------------------------
+Ans: Using this control we can determine whether Ansible Playbook should prompt a password for the vault password by default. As usual, the default behavior is no
+
+ask_vault_pass= True
+
+
+22.What is Ansible fork?
+---------------------------
+The forks parameter controls how many hosts are configured by Ansible in parallel. ... If you are using Ansible for rolling updates and have, say, 2000 systems, but have decided that you want to update only 100 machines at a time, set "serial" in Ansible to 100, and you'll only need 100 forks, too.
+
+How do I create Ansible config file:
+--------------------------------------
+How to create a blank file in Ansible playbook
+path: /usr/local/etc/my. ...
+state: touch – Create a file set by path.
+owner: root – Set the user that should own the file/directory.
+group: root – Set the group that should own the file/directory.
+mode: 0600 – Set the file permission using octal numbers.
+
+
+23.What is inventory host file?
+---------------------------------
+The Ansible inventory file defines the hosts and groups of hosts upon which commands, modules, and tasks in a playbook operate. The file can be in one of many formats depending on your Ansible environment and plugins. ... If necessary, you can also create project-specific inventory files in alternate locations.
+
+A Ansible hosts file consists of host groups and hosts within those groups. A super-set of hosts can be built from other host groups using the :children operator. Below is an example of a very basic Ansible hosts file.
+
+A hosts file consists of host groups and hosts within those groups. A super-set of hosts can be built from other host groups using the :children operator. Below is an example of a very basic Ansible hosts file.
+
+
+24.Difference between Push and Pull in Ansible/
+---------------------------------------------------
+Push means, that a central Ansible “master server” connects via SSH to the machines (I call nodes) it wants to manage and does what it's supposed to do. ... We need “pull” mode, where a node connects to a master for instructions on what to do.
+Push means, that a central Ansible “master server” connects via SSH to the machines (I call nodes) it wants to manage and does what it's supposed to do. ... We need “pull” mode, where a node connects to a master for instructions on what to do.
+

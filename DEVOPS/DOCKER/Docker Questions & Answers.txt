@@ -1,0 +1,199 @@
+
+
+=> Docker :
+========
+
+1.What is DOcker?
+--------------------
+>Docker is an open-source lightweight containerization technology. It has gained widespread popularity in the cloud and application      packaging world. It allows you to automate the deployment of applications in lightweight and portable containers. 
+>A Docker is defined as the platform for containerizing the applications to isolate it from each other in order to ensure high availability     and more efficiency irrespective of the environments such as Development, Testing or Production. All the application related     dependencies such as libraries, jar files, server related configurations, infrastructure-related elements will be packaged and formed as     container called containerized application which does not need any dependency and works independently. It ensures the application to     be run irrespective of the external factors. Containers in Docker have support from Docker Engine and Host Operating System to     support all the operational or infrastructural related dependencies.
+
+Docker File:
+-------------
+Docker can build images automatically by reading the instructions from a file called Dockerfile. A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. Using docker build, users can create an automated build that executes several command-line instructions in succession.
+
+
+2. What are the advantages of using Docker container?
+-----------------------------------------------------------
+
+Here, are a major advantage of using Docker.
+
+  > Offers an efficient and easy initial set up
+  > Allows you to describe your application lifecycle in detail
+  > Simple configuration and interacts with Docker Compose.
+  > Documentation provides every bit of information.
+
+
+3. What are the important features of Docker?
+----------------------------------------------------
+Here are the essential features of Docker:
+
+  >  Easy Modeling
+  >  Version control
+  >  Placement/Affinity
+  >  Application Agility
+  >  Developer Productivity
+  >  Operational Efficiencies
+
+
+4. What are the main drawbacks of Docker?
+------------------------------------------------
+Some notable drawbacks of Docker are:
+
+  >  Doesn't provide a storage option
+  >  Offer a poor monitoring option.
+  >  No automatic rescheduling of inactive Nodes
+  >  Complicated automatic horizontal scaling set up
+
+
+5. What is Docker image?
+---------------------------
+The Docker image help to create Docker containers. You can create the Docker image with the build command. Due to this, it creates a container that starts when it begins to run. Every docker images are stored in the Docker registry.
+
+
+6. What is Docker Engine?
+----------------------------
+Docker daemon or Docker engine represents the server. The docker daemon and the clients should be run on the same or remote host, which can communicate through command-line client binary and full RESTful API. 
+
+
+7.Explain Docker Swarm?
+---------------------------
+Docker Swarm is native gathering for docker which helps you to a group of Docker hosts into a single and virtual docker host. It offers the standard docker application program interface. 
+
+
+8. What is Docker Hub?
+--------------------------
+Docker images create docker containers. There has to be a registry where these docker images live. This registry is Docker Hub. Users can pick up images from Docker Hub and use them to create customized images and containers. Currently, the Docker Hub is the world’s largest public repository of image containers.
+
+
+9.Docker Vs VM (Virtual Machine)
+------------------------------------
+ Virtual Machines 	                       Docker Containers
+ ------------------                          -------------------- 
+>Need more resources 	         Less resources are used
+>Process isolation is done at          Process Isolation is done at Operating System level
+  hardware level 	
+>Separate Operating System          Operating System resources can be shared within Docker
+  for each VM 	
+>VMs can be customized. 	        Custom container setup is easy
+>Takes time to create Virtual         Creation of docker is very quick
+  Machine 	
+>Booting takes minutes 	        Booting is done within seconds
+
+
+
+10.Explain Docker Architecture?
+---------------------------------
+Docker Architecture consists of a Docker Engine which is a client-server application with three major components:
+
+  >  A server which is a type of long-running program called a daemon process (the docker command).
+  >  A REST API which specifies interfaces that programs can use to talk to the daemon and instruct it what to do.
+  >  A command line interface (CLI) client (the docker command).
+  >  The CLI uses the Docker REST API to control or interact with the Docker daemon through scripting or direct CLI commands. Many           other Docker applications use the underlying API and CLI..
+
+
+11.What is Docker networking?
+---------------------------------
+Docker networking allows you to attach a container to as many networks as you like. 
+You can also attach an already running container.
+
+
+12.How to Share folder Between Docker Containers?
+--------------------------------------------------------
+  How to Share data Between Docker Containers:
+  ------------------------------------------------------
+    Step 1: Create a Container With Data Volume. To demonstrate how to share between two containers you need to create a container                     (Container1) with data volume (datavolume1) you can later share. ...
+    Step 2: Create a New Container and Add to the Data Volume.
+    Step 3: Verify You Can Share Data Between Docker Containers
+    
+  How To Share files between Docker Containers:
+  ---------------------------------------------------
+    Step 1 — Creating an Independent Volume. ...
+    Step 2 — Creating a Volume that Persists when the Container is Removed. ...
+    Step 3 — Creating a Volume from an Existing Directory with Data. ...
+    Step 4 — Sharing Data Between Multiple Docker Containers.
+
+
+13.Docker overlay network?
+-------------------------------
+The overlay network driver creates a distributed network among multiple Docker daemon hosts. ... When you initialize a swarm or join a Docker host to an existing swarm, two new networks are created on that Docker host: an overlay network called ingress , which handles control and data traffic related to swarm services.
+
+
+14.What is the difference between Docker image and Docker container?
+-------------------------------------------------------------------------------
+Docker is a platform that runs each and every application segregated and securely by the use of kernel containerization feature. ... Docker Image is a set of files which has no state, whereas Docker Container is the instantiation of Docker Image. In other words, Docker Container is the run time instance of images.
+
+
+15.What is a docker compose?
+---------------------------------
+Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application's services. Then, with a single command, you create and start all the services from your configuration. ... Run docker-compose up and Compose starts and runs your entire app.
+
+
+16.What is the difference between docker service and stack?
+------------------------------------------------------------------
+The docker service is used when managing individual service on a docker swarm cluster. It is the client command line to access the docker swarm manager.
+
+The docker stack can be used to manage a multi-service application. It also moves many of the options you would enter on the docker service into the .yml file (such as docker-cloud.yml or docker-compose.yml) for easier reuse. It works as a front end "script" on top of the docker swarm manager used by docker swarm cluster, so you can do everything docker stack does with docker service.
+
+Last but not least, you can consider the docker service vs docker stack is the same as docker run vs docker compose, but in the docker swarm cluster.
+
+
+17.What is the lifecycle of a Docker Container?
+---------------------------------------------------
+This is one of the most popular questions asked in Docker interviews. Docker containers have the following lifecycle:
+
+    >Create a container
+    >Run the container
+    >Pause the container(optional)
+    >Un-pause the container(optional)
+    >Start the container
+    >Stop the container
+    >Restart the container
+    >Kill the container
+    >Destroy the container
+
+
+18.Docker volume?
+--------------------
+In order to be able to save (persist) data and also to share data between containers, Docker came up with the concept of volumes. 
+Quite simply, volumes are directories (or files) that are outside of the default Union File System and exist as normal directories and files on the host filesystem.
+ 
+use of Docker volume:
+---------------------------
+docker volume create creates a volume without having to define a Dockerfile and build an image and run a container. It is used to quickly allow other containers to mount said volume.
+
+
+19.Push docker Image to Docker Hub?
+-----------------------------------------
+Step 1: login into the docker hub repository you want to push the image to.
+
+# docker login
+Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
+Username: geeklab
+Password: 
+Login Succeeded
+
+Step 2: Now you can push the image to the docker hub repository.
+
+# docker push  geeklab/test_repo
+The push refers to a repository [docker.io/geeklab/test_repo]
+3dbbbdcf3ef9: Pushed 
+cf516324493c: Pushed 
+latest: digest: sha256:c542e22fe3f29f809226d72b6c6d8efd0bec46c2924d66ad8fbb5612972740fe size: 736
+
+Step 3: Now, we’ll login to the Docker Hub and verify the image in Repositories.
+
+
+20.How to Create a Docker Image From a Container?
+---------------------------------------------------------
+    Step 1: Create a Base Container. Let's get started by creating a running container. ...
+    Step 2: Inspect Images. ...
+    Step 3: Inspect Containers. ...
+    Step 4: Start the Container. ...
+    Step 5: Modify the Running Container. ...
+    Step 6: Create an Image From a Container. ...
+    Step 7: Tag the Image. ...
+    Step 8: Create Images With Tags.
+    Step 9: Delete the Original Container
+    Step 10: Look at Running Containers
+    Creating Docker Images: Conclusion

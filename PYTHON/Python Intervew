@@ -1,0 +1,3841 @@
+
+=> PROJECTS:
+==============
+
+PROJECT: 1
+-----------
+Project: Development and Automations
+Client : HSBC
+
+Responsibilities:
+•	Automating reports using python
+•	Automating the manual process by using python
+•	Developed python script for the daily activities
+•	Designed, developed and Implemented tableau reports
+•	Analyzed data from various databases and formatted into graphs using tableau
+•	Understanding the structure of the database and the relation between various relational tables
+•	Resolving various issues and making relevant changes to the report template and data queries during the development of the reports
+•	Handled support and maintenance of database containing business data and working with clients in resolving business specific issues.
+ 
+
+=>PROJRCT 2:-
+  =========
+Client	   :  Intel corporation
+Designation:  Product Development Engineer
+Project    :  PCCG Windows Automation:
+
+Project Description:
+-------------------
+Automation project involves the automation of the test cases in different windows versions for 
+the different type of mother board and CPUs which is yet to release. 
+Automation of different BIOS and Platform test cases and basic python application development for the automation.
+
+Highlights of project:
+---------------------
+•	Captures all the required details like - hardware, software version specific details
+•	Does not require more hardware, time and efforts
+•	Can be executed any number of times on new OS and hardware releases
+•	New test cases can also be developed and added to framework
+
+Responsibilities:
+-----------------
+•	Developing and Automating test cases using Python
+•	Checking the feasibility of automation
+•	Debugging and fixing the bugs in automated scripts
+•	Creating effective Documentation, Test Cases, Test results
+•	Interaction with clients to get requirement to develop and modify the scripts
+•	Maintenance and enhancement of already developed test cases
+•	Make sanity and Unit test for developed scripts
+•	Issues reporting /clarifications, raising bugs if  product issues 
+•	Working with manual team to know the exact functionality of the test case
+•	Making daily reports with in time and status of the tasks done
+
+
+==>PROJECT: 2
+   ==========
+   
+Client	   :  Intel 
+Designation:  Python developer
+Project    :  Peripheral device validation
+
+Desription:
+         
+The main aim of the project is a peripheral device pre and post silicon validation, working with peripheral team 
+to building the scripts. Pre and Post silicon validation automation is used for testing the 
+computers, tablets and smart phones. Test with multiple input files, which is used for automation 
+the User level scenarios and the domain based functionality scenarios in Windows platform the 
+Intel Core Processor Family using Various Scripting techniques. 
+Post-silicon validation has become a critical stage in the system-on-chip development cycle, 
+driven by increasing design complexity, higher level of integration and decreasing time-to-market.
+
+Responsibilities:
+
+•	Developing the test script for input files in python
+•	Using button module available in peripheral library
+•	Maintenance already developed test cases
+•	Using regular expressions and excel modules
+•	Executing the automated scripts and updating the logs
+•	Updating logs involved in execution of the scripts with respect to functionality
+•	After building the script I pushed to main repository
+•	Issues reporting / clarifications, raising bugs if  product issues
+•	Support team members in understanding the client raised bugs.
+
+
+=>PROJECT 3:-
+  ==========  
+  
+Project:   Validation and Debug environment tool for Intel next generation processor debug
+--------
+ Intel next generation Processor has several components which need to function properly.
+ Each component has several registers with different fields which can be read and programmed for knowing 
+ the behavior/functionality. This project involved in developing tool which abstracts the components, 
+ several registers, fields and descriptions to the user and provides user friendly debug environment. 
+ The tool should be comprehensive enough to hide the confidential and IP of the Intel so that it is given 
+ to customers which help in debugging the customer issues.
+
+Responsibilities:
+-----------------
+Understanding the several Processor components
+Analyzing the data in design database.
+Maintaining the data with different levels of access privileges
+Coordinating with the design team members to provide the data in required format
+Collecting the several usage models and functions from the team members
+Developing and maintenance of the tool that abstracts the information for the user
+Parsers written in Python for extracting useful data from the design data base.
+Development of XMLs for several components which maintains data for several registers
+Development of data structures, xml parsing using Python.
+Usage of advance features like pickle/unpickle in python for sharing the information across the applications
+Representation of the system in hierarchy form by defining the components, subcomponents using Python and developed set of library functions over the system based on the user needs.
+Development of several Python APIs and harassers that works both in Linux and windows and maintaining them using the revision control SVN
+
+Environment: Perl, Python, XML, SVN
+-----------
+
+
+PROJECT 4:
+==========
+Project : Financial Information Monitoring Organizer
+Client  : Electronica Financial limited
+
+Description:
+
+Electronica Finance Limited is a Non-Banking Finance Company engaged in providing machinery loans, 
+working capital loans, industrial property loans & business loans to Micro, Small and Medium Enterprises in India. 
+Financial Information Monitoring Organizer is an online application that monitors all the information of a 
+Micro Finance Organization that means it maintains all the financial information and other information regarding
+the finance organization. 
+This provides a very user friendly interface and security to the user of a micro finance organization
+
+
+Responsibilities:
+
+Involved in understanding the Application and implementing the business logic
+Developing python code for Data Integration
+Involved in creating modules using Python required for the project
+Involved in creating model forms, views, URLs for the application
+Performing code coverage’s and standardization 
+Involved in retrieving the data by using SQL
+Running unit test cases according to requirements
+Support team members in understanding the client raised bugs
+Making day to day changes in the project according to client request fixing bugs and writing script
+
+
+=============================================================================================================================
+
+->CORE PYTHON TOPICS
+  ==================
+1.Introduction
+2.Strings,lists,tuples,dictionaries,sets data structures
+3.operators
+4.Modules
+5.packages
+6.Fuctions
+7.flow controls
+
+-> ADVANCED TOPICS
+   ===============
+1.Generators
+2.Decorators
+3.Regular Expressions
+4.File handling
+5.database connection
+6.OOPS
+7.Multi Threading
+8.Exception hnadling
+9.web development like django , FLAsk
+
+===============================================================================================================================
+
+=>DATA TYPES:
+============
+        Python has five standard Data Types:
+
+            1. Numbers
+            2. String
+            3. List
+            4. Tuple
+            5. Dictionary
+			6. set
+			7. frozen set
+			
+        Python sets the variable type based on the value that is assigned to it. 
+		Unlike more riggers languages, Python will change the variable type if the variable value is set to another value. 
+		
+ 1) NUMBERS:
+ -----------
+           Python numbers variables are created by the standard Python method:
+
+        > var = 382
+    
+	Most of the time using the standard Python number type is fine. 
+	Python will automatically convert a number from one type to another if it needs. But, under certain circumstances 
+	that a specific number type is needed (ie. complex, hexidecimal), the format can be forced into a format 
+	by using additional syntax in the table below:
+
+Type	 	 	Format	 	 	    Description
+----            --------            ------------
+int	 	 	    a = 10	 	 	     Signed Integer
+long	 	 	a = 345L	 	 	(L) Long integers, they can also be represented in octal and hexadecimal
+float	 	 	a = 45.67	 	 	(.) Floating point real values
+complex	 	 	a = 3.14J	 	 	(J) Contains integer in the range 0 to 255.
+ 	 	 	 	 	 	 
+Most of the time Python will do variable conversion automatically. You can also use Python conversion functions 
+(int(), long(), float(), complex()) to convert data from one type to another. In addition, the type 
+function returns information about how your data is stored within a variables.
+		  
+2) STRING:
+----------
+          A string is usually a bit of text you want to display to someone, or "export" out of the program you are writing.
+		  Python knows you want something to be a string when you put either " (double-quotes) or ' 
+		  (single-quotes) around the text.
+
+		  A string is a sequence of characters.
+
+          A character is simply a symbol. For example, the English language has 26 characters.
+
+          Computers do not deal with characters, they deal with numbers (binary). 
+		  Even though you may see characters on your screen, internally it is stored and manipulated as a combination
+		  of 0's and 1's.
+
+          This conversion of character to a number is called encoding, and the reverse process is decoding. 
+		  ASCII and Unicode are some of the popular encoding used.
+
+          In Python, string is a sequence of Unicode character. Unicode was introduced to include every character 
+		  in all languages and bring uniformity in encoding. You can learn more about Unicode from here.
+3) TOUPLE:
+---------
+          
+         A tuple is a sequence of immutable Python objects. Tuples are sequences, just like lists. 
+		 The differences between tuples and lists are, the tuples cannot be changed unlike lists and tuples use parentheses,
+		 whereas lists use square brackets. Creating a tuple is as simple as putting different comma-separated values.
+		 
+		 A tuple is a sequence of immutable Python objects. Tuples are sequences, just like lists. 
+		 The differences between tuples and lists are, the tuples cannot be changed unlike lists and 
+		 tuples use parentheses, whereas lists use square brackets.
+
+         Creating a tuple is as simple as putting different comma-separated values. Optionally you can put 
+		 these comma-separated values between parentheses also.
+		 
+		 Here are some advantages of tuples over lists:
+		 ----------------------------------------------
+
+    > Elements to a tuple. Tuples have no append or extend method.
+    > Elements cannot be removed from a tuple.
+    > You can find elements in a tuple, since this doesn’t change the tuple.
+    > You can also use the in operator to check if an element exists in the tuple.
+    > Tuples are faster than lists. If you’re defining a constant set of values and all you’re ever going 
+      to do with it is iterate through it, use a tuple instead of a list.
+    > It makes your code safer if you “write-protect” data that does not need to be changed.
+	
+4)LIST:
+-------
+       A list is a data structure in Python that is a mutable, or changeable, ordered sequence of elements. 
+	   Each element or value that is inside of a list is called an item. ... In this tutorial, we'll go through 
+	   some of the ways that we can work with lists in Python.
+	   
+	   list (also called an array in other programming languages) is a tool that can be used to store multiple 
+	   pieces of information at once. It can also be defined as a variable containing multiple other variables.
+	   A list consists of a numbers paired with items. Each item can be retrieved by its paired number.
+		
+	List comprehension:
+    ------------------- 
+         List comprehension is an elegant way to define and create list in Python.
+	     These lists have often the qualities of sets, but are not in all cases sets.
+		 List comprehension is a complete substitute for the lambda function as well as
+	     the functions map(), filter() and reduce().
+			   
+    How to create a list?
+	--------------------
+         In Python programming, a list is created by placing all the items (elements) inside a square bracket [ ],
+		 separated by commas
+
+    List Index:
+	----------
+         We can use the index operator [] to access an item in a list. Index starts from 0. So, a list having 5 elements 
+		 will have index from 0 to 4.
+
+         Trying to access an element other that this will raise an IndexError. The index must be an integer.
+		 We can't use float or other types, this will result into TypeError.
+		 
+5)DICTIONARY:
+------------
+         A dictionary is an associative array (also known as hashes). Any key of the dictionary is associated
+		 (or mapped) to a value. The values of a dictionary can be any Python data type. So dictionaries are
+		 unordered key-value-pairs.
+		 
+		 A dictionary in Python is a collection of unordered values accessed by key rather than by index. 
+		 The keys have to be hashable: integers, floating point numbers, strings, tuples, and frozensets are hashable, 
+		 while lists, dictionaries, and sets other than frozensets are not.
+		 
+		 How to create a dictionary?:
+		 ----------------------------
+         Creating a dictionary is as simple as placing items inside curly braces {} separated by comma.
+
+         An item has a key and the corresponding value expressed as a pair, key: value.
+
+         While values can be of any data type and can repeat, keys must be of immutable type 
+		 (string, number or tuple with immutable elements) and must be unique.
+		 
+		 How to access elements from a dictionary?:
+		 ----------------------------------------
+         While indexing is used with other container types to access values, dictionary uses keys. 
+		 Key can be used either inside square brackets or with the get() method.
+
+         The difference while using get() is that it returns None instead of KeyError, if the key is not found.
+		 
+		 How to delete or remove elements from a dictionary?:
+		 --------------------------------------------------
+         We can remove a particular item in a dictionary by using the method pop(). This method removes as item 
+		 with the provided key and returns the value.
+
+         The method, popitem() can be used to remove and return an arbitrary item (key, value) form the dictionary. 
+		 All the items can be removed at once using the clear() method.
+		 
+6)SET:
+-----  
+       A set contains an unordered collection of unique and immutable objects. The set data type is, as the name implies,
+	   a Python implementation of the sets as they are known from mathematics.
+	   
+	   What is a set in Python?:
+	   -------------------------
+       A set is an unordered collection of items. Every element is unique (no duplicates) and must be immutable 
+	   (which cannot be changed).
+
+       However, the set itself is mutable. We can add or remove items from it.
+
+       Sets can be used to perform mathematical set operations like union, intersection, symmetric difference etc.
+	   
+	   How to create a set?:
+	   --------------------
+       A set is created by placing all the items (elements) inside curly braces {}, separated by comma or by using
+	   the built-in function set().
+
+       It can have any number of items and they may be of different types (integer, float, tuple, string etc.). 
+	   But a set cannot have a mutable element, like list, set or dictionary, as its element.
+
+
+	   
+7)frozen set:
+------------
+        A set object is an unordered collection of immutable values. ... The frozenset type is immutable and 
+		hashable -- its contents cannot be altered after is created; however, it can be used as a dictionary key
+		or as an element of another set.
+		
+		Python frozenset() The frozenset() method returns an immutable frozenset object initialized with 
+		elements from the given iterable. Frozen set is just an immutable version of a Python set object. 
+		While, elements of a set can be modified at any time, elements of frozen set remains the same after creation.
+		
+		Frozen set is just an immutable version of a Python set object. While, elements of a set can be modified 
+		at any time, elements of frozen set remains the same after creation.
+
+       Due to this, frozen sets can be used as key in Dictionary or as element of another set. But like sets, 
+	   it is not ordered (the elements can be set at any index).
+
+-> Difference beetween list and tuples?
+    ----------------------------------
+	 TUPLES:
+	 ------
+	        > The literal syntax of tuples is shown by parentheses.
+            > Tuples are immutable. By “immutable,” it is meant that once they are created, they do not support
+			   any additional operations which might be added to the language and cannot be modified after they are created.
+            > Tuples are heterogeneous. “Heterogeneous” means that generally tuples are a sequence type which 
+			  have varied and different types, or the entries made have separate meanings.
+            > A tuple is considered a coherent unit.
+            > Tuples shows structure.
+
+    LISTS:
+	------
+	        > The literal syntax of lists is shown by square brackets.
+            > Lists are mutable. By “mutable” it is meant that these objects are capable of supporting 
+			   additional operations. So the list sequence is a type of sequence which supports operations when it is 
+			   added to the language even after the creation.
+            > They are homogeneous. By “homogeneous,” it means that these sequence types deal with the similar or same
+     			kinds of things. One has to deal individually with the items.
+            > Lists show order.
+
+-> Difference beteen LIST and DICTIONARY:
+  ---------------------------------------
+    LIST:
+	-----
+	     > They maintain their ordering unless explicitly re-ordered (for example, by sorting the list).
+         > They can be of any type, and types can be mixed.
+         > They are accessed via numeric (zero based) indices.
+		 
+	DICTIONARY:
+	-----------
+	     > Every entry has a key and a value
+         > Ordering is not guaranteed
+         > Elements are accessed using key values
+         > Key values can be of any hashtable type (i.e. not a dict) and types can be mixed
+         > Values can be of any type (including other dict’s), and types can be mixed
+	
+	
+->Difference  between Mutable and immutable:
+--------------------------------------------
+  Mutable:
+  --------
+          Mutable objects are great for efficiently passing around data. 
+		  Let’s say object anton and berta have access to the same list. 
+		  anton adds “lemons” to the list, and berta automatically has access to this information.
+          If both would use a tuple, anton would have to copy the entries of his shopping-tuple, 
+		  add the new element, create a new tuple, then send that to berta. Even if both can talk directly, 
+		  that is a lot of work.
+		  mutable objects when having to deal with growing data. 
+		  For example, when parsing a file, you may append information from each line to a list. 
+		  Custom objects are usually mutable, buffering data, adjusting to new conditions and so on. 
+		  In general, whenever something can change, mutable objects are much easier.
+
+ Immutable:
+----------
+          Immutable objects are great for working with the data. 
+		  So berta is going to buy all that stuff - she can read everything, make a plan, 
+		  and does not have to double check for changes. If next week, she needs to buy more stuff for 
+		  the same shopping-tuple, berta just reuses the old plan. She has the guarantee that anton cannot change
+		  anything unnoticed.
+          If both would use a list, berta could not plan ahead. She has no guarantee that “lemons” are still on  
+		  the list when she arrives at the shop. She has no guarantee that next week, she can just repeat 
+		  what was appropriate last week. 
+		  Immutable objects are sparingly used in python - usually, it is implicit such as using int or other basic,
+		  immutable types. Often, you will be using mutable types as de-facto 
+		  immutable - many lists are filled at construction and never changed. 
+		  There is also no immutable dict. You should enforce immutability to optimise algorithms, e.g. to do caching.
+		  
+	
+
+===============================================================================================================================
+
+
+=>PYTHON:-
+  ======
+    Python is a general purpose interpreted ,interctive object oriented programing language
+    and high level programing language.
+	It provides high level dynamic datatypes and support dynamic checking
+	It supports automatic Garbage collections.
+	Python works on different platforms(Windows, Mac, Linux, Raspberry Pi, etc).
+	
+	USED FOR:- Web development,software development,Python scripting,Automation, Scientific apps,Bigdata applications
+	BENFITS :- Are Simple,Shorter, opensource, Portable
+	Features:- Easy learn, Easy to read, Easy to maintain, Interactive mode, Portable, Extensible, Databases, GUI programing
+	
+=>PYCHARM:-
+  =======
+    Pycharm is a an Integrated Development Environment(IDE) used in computer programs specially for python programing.
+	Pycharm is a class platform with windows,linux,mac.
+	It is used for development in python and framework like Django
+	
+=>PIP:-
+  ===
+    Pip is a package manager for python packages or modules.
+	Pip command is a tool.It is used to installing and managing Python packages, 
+	such as those found in the Python Package Index.
+	
+=>PEP8:-
+  ====
+    PEP stands for Python Enhancement Proposals
+	Pep8 is a latest python coding standard, a set of coding recomendations
+	It guides to deliver more readable python code
+	PEP8 is Python's style guide. It's a set of rules for how to format your Python code to maximize its readability. 
+	Writing code to a specification helps to make large code bases, with lots of writers, more uniform and predictable.
+	
+=>PACKAGE:-
+  =======
+    The folder of python program is a package of modules.
+	A package can have modules or sub folders
+
+=>MODULE:-
+ =======
+    Module is way to structure program
+	Each program file is a module
+	which imports other module like objects and attributes.
+	Modules means definitions and statements
+
+=>Shallow copy:- Copy is a module, shallow and deep copies are functions
+  ============
+    Shallow copy is used to copy the reference pointers, its just like copies the values
+	Shallow copy allows Faster execution of the program and 
+	It depends on the size of the data that is used.
+	A shallow is a bitwise copy of object.
+  
+  DEEP COPY:-
+  =========
+    Deep copy doesn't copy the reference pointers to the objects
+	Deep copy makes execution of the program slower, due to making certain copies for each object that is been called.
+	Deep is used to store the values that are already copied.
+	
+=>*ARGS:-
+  =====
+    In python *args are used to pass a non-keyworded,variable length argument list to a functions
+	*args are mostly used in function definitions
+	we use *args when we aren't sure how many arguments are going to be passed to a function.
+	
+  **kwargs:-
+  ========
+    Kwargs means Keyword arguments.
+    Kwargs is used to passed a keyworded variable length argument list
+    Actuallly it is not a python keyword, its just convention
+    kwargs are output not shown in order	
+	
+=>MEMORY MANAGEMENT:-
+  =================
+    Memory management is managed by Python private heap space.
+	All objects and datastructures are located in private heap
+	The programers doesn't have access to this private heap, The python interepreter takes care of this insted
+	Python also has an inbuilt garbage collector, which recycles all the unused memory and does so that it can be made 
+	available to HEAP SPACE.
+	
+=>PICKLE and UNPICKLE:-
+  ===================
+    Pickle is a module, It accepts any python objects and converts into a string representation and 
+	Dump's it into a file by using DUMP function, This process is called Pickling.
+	
+	While the process of retrieving original python objects and from stored string representation is called UNPICKLING
+	
+=>MONKEY PATCHING:-
+  ===============
+    Monkey patching is dynamically modifying a class or module at runtime and changing behaviour
+	MOnkey Patching is a Technic of swaping functions and methods with others in order to change a module,library,class behaviour 
+     
+=>GIL(Global Interpreter lock):-
+  ============================
+    In python Global Interpreter Lock is a commenly known as GIL,is similar to MUTEX behaviour.(Mutual Exclusion)
+    Global Interpreter lock is a mechanism is used in computer language Interpreters to syncronise the execution of threads.
+    So that only one native thread execute at a time.
+    GIL is a popular Interpreter in python,ruby
+
+=>DUCK TYPING:-
+  ============
+    Duck typing is a way of programing in which an object passed into a function or method supports all method 
+    signatures and attributes expected of that object at run time. The object's type itself is not imp
+
+=>.PY and .PYC:-
+  ============
+    Python compiles .py files and save it as .pyc files, so it can reference them in subsequent invocations.
+	The .pyc contain the compiled bytecode of python source files which is what the python interpreter compiles source to.
+	.PYC file containing the compiled code will usually be created in the same directory as the .py file
+	File extensions:-
+	---------------
+	1).py  - Extension for source file           4).pyo - created with optimising
+	2).pyc - Compiled byte code                  5).pyw - script windows
+	3).pyd - Windows dll files                   6).pyx - script archieve
+	
+=>VIRTUAL ENVIRONMENT:-
+  ===================
+    Virtual environment is a tool that helps to keep dependencies required by different projects separated by creating isolated 
+    python virtual environment of them.
+    This is one of most important tools that most of the python developers use.
+ 
+=>HELP():-
+  ======
+    Help() function is used to disply the documentation string
+	and also fecilities you to see the help related to modules,keywords,attributes etc.
+	
+=>DIR():-
+  =====
+    Dir function is used to disply the defind symbols
+	Dir function is a powerful inbuilt function in python
+	Which returns list of the attributes and methods of any object(says modules, functions, strings, lists, dicts etc)
+
+	ex:- import platform
+         x = dir(platform)
+         print(x)
+ =>Map():-
+  =====
+    Map function returns a list of results after applying the given function to each item of given iterable(list,tuple,etc)
+	Ex:- syntax:-map(function,iter)
+
+=>Lambda():-
+  ========
+    We can create a anonymous function known as Lambda function
+	Lambda funtions are different from normal python fucntions
+	Lambda functions have arguments and expressions.
+	Lambda function is a very short function
+	syntax:- lambda arguments:expressions
+	Ex:-     f=lambda x:2*x                output:   6
+	         print(f(3))
+			 
+=>Filter():-
+  ========
+    Filter function creates a new list from the elements for which the function returns true.
+	Ex:- list=[1,2,3,4,5,6,7,8,9,10]
+	     newlist=filter(lambda x:x%2==0,list)    output: <filter object ar 0x2527jdo>
+		 print(newlist)
+		 
+=>Reverse():-
+  =========
+    Reverse function is used to returned an iterator that access the given sequence in the reverse order.
+	syntax:- reversed(sequence)
+	Ex:-     s=[1,2,3,4,5]                       output:  [5,4,3,2,1]
+	         print(list(reversed(s))
+			 
+=>ZIP():-
+  =====
+    The zip() function returns a zip object, which is an iterator of tuples where the 
+	first item in each passed iterator is paired together, and then the 
+	second item in each passed iterator are paired together etc.
+    If the passed iterators have different lengths, the iterator with least items decides the length of the new iterator.
+    
+	Syntax:- zip(iterator1, iterqator2, iterator3 ...)
+	Ex:-     a = ("shaik", "baba", "pedda")                           output:
+             b = ("sha", "shareef", "babaiah", "charan")            (('shaik','sha'),('baba','shareef'),('pedda,Babaiah'))
+             x = zip(a, b)
+			 print(tuple(x))
+
+=>Next():-
+  ======
+    The next() function returns the next item in an iterator.
+	Next() is built in function 
+	which retrieves the next item from the iterator by calling its __next__() method
+	Next is used when a file is used an iterator,typically in a loop,The next() method is called repeatedly.
+	
+=>RECURSIVE():-
+  ===========
+    Recurtion is a process of defining something interms of itself.
+	A function can call other functions,It is even possible for the functionality to call itself.
+	These type of construct are termed as recursive function.
+
+=>RANGE():-
+  =======
+    The built in range function in python is very usefull to generate seq of numbers in the form of list.
+    Range function returns a python list object.
+  
+  XRANGE():-
+  ========
+    This function returns the generator object that can be used to display numbers only by using looping
+
+=>SELF():-
+  ======
+    Self represents instance of class. By using the self keyoword we can access the attributes and methods of class in python
+	
+		  
+
+================================================================================================================================
+
+                            OOPS
+							====
+							
+=>CLASS:-
+  ======
+A class is a blue print of objects.
+A class can be defind as collection of objects.
+It is a logical entity that has some specific attributes and methods.  EX:- class className:
+
+
+=>OBJECT:-
+  ======
+An object is a instance of class
+Object is an entity that has state and behaviour
+It may be anything either physical and logical                         EX:- obj=className():
+
+
+=>METHOD:-
+  ======
+Method is a function that is associated with an object and its defind inside the body of a class
+In python, method is not unique to class instances
+Any object type can have methods                              
+                                                       Ex:-  def fun(self,posibly,other,arguments):
+
+
+=>INHERITANCE:-
+  ===========
+Inheritance is a process of declaring properties of super class to subclass is known as Inheritance.
+Ineritance is a powerfull feature of object oriented programing languages
+Inheritance included almost every oop languages
+Python inhetance enables to use the member attributes and methods of one class into another.
+
+> super class:- The class from which attributes and methods will be inherited
+> sub class:-   The class which inherits the members from super class
+> Benfits:- Code Reusability, Readability, Flexibility, Extensibility
+> Types of Inheritance:- 1) Single 2)Multiple 3)Multilevel
+
+1) SINGLE INHERITANCE:- Declaring a subclass from one super class is known as single inheritance
+-----------------------
+class Animal:
+    def eat(self):                                OUTPUT:
+      print ('Eating...')                         -------
+class Dog(Animal):                                Eating...
+   def bark(self):                                Barking...
+      print ('Barking...' )
+d=Dog()
+d.eat()  
+d.bark()
+
+ 
+2) MULTIPLE INHERITANCE:- A class can be derived from more than one base classes.
+------------------------
+class first():
+    def sum(self,a,b):
+        c=a+b
+        return c
+class second():                                     OUTPUT:
+    def sub(self,x,y):                             ---------
+        z=x-y                                        35
+        return z                                     12
+class third(first,second):
+    pass
+obj=third()
+print(obj.sum(20,15))
+print(obj.sub(25,13))
+
+
+3) MULTILEVEL INHERITANCE:- A class can inherit from a child class or derived class
+-------------------------
+class Animal:   
+    def eat(self):  
+      print('Eating...')  
+class Dog(Animal):                                  OUTPUT:
+   def bark(self):                                 --------
+      print('Barking...')                          Eating...
+class BabyDog(Dog):                                Barking...
+    def weep(self):                                Weaping...
+        print('Weeping...')  
+d=BabyDog()  
+d.eat()  
+d.bark()  
+d.weep()  
+
+
+=>POLYMORPHISM:-
+  ============
+Poly means MANY morphism means FORMS.
+Polymorphism means ability to take various forms,same method represents many forms.
+Polymorphism allows us to define methods in the child class with same name as defind their parent class.
+
+Ex:-
+---
+class Dog:
+    def sound(self):
+	   print("Bow Bow")
+class Cat:                                      OUTPUT:
+    def sound(self):                            -------
+	   Print("Meou")                             Meou
+def makesound(animaltype)                        Bow Bow
+    animltype.sound()
+
+catobj=cat()
+dogobj=dog()
+makesound(catobj)
+makesound(dogsound)
+
+
+=>ENCAPSULATION:-
+  ==============
+Encapsulation is a Group variables and methods into a single unit is known as Encapsulation
+Encapsulation provides security to a class
+In object oriented programing language we can restrict the access methods and variables 
+This can prevent the data from being modified by accident and is known as encapsulation
+Encapsulation is used to prevent the data from being modify by accidently
+
+>Public methods - We can access them outside class also modified(methods,variables)
+>Private methods- We can't access them outside we can't modified(methods,variables)
+
+Ex:-
+class Car:
+   def __init__(self):
+       self.__updatesoftware()
+   def drive(self):                            OUTPUT
+       print("driving")                        ======
+   def __updatesoftware(self)                  updatingsoftware
+       print("updating software")              driving
+blackcar=Car()
+blackcar.drive()
+
+
+=>ABSRACTION:-
+  ===========
+Abstraction is used to hide internal details and shows only functionalities.
+Ex:- Suppose we are going to ATM to withdraw money..so Abstraction method hide internal funtionalities from user
+
+class Animal(ABC):
+    @absractmethod
+	def move(self):
+	    pass
+class Cat(Animal)
+    def move(self)
+	    print("I can walk and run.....")
+class Snake(Animal)
+    def move(self)
+	    print("I can crawl...")
+def main():
+    a.Animal()
+	c=Cat()
+	c.move()
+	s=Snake()
+	s.move()
+if __name__=="__main__":
+    main()
+
+=>MULTITHREADING:-
+  ==============
+Thread:- Thread is the execution of tiny sequence of program instruction that can be managed independently and
+         destinctive part of operating system.
+		 threads some times called as Light weight process.
+
+Multithreading:-Multithreading is a process of two or more tasks can start ,run,execute in overlapping time periods 
+
+New thread = thread.start_new_thread()
+
+Ex:-
+--
+import time
+import threading
+
+def calc_add(x):
+    for i in x:
+	    time.sleep(1)
+		print("addition of:",i+1)
+def calc_sub(x):
+    for i in x:
+	    time.slepp(1)
+	    print("subsraction of:",i-1)
+
+m=[1,2,3,4,5]
+t=time.time()
+t1=threading.Thread("target=calc_add,args=(m,))
+t2=threading.Thread("target=calc_sub,args=(m,))
+t1.start()
+t2.start()
+t1.join()
+t2.join()
+print("done it",time.time()-t)
+print("yaah! multithreading executed")
+
+
+=>EXCEPTION HANDLING:-
+  ==================
+Exception:- An exception is a Runtime error which terminates a program abnormally.
+            Exceptions are events that are used to modify the flow of control through a program when the errors occures.
+			Exceptions get triggered automatically finding errors in python.
+ExpHanding:-Exception handling means the way of handle exceptions is called Exception Handing.
+
+Common Exceptions:- 1.Zero devision error  4.IO error      7. Value error
+                    2.Name error           5.EOF error
+					3.Identation error     6.Type error
+         
+Try    :-Try consists fo RISKY STATEMENT .wheneveer an exception is raised in try block it is thrown to catch block
+Except :-
+Finally:-It is used to CLEANUP OPERATION like closing database connections,closing file streams, closing network connections.
+
+Ex:-
+--                                                  import math
+a=6                       OUTPUT                    num=int(input("Enter factorial no:")
+b=0                       ======                     try:                                               OUTPUT
+try:                 This devidef by Zero error         result=math.factorial(num)                      ======                                               
+    g=a/b                                               print(result)                               Enter factorial no: 6
+except ZeroDevisionError                            except:                                              720
+    print("This devided by Zero error")                 print("can't compute fact of _ve no")       Enter factorial no:-5
+finally:                                                                                                 can't comput fact no
+    print("ALL done")
+	
+-------------------------------------------------------------------------------------------------------------------------------
+===============================================================================================================================
+
+
+
+=>DECORATORS:
+ ===========
+    Decorators can be thought of "Functions which modify the functionality of another function".
+	They help to make a code shorter and more pythonic.
+	Decorators we will slowly buildup functions
+	
+	Decorators are used to check the permissions,modify or track the arguments passed to a method,logging the calls
+	to a specific method ,etc
+	
+	Ex:-
+	    def first(msg)                          output
+		    print(msg)                          ------    
+		first("HELLO")                           HELLO
+		second=first                             HELLO
+		second("HELLO")
+	
+=>GENERATORS:-
+  ==========
+    Generator is a function that returns an object
+	Which we can iterate over one value at a time.
+	There are two terms involved in Generators They are
+	
+	Generator function:-
+	-------------------
+	Generator function defind like a narmal function.But whenever we need its need to generate a value,
+    It does so with the "YIELD" expression(keyword) rather than returns.
+    If the function automatically becomes a generator function.
+    Ex:-
+        def fun():
+            yield 1
+            yield 2
+            yield 3
+        for i in fun():
+            print(i)
+
+	Generator object:-
+    -----------------
+    Generator funtion returns generator object.
+    Generator objects are used either by calling the NEXT() method on the generator object or using the 
+    generator object in a for in loop.
+    Ex 1:-                                            EX:2:-
+	    def fun():                                          list=[1,2,3]                  output
+		    yield 1               output                    a=(x**2 for x in list)        1
+			yield 2                 1                       print(next(a))                4
+			yield 3                 2                       print(next(a))                9
+		x=fun()                     3                       print(next(a))
+		print(x.next())
+		print(x.next())
+		print(x.next())
+		
+=>ITERATORs:-
+  =========    NOTE:- Every generator is an Iterator, but not every iterator is an generator
+    
+	Iterator in python is simply an object that can be iterated upon
+	An object which will return data, one element at a time.
+	Iterator implement two special methods like _iter_()  and  _next_()
+	Ex:-
+	    a=['boy1','boy2']
+		b=next(a)
+		                             output
+		iter=next(b)                 ------
+		print(iter)                    boy1
+		                               boy2
+		iter=next(b)
+		print(iter)
+		
+=>FILE HANDLING:-
+  =============
+    File handling is an important port of any web application
+	Python has several funtions for Creating, Reading, Updating, Deleting
+	FileHandling key functions working with python oops()
+	OPEN takes two parameters : 1. filename
+	                            2. mode:- read('r')   ->  r, rb, r+, rb+
+								          write('w')  ->  w, wb, w+, wb+
+										  append('a') ->  a, ab, a+, ab+
+										  create('x')
+										  text('t')
+	Ex:-
+	     f=open("filename.txt", 'r')
+		 print(f.read())
+										  
+		
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%		                          
+								  
+								  MODULES
+								  =======
+Standerd                  Linux related
+--------				  -------------				  
+1.os module                1.Tempfile
+2.Sys module               2.Shutile
+3.Sub process              3.Fabric
+4.RegEx                    4.Shutile
+5.DateTime                 5.psutil
+6.Time                     6.pathlib
+7.XLRD                     7.glob
+8.Zip file                 8.paramiko
+						   9.Arg parse
+						   10.config parser
+						   
+							  
+								  
+=>OS MODULE:-
+ ==========
+    The os module in python provides a way of using operating system dependent functionality.
+	The functions that the os module provides allows you to interface eith underlying os that python running on that  
+	windows,mac,linux
+	OS.walk():-
+	---------  It generates the file names in a directory tree by walking the tree either top down or bottom up.
+			   If it yields are 3 tuples
+			                            >dir path
+										>dir names
+										>file name
+										
+=>SYS MODULE:-
+  ===========
+    Sys module provides paremeters and functions.
+	This module provides access to some variables used or maintained by interpreter and to funcitons that interact srongly
+	with interpreter.
+	sys.argv:-
+	---------  It is list in python which contains commandline arguments passed to the script.
+	
+=>SUBPROCESS MODULE:-
+  =================
+    The sub process module allows you to spawn of new process, connect to their input output error pipes,
+	and obtain their return codes.
+	
+	subprocess.call():-
+	-----------------  It just like a popen class and takes all of the same aruments .But simply wait untill command completes
+	                   and gives us return code.
+					   Ex:-
+					        import os
+							os.chdir('/')
+							import subprocess
+							subprocess.call(['ls','-l'])
+							
+	os.system():- The simplest way of running unix commands is to use os.system()
+	-----------   Ex:-
+				      import os
+                      os.system('echo $Home')
+					  
+	os.popen() :- It is same thing as os.system() except that gives file like stream object we can use to access standard input
+	----------    and output for that process
+		          Ex:-
+				       import os 
+					   stream=os.popen('echo $Home')
+					   stream.read()
+					   
+=>REGULAR EXPRESSION:-(RegEx module)
+  ==================
+    Regular expression is a special sequence of charactors.
+	Mainly used to find and replace patterns in a string or file
+	Regular expressions are widly used in unix world.
+	The module provides  full support for python.
+	
+	Methods:-  The most common uses of RegEx
+	--------     
+   	          1.re.match()         4.re.split()
+			  2.re.search()        5.re.sub()
+			  3.re.findall()       6.re.compile()
+    	
+	Most commonly used operators are
+	. , \w , \w+ , \w* , ^\w+ , \w+$ , \w\w , \b\w , @\w+.\w+ , @\w+.(\w+)
+	
+=>RANDOM MODULE:-
+  ==============
+    Random module provides access to functions that support many opertions.
+	Most imp thing it generates random numbers.
+	It is used to piick a random number in a given range
+	
+	Rand functins:-  1.Random()      4.shuffile()
+	                 2.Randint()     5.choice()
+					 3.Randrang()
+					 
+=>Date & Time module:-
+  ==================
+    Python provides time package to deal with date and time.
+	It helps to retrieve current date and time and manipulation using built in methods 
+	
+	Ex:-  1) import time
+	         localtime=time.localtime(time.time())
+			 print("current time is:",localtime)
+			 
+		  2) import datetime
+		     presenttime=datetime.now()
+			 print("now the time:",presenttime)
+		
+		  3) import cal
+		     cal=calendar.month(2018,12)
+			 print("Calendar of December 2018:")
+			 print(cal)
+
+		
+=================================================================================================================================
+
+
+                    
+				############ PANDAS #########
+			    =============================
+               Python Pandas Tutorial
+	           ======================
+    
+ Pandas is an open-source, BSD-licensed Python library providing high-performance, easy-to-use data structures and
+ data analysis tools for the Python programming language. Python with Pandas is used in a wide range of fields including
+ academic and commercial domains including finance, economics, Statistics, analytics, etc.In this tutorial, we will learn
+ the various features of Python Pandas and how to use them in practice.
+
+Audience:
+--------
+    This tutorial has been prepared for those who seek to learn the basics and various functions of Pandas. 
+	It will be specifically useful for people working with data cleansing and analysis. After completing this tutorial, 
+	you will find yourself at a moderate level of expertise from where you can take yourself to higher levels of expertise.
+
+Prerequisites:
+-------------
+    You should have a basic understanding of Computer Programming terminologies. A basic understanding of any of the
+	programming languages is a plus. Pandas library uses most of the functionalities of NumPy. 
+	It is suggested that you go through our tutorial on NumPy before proceeding with this tutorial. 
+	You can access it from − NumPy Tutorial.
+
+=>  Python Pandas - Introduction:-
+    ============================
+ 
+    Pandas is an open-source Python Library providing high-performance data manipulation and analysis tool using its powerful
+	data structures. The name Pandas is derived from the word Panel Data – an Econometrics from Multidimensional data.
+
+    In 2008, developer Wes McKinney started developing pandas when in need of high performance, flexible tool for analysis 
+	of data.
+
+    Prior to Pandas, Python was majorly used for data munging and preparation. It had very little contribution towards 
+	data analysis. Pandas solved this problem. Using Pandas, we can accomplish five typical steps in the processing and 
+	analysis of data, regardless of the origin of data — load, prepare, manipulate, model, and analyze.
+
+    Python with Pandas is used in a wide range of fields including academic and commercial domains including finance, 
+	economics, Statistics, analytics, etc.
+
+Key Features of Pandas:-
+----------------------
+    > Fast and efficient DataFrame object with default and customized indexing.
+    > Tools for loading data into in-memory data objects from different file formats.
+    > Data alignment and integrated handling of missing data.
+    > Reshaping and pivoting of date sets.
+    > Label-based slicing, indexing and subsetting of large data sets.
+    > Columns from a data structure can be deleted or inserted.
+    > Group by data for aggregation and transformations.
+    > High performance merging and joining of data.
+    > Time Series functionality.
+
+=> Python Pandas - Environment Setup:-
+   ================================
+  
+       Standard Python distribution doesn't come bundled with Pandas module. A lightweight alternative is to install 
+	   NumPy using popular Python package installer, pip.
+
+     > pip install pandas
+      
+	  If you install Anaconda Python package, Pandas will be installed by default with the following −
+
+     Window:
+	 -------
+     1.Anaconda: is a free Python distribution for SciPy stack. It is also available for Linux and Mac.
+     2.Canopy:  is available as free as well as commercial distribution with full SciPy stack for Windows, Linux and Mac.
+     3.Python (x,y): is a free Python distribution with SciPy stack and Spyder IDE for Windows OS.
+
+     Linux:
+	 -----
+     Package managers of respective Linux distributions are used to install one or more packages in SciPy stack.
+
+     //For Ubuntu Users:
+
+	     sudo apt-get install python-numpy python-scipy python-matplotlibipythonipythonnotebook
+         python-pandas python-sympy python-nose
+     
+	 //For Fedora Users:
+
+         sudo yum install numpyscipy python-matplotlibipython python-pandas sympy
+         python-nose atlas-devel
+	
+=> Introduction to Data Structures:-
+   ===============================
+ 
+Pandas deals with the following three data structures −
+
+     Series
+     DataFrame
+     Panel
+         These data structures are built on top of Numpy array, which means they are fast.
+
+Dimension & Description:
+
+      The best way to think of these data structures is that the higher dimensional data structure is a container of its 
+	  lower dimensional data structure. For example, DataFrame is a container of Series, Panel is a container of DataFrame.
+
+            Data Structure			Dimensions	              Description
+			-------------           ----------                -----------
+              Series	                1	             1D labeled homogeneous array, sizeimmutable.
+              Data Frames	            2	             General 2D labeled, size-mutable tabular structure with potentially heterogeneously typed columns.
+              Panel	                    3	             General 3D labeled, size-mutable array.
+			  
+     Building and handling two or more dimensional arrays is a tedious task, burden is placed on the user to consider the 
+     orientation of the data set when writing functions. But using Pandas data structures, the mental effort of the user 
+     is reduced.
+
+     For example, with tabular data (DataFrame) it is more semantically helpful to think of the index (the rows) and 
+	 the columns rather than axis 0 and axis 1.
+
+Mutability:
+----------
+     All Pandas data structures are value mutable (can be changed) and except Series all are size mutable. Series is size 
+	 immutable.
+
+     Note: − DataFrame is widely used and one of the most important data structures. Panel is used much less.
+
+Series:
+------
+     Series is a one-dimensional array like structure with homogeneous data. For example, the following series is a
+	 collection of integers 10, 23, 56, …................
+
+             10	23	56	17	52	61	73	90	26	72
+Key Points:
+----------
+     > Homogeneous data
+     > Size Immutable
+     > Values of Data Mutable
+     > DataFrame
+     > DataFrame is a two-dimensional array with heterogeneous data. For example,
+
+     Name	    Age	     Gender	     Rating
+	 ----      ----      ------      ------
+     Steve	    32	      Male	      3.45
+     Lia	    28	      Female	  4.6
+     Vin	    45	      Male	      3.9
+     Katie	    38	      Female	  2.78
+	 
+     The table represents the data of a sales team of an organization with their overall performance rating. 
+     The data is represented in rows and columns. Each column represents an attribute and each row represents a person.
+
+Data Type of Columns:
+--------------------
+The data types of the four columns are as follows −
+
+          Column    	Type
+		  ------        ----
+           Name	      String
+           Age	      Integer
+           Gender	  String
+           Rating	  Float
+     Key Points:
+	 
+         Heterogeneous data
+         Size Mutable
+         Data Mutable
+Panel:-
+------
+     Panel is a three-dimensional data structure with heterogeneous data. It is hard to represent the panel in graphical 
+	 representation. But a panel can be illustrated as a container of Data Frame.
+
+     Key Points:
+	 
+          Heterogeneous data
+          Size Mutable
+          Data Mutable
+		  
+=> Python Pandas - Series:-
+   =======================
+  
+     Series is a one-dimensional labeled array capable of holding data of any type (integer, string, float, python objects,
+	 etc.). The axis labels are collectively called index.
+
+pandas.Series:
+-------------
+      A pandas Series can be created using the following constructor −
+
+      pandas.Series( data, index, dtype, copy)
+    The parameters of the constructor are as follows −
+
+        S.No	Parameter & Description
+		----    -----------------------
+         1	     data 
+                 data takes various forms like ndarray, list, constants
+
+         2	     index
+                 Index values must be unique and hashable, same length as data. Default np.arrange(n) if no index is passed.
+         
+		 3	     dtype
+                 dtype is for data type. If None, data type will be inferred
+
+         4	     copy
+                 Copy data. Default False
+
+    A series can be created using various inputs like −
+
+        . Array
+        . Dict
+        . Scalar value or constant
+        . Create an Empty Series
+     
+	 A basic series, which can be created is an Empty Series.
+
+Example
+        #import the pandas library and aliasing as pd
+        import pandas as pd
+        s = pd.Series()
+        print s
+Its output is as follows −
+
+        Series([], dtype: float64)
+
+Create a Series from ndarray:
+----------------------------
+
+        If data is an ndarray, then index passed must be of the same length. If no index is passed, then by default 
+		index will be range(n) where n is array length, i.e., [0,1,2,3…. range(len(array))-1].
+
+Example 1
+       #import the pandas library and aliasing as pd
+       import pandas as pd 
+       import numpy as np
+       data = np.array(['a','b','c','d'])
+       s = pd.Series(data)
+       print s
+Its output is as follows −
+
+0   a
+1   b
+2   c
+3   d
+dtype: object
+We did not pass any index, so by default, it assigned the indexes ranging from 0 to len(data)-1, i.e., 0 to 3.
+
+Example 2
+    #import the pandas library and aliasing as pd
+    import pandas as pd
+    import numpy as np
+    data = np.array(['a','b','c','d'])
+    s = pd.Series(data,index=[100,101,102,103])
+    print s
+Its output is as follows −
+
+100  a
+101  b
+102  c
+103  d
+dtype: object
+We passed the index values here. Now we can see the customized indexed values in the output.
+
+Create a Series from dict:
+-------------------------
+
+A dict can be passed as input and if no index is specified, then the dictionary keys are taken in a sorted order to construct index. If index is passed, the values in data corresponding to the labels in the index will be pulled out.
+
+Example 1
+    #import the pandas library and aliasing as pd
+    import pandas as pd
+    import numpy as np
+    data = {'a' : 0., 'b' : 1., 'c' : 2.}
+    s = pd.Series(data)
+    print s
+Its output is as follows −
+
+a 0.0
+b 1.0
+c 2.0
+dtype: float64
+Observe − Dictionary keys are used to construct index.
+
+Example 2
+    #import the pandas library and aliasing as pd
+    import pandas as pd
+    import numpy as np
+    data = {'a' : 0., 'b' : 1., 'c' : 2.}
+    s = pd.Series(data,index=['b','c','d','a'])
+    print s
+Its output is as follows −
+
+b 1.0
+c 2.0
+d NaN
+a 0.0
+dtype: float64
+Observe − Index order is persisted and the missing element is filled with NaN (Not a Number).
+
+Create a Series from Scalar:
+----------------------------
+
+If data is a scalar value, an index must be provided. The value will be repeated to match the length of index
+
+      #import the pandas library and aliasing as pd
+      import pandas as pd
+      import numpy as np
+      s = pd.Series(5, index=[0, 1, 2, 3])
+      print s
+Its output is as follows −
+
+0  5
+1  5
+2  5
+3  5
+dtype: int64
+Accessing Data from Series with Position
+Data in the series can be accessed similar to that in an ndarray.
+
+Example 1
+     Retrieve the first element. As we already know, the counting starts from zero for the array, which means the first 
+	 element is stored at zeroth position and so on.
+
+     import pandas as pd
+     s = pd.Series([1,2,3,4,5],index = ['a','b','c','d','e'])
+
+     #retrieve the first element
+     print s[0]
+Its output is as follows −
+
+    1
+Example 2
+      Retrieve the first three elements in the Series. If a : is inserted in front of it, all items from that 
+	  index onwards will be extracted. If two parameters (with : between them) is used, 
+	  items between the two indexes (not including the stop index)
+
+      import pandas as pd
+      s = pd.Series([1,2,3,4,5],index = ['a','b','c','d','e'])
+
+      #retrieve the first three element
+      print s[:3]
+Its output is as follows −
+
+a  1
+b  2
+c  3
+dtype: int64
+
+Example 3:
+
+     Retrieve the last three elements.
+
+     import pandas as pd
+     s = pd.Series([1,2,3,4,5],index = ['a','b','c','d','e'])
+
+     #retrieve the last three element
+     print s[-3:]
+Its output is as follows −
+
+c  3
+d  4
+e  5
+dtype: int64
+
+Retrieve Data Using Label (Index):-
+---------------------------------
+       
+	   A Series is like a fixed-size dict in that you can get and set values by index label.
+
+Example 1:
+
+     Retrieve a single element using index label value.
+
+        import pandas as pd 
+        s = pd.Series([1,2,3,4,5],index = ['a','b','c','d','e'])
+
+        #retrieve a single element
+        print s['a']
+Its output is as follows −
+
+    1
+Example 2:
+
+      Retrieve multiple elements using a list of index label values.
+
+        import pandas as pd
+        s = pd.Series([1,2,3,4,5],index = ['a','b','c','d','e'])
+
+        #retrieve multiple elements
+        print s[['a','c','d']]
+Its output is as follows −
+
+a  1
+c  3
+d  4
+dtype: int64
+
+Example 3:
+
+      If a label is not contained, an exception is raised.
+
+     import pandas as pd
+     s = pd.Series([1,2,3,4,5],index = ['a','b','c','d','e'])
+
+     #retrieve multiple elements
+     print s['f']
+Its output is as follows −
+
+…
+     KeyError: 'f'
+	 
+
+=> Python Pandas - DataFrame:-
+   =========================
+  
+A Data frame is a two-dimensional data structure, i.e., data is aligned in a tabular fashion in rows and columns.
+
+Features of DataFrame
+---------------------
+>Potentially columns are of different types
+>Size – Mutable
+>Labeled axes (rows and columns)
+>Can Perform Arithmetic operations on rows and columns
+Structure:
+--------
+
+Let us assume that we are creating a data frame with student’s data.
+
+   rows, colums  is called structure.
+pandas.DataFrame:-
+-----------------
+A pandas DataFrame can be created using the following constructor −
+
+pandas.DataFrame( data, index, columns, dtype, copy)
+      The parameters of the constructor are as follows −
+
+S.No	Parameter & Description
+----    -----------------------
+1	     data
+         data takes various forms like ndarray, series, map, lists, dict, constants and also another DataFrame.
+
+2	     index
+         For the row labels, the Index to be used for the resulting frame is Optional Default np.arrange(n) if no 
+		 index is passed.
+
+3	     columns
+         For column labels, the optional default syntax is - np.arrange(n). This is only true if no index is passed.
+
+4	     dtype
+         Data type of each column.
+
+4	     copy
+         This command (or whatever it is) is used for copying of data, if the default is False.
+
+Create DataFrame:
+-----------------
+A pandas DataFrame can be created using various inputs like −
+
+>Lists
+>dict
+>Series
+>Numpy ndarrays
+>Another DataFrame
+
+  In the subsequent sections of this chapter, we will see how to create a DataFrame using these inputs.
+
+Create an Empty DataFrame:
+-------------------------
+A basic DataFrame, which can be created is an Empty Dataframe.
+
+Example:
+
+     #import the pandas library and aliasing as pd
+     import pandas as pd
+     df = pd.DataFrame()
+     print df
+  Its output is as follows −
+
+    Empty DataFrame
+    Columns: []
+    Index: []
+Create a DataFrame from Lists:
+-----------------------------
+The DataFrame can be created using a single list or a list of lists.
+
+Example 1:
+---------
+
+     import pandas as pd
+     data = [1,2,3,4,5]
+     df = pd.DataFrame(data)
+     print df
+  Its output is as follows −
+
+          0
+     0    1
+     1    2
+     2    3
+     3    4
+     4    5
+Example 2:
+--------
+    import pandas as pd
+    data = [['Alex',10],['Bob',12],['Clarke',13]]
+    df = pd.DataFrame(data,columns=['Name','Age'])
+    print df
+  Its output is as follows −
+
+      Name      Age
+0     Alex      10
+1     Bob       12
+2     Clarke    13
+
+Example 3:
+---------
+import pandas as pd
+data = [['Alex',10],['Bob',12],['Clarke',13]]
+df = pd.DataFrame(data,columns=['Name','Age'],dtype=float)
+print df
+Its output is as follows −
+
+      Name     Age
+0     Alex     10.0
+1     Bob      12.0
+2     Clarke   13.0
+     Note − Observe, the dtype parameter changes the type of Age column to floating point.
+     ----
+Create a DataFrame from Dict of ndarrays / Lists:
+------------------------------------------------
+       All the ndarrays must be of same length. If index is passed, then the length of the index should equal to the 
+       length of the arrays.
+
+     If no index is passed, then by default, index will be range(n), where n is the array length.
+
+Example 1:
+---------
+     import pandas as pd
+     data = {'Name':['Tom', 'Jack', 'Steve', 'Ricky'],'Age':[28,34,29,42]}
+     df = pd.DataFrame(data)
+     print df
+Its output is as follows −
+
+      Age      Name
+0     28        Tom
+1     34       Jack
+2     29      Steve
+3     42      Ricky
+   Note :− Observe the values 0,1,2,3. They are the default index assigned to each using the function range(n).
+   ----
+Example 2:
+---------
+Let us now create an indexed DataFrame using arrays.
+
+   import pandas as pd
+   data = {'Name':['Tom', 'Jack', 'Steve', 'Ricky'],'Age':[28,34,29,42]}
+   df = pd.DataFrame(data, index=['rank1','rank2','rank3','rank4'])
+   print df
+ Its output is as follows −
+
+         Age    Name
+rank1    28      Tom
+rank2    34     Jack
+rank3    29    Steve
+rank4    42    Ricky
+
+   Note − Observe, the index parameter assigns an index to each row.
+   ----
+Create a DataFrame from List of Dicts:
+-------------------------------------
+   List of Dictionaries can be passed as input data to create a DataFrame. The dictionary keys are by default 
+   taken as column names.
+
+Example 1:
+---------
+   The following example shows how to create a DataFrame by passing a list of dictionaries.
+
+import pandas as pd
+data = [{'a': 1, 'b': 2},{'a': 5, 'b': 10, 'c': 20}]
+df = pd.DataFrame(data)
+print df
+
+Its output is as follows −
+    ------
+    a    b      c
+0   1   2     NaN
+1   5   10   20.0
+Note − Observe, NaN (Not a Number) is appended in missing areas.
+
+Example 2:
+---------
+The following example shows how to create a DataFrame by passing a list of dictionaries and the row indices.
+
+import pandas as pd
+data = [{'a': 1, 'b': 2},{'a': 5, 'b': 10, 'c': 20}]
+df = pd.DataFrame(data, index=['first', 'second'])
+print df
+
+Its output is as follows −
+    ------
+        a   b       c
+first   1   2     NaN
+second  5   10   20.0
+
+Example 3:
+---------
+     The following example shows how to create a DataFrame with a list of dictionaries, row indices, and column indices.
+
+     import pandas as pd
+     data = [{'a': 1, 'b': 2},{'a': 5, 'b': 10, 'c': 20}]
+     #With two column indices, values same as dictionary keys
+     df1 = pd.DataFrame(data, index=['first', 'second'], columns=['a', 'b'])
+     #With two column indices with one index with other name
+     df2 = pd.DataFrame(data, index=['first', 'second'], columns=['a', 'b1'])
+     print df1
+     print df2
+
+Its output is as follows :−
+    ------
+
+#df1 output
+         a  b
+first    1  2
+second   5  10
+
+#df2 output
+         a  b1
+first    1  NaN
+second   5  NaN
+ 
+ Note :− Observe, df2 DataFrame is created with a column index other than the dictionary key; thus, appended 
+ -----   the NaN’s in place. Whereas, df1 is created with column indices same as dictionary keys, so NaN’s appended.
+ 
+Create a DataFrame from Dict of Series:-
+--------------------------------------
+       Dictionary of Series can be passed to form a DataFrame. The resultant index is the union of all the series 
+	   indexes passed.
+
+Example:
+-------
+     import pandas as pd
+
+     d = {'one' : pd.Series([1, 2, 3], index=['a', 'b', 'c']),
+          'two' : pd.Series([1, 2, 3, 4], index=['a', 'b', 'c', 'd'])}
+
+     df = pd.DataFrame(d)
+     print df
+Its output is as follows −
+    ------
+      one    two
+a     1.0    1
+b     2.0    2
+c     3.0    3
+d     NaN    4
+
+  Note − Observe, for the series one, there is no label ‘d’ passed, but in the result, for the d label, 
+  ----        NaN is appended with NaN.
+  
+  Let us now understand column selection, addition, and deletion through examples.
+
+- Column Selection:
+  ---------------
+We will understand this by selecting a column from the DataFrame.
+
+Example:
+-------
+     import pandas as pd
+     d = {'one' : pd.Series([1, 2, 3], index=['a', 'b', 'c']),
+          'two' : pd.Series([1, 2, 3, 4], index=['a', 'b', 'c', 'd'])}
+     df = pd.DataFrame(d)
+     print df ['one']
+	 
+Its output is as follows −
+    ------
+
+a     1.0
+b     2.0
+c     3.0
+d     NaN
+
+Name: o ne, dtype: float64
+
+- Column Addition:
+  ---------------
+We will understand this by adding a new column to an existing data frame.
+
+Example:
+
+     import pandas as pd
+     d = {'one' : pd.Series([1, 2, 3], index=['a', 'b', 'c']),
+           'two' : pd.Series([1, 2, 3, 4], index=['a', 'b', 'c', 'd'])}
+     df = pd.DataFrame(d)
+     # Adding a new column to an existing DataFrame object with column label by passing new series
+     print ("Adding a new column by passing as Series:")
+     df['three']=pd.Series([10,20,30],index=['a','b','c'])
+     print df
+     print ("Adding a new column using the existing columns in DataFrame:")
+     df['four']=df['one']+df['three']
+     print df
+Its output is as follows −
+
+Adding a new column by passing as Series:
+     one   two   three
+a    1.0    1    10.0
+b    2.0    2    20.0
+c    3.0    3    30.0
+d    NaN    4    NaN
+
+Adding a new column using the existing columns in DataFrame:
+      one   two   three    four
+a     1.0    1    10.0     11.0
+b     2.0    2    20.0     22.0
+c     3.0    3    30.0     33.0
+d     NaN    4     NaN     NaN
+ 
+- Column Deletion:
+  ---------------
+   Columns can be deleted or popped; let us take an example to understand how.
+
+Example:
+
+# Using the previous DataFrame, we will delete a column
+# using del function
+import pandas as pd
+
+d = {'one' : pd.Series([1, 2, 3], index=['a', 'b', 'c']), 
+     'two' : pd.Series([1, 2, 3, 4], index=['a', 'b', 'c', 'd']), 
+     'three' : pd.Series([10,20,30], index=['a','b','c'])}
+
+df = pd.DataFrame(d)
+print ("Our dataframe is:")
+print df
+
+# using del function
+print ("Deleting the first column using DEL function:")
+del df['one']
+print df
+
+# using pop function
+print ("Deleting another column using POP function:")
+df.pop('two')
+print df
+
+Its output is as follows −
+    ------
+Our dataframe is:
+      one   three  two
+ a     1.0    10.0   1
+b     2.0    20.0   2
+c     3.0    30.0   3
+d     NaN     NaN   4
+
+Deleting the first column using DEL function:
+      three    two
+a     10.0     1
+b     20.0     2
+c     30.0     3
+d     NaN      4
+
+Deleting another column using POP function:
+   three
+a  10.0
+b  20.0
+c  30.0
+d  NaN
+
+Row Selection, Addition, and Deletion:
+--------------------------------------
+
+      We will now understand row selection, addition and deletion through examples. 
+	  Let us begin with the concept of selection.
+
+- Selection by Label:
+  ------------------
+Rows can be selected by passing row label to a loc function.
+
+import pandas as pd
+
+d = {'one' : pd.Series([1, 2, 3], index=['a', 'b', 'c']), 
+     'two' : pd.Series([1, 2, 3, 4], index=['a', 'b', 'c', 'd'])}
+
+df = pd.DataFrame(d)
+print df.loc['b']
+
+Its output is as follows −
+    ------
+one 2.0
+two 2.0
+Name: b, dtype: float64
+      The result is a series with labels as column names of the DataFrame. And, the Name of the series is the label with which it is retrieved.
+
+- Selection by integer location:
+  ---------------------------
+Rows can be selected by passing integer location to an iloc function.
+
+   import pandas as pd
+
+   d = {'one' : pd.Series([1, 2, 3], index=['a', 'b', 'c']),
+     'two' : pd.Series([1, 2, 3, 4], index=['a', 'b', 'c', 'd'])}
+
+   df = pd.DataFrame(d)
+   print df.iloc[2]
+Its output is as follows −
+    ------
+one   3.0
+two   3.0
+Name: c, dtype: float64
+
+- Slice Rows:
+  ----------
+   Multiple rows can be selected using ‘ : ’ operator.
+
+    import pandas as pd
+
+    d = {'one' : pd.Series([1, 2, 3], index=['a', 'b', 'c']), 
+        'two' : pd.Series([1, 2, 3, 4], index=['a', 'b', 'c', 'd'])}
+
+    df = pd.DataFrame(d)
+    print df[2:4]
+Its output is as follows −
+    -----
+      one    two
+c     3.0     3
+d     NaN     4
+
+- Addition of Rows:
+--------------------
+   Add new rows to a DataFrame using the append function. This function will append the rows at the end.
+
+   import pandas as pd
+
+   df = pd.DataFrame([[1, 2], [3, 4]], columns = ['a','b'])
+   df2 = pd.DataFrame([[5, 6], [7, 8]], columns = ['a','b'])
+
+   df = df.append(df2)
+   print df
+Its output is as follows −
+   -------
+   a  b
+0  1  2
+1  3  4
+0  5  6
+1  7  8
+- Deletion of Rows:
+  ----------------
+    Use index label to delete or drop rows from a DataFrame. If label is duplicated, then multiple rows will be dropped.
+
+    If you observe, in the above example, the labels are duplicate. Let us drop a label and will see 
+	how many rows will get dropped.
+
+  import pandas as pd
+
+  df = pd.DataFrame([[1, 2], [3, 4]], columns = ['a','b'])
+  df2 = pd.DataFrame([[5, 6], [7, 8]], columns = ['a','b'])
+
+  df = df.append(df2)
+
+  # Drop rows with label 0
+  df = df.drop(0)
+
+  print df
+Its output is as follows −
+    ------
+  a b
+1 3 4
+1 7 8
+In the above example, two rows were dropped because those two contain the same label 0.
+
+
+=> PYTHON PANDAS PANEL:-
+   ===================
+       
+	   A panel is a 3D container of data. The term Panel data is derived from econometrics and is partially responsible
+		for the name pandas − pan(el)-da(ta)-s.
+
+        The names for the 3 axes are intended to give some semantic meaning to describing operations involving panel data. They are −
+
+        items − axis 0, each item corresponds to a DataFrame contained inside.
+
+        major_axis − axis 1, it is the index (rows) of each of the DataFrames.
+
+        minor_axis − axis 2, it is the columns of each of the DataFrames.
+
+pandas.Panel():
+--------------
+        A Panel can be created using the following constructor −
+
+           pandas.Panel(data, items, major_axis, minor_axis, dtype, copy)
+		   
+Create Panel:
+------------
+
+   A Panel can be created using multiple ways like −
+
+     > From ndarrays
+     > From dict of DataFrames
+     > From 3D ndarray
+
+	 # creating an empty panel
+     import pandas as pd
+     import numpy as np
+     data = np.random.rand(2,4,5)
+     p = pd.Panel(data)
+     print p
+ Its output is as follows −
+     ------
+    <class 'pandas.core.panel.Panel'>
+   Dimensions: 2 (items) x 4 (major_axis) x 5 (minor_axis)
+   Items axis: 0 to 1
+   Major_axis axis: 0 to 3
+   Minor_axis axis: 0 to 4
+ Note :− Observe the dimensions of the empty panel and the above panel, all the objects are different.
+ -----
+From dict of DataFrame Objects:
+-----------------------------
+    #creating an empty panel
+    import pandas as pd
+    import numpy as np
+
+    data = {'Item1' : pd.DataFrame(np.random.randn(4, 3)), 
+        'Item2' : pd.DataFrame(np.random.randn(4, 2))}
+    p = pd.Panel(data)
+    print p
+Its output is as follows −
+    ------
+
+     <class 'pandas.core.panel.Panel'>
+     Dimensions: 2 (items) x 4 (major_axis) x 5 (minor_axis)
+     Items axis: 0 to 1
+     Major_axis axis: 0 to 3
+     Minor_axis axis: 0 to 4
+
+Create an Empty Panel:
+---------------------
+     An empty panel can be created using the Panel constructor as follows −
+
+      #creating an empty panel
+      import pandas as pd
+      p = pd.Panel()
+      print p
+	  
+Its output is as follows −
+    -------
+    <class 'pandas.core.panel.Panel'>
+    Dimensions: 0 (items) x 0 (major_axis) x 0 (minor_axis)
+    Items axis: None
+    Major_axis axis: None
+    Minor_axis axis: None
+
+Selecting the Data from Panel:
+-----------------------------
+    Select the data from the panel using −
+
+    Items
+    Major_axis
+    Minor_axis
+    Using Items
+         # creating an empty panel
+         import pandas as pd
+         import numpy as np
+         data = {'Item1' : pd.DataFrame(np.random.randn(4, 3)), 
+                 'Item2' : pd.DataFrame(np.random.randn(4, 2))}
+         p = pd.Panel(data)
+         print p['Item1']
+    Its output is as follows −
+        ------
+            0          1          2
+  0    0.488224  -0.128637   0.930817
+  1    0.417497   0.896681   0.576657
+  2   -2.775266   0.571668   0.290082
+  3   -0.400538  -0.144234   1.110535
+  We have two items, and we retrieved item1. The result is a DataFrame with 4 rows and 3 columns, which are the Major_axis and Minor_axis dimensions.
+
+Using major_axis:
+----------------
+    Data can be accessed using the method panel.major_axis(index).
+
+    # creating an empty panel
+    import pandas as pd
+    import numpy as np
+    data = {'Item1' : pd.DataFrame(np.random.randn(4, 3)), 
+           'Item2' : pd.DataFrame(np.random.randn(4, 2))}
+    p = pd.Panel(data)
+    print p.major_xs(1)
+Its output is as follows −
+    ------
+      Item1       Item2
+  0   0.417497    0.748412
+  1   0.896681   -0.557322
+  2   0.576657       NaN
+Using minor_axis:
+---------------
+   Data can be accessed using the method panel.minor_axis(index).
+
+    # creating an empty panel
+    import pandas as pd
+    import numpy as np
+    data = {'Item1' : pd.DataFrame(np.random.randn(4, 3)), 
+        'Item2' : pd.DataFrame(np.random.randn(4, 2))}
+    p = pd.Panel(data)
+    print p.minor_xs(1)
+
+Its output is as follows −
+    ------
+       Item1       Item2
+   0   -0.128637   -1.047032
+   1    0.896681   -0.557322
+   2    0.571668    0.431953
+   3   -0.144234    1.302466
+ Note: − Observe the changes in the dimensions.
+-------
+	
+	
+=> Python Pandas - Function Application:-
+   ==================================== 
+
+  To apply your own or another library’s functions to Pandas objects, you should be aware of the three 
+  important methods. The methods have been discussed below. The appropriate method to use depends on whether your function expects to operate on an entire DataFrame, row- or column-wise, or element wise.
+
+   Table wise Function Application: pipe()
+   Row or Column Wise Function Application: apply()
+   Element wise Function Application: applymap()
+
+Table-wise Function Application:
+-------------------------------
+   Custom operations can be performed by passing the function and the appropriate number of parameters
+   as pipe arguments. Thus, operation is performed on the whole DataFrame.
+
+For example, add a value 2 to all the elements in the DataFrame. Then,
+
+adder function:
+--------------
+    The adder function adds two numeric values as parameters and returns the sum.
+
+    def adder(ele1,ele2):
+    return ele1+ele2
+    We will now use the custom function to conduct operation on the DataFrame.
+
+    df = pd.DataFrame(np.random.randn(5,3),columns=['col1','col2','col3'])
+    df.pipe(adder,2)
+
+  Row or Column Wise Function Application:
+  ---------------------------------------
+  Arbitrary functions can be applied along the axes of a DataFrame or Panel using the apply() method,
+  which, like the descriptive statistics methods, takes an optional axis argument. By default, the operation performs column wise, taking each column as an array-like.	
+
+  
+Element Wise Function Application:
+----------------------------------
+    Not all functions can be vectorized (neither the NumPy arrays which return another array nor any value), the methods 
+    applymap() on DataFrame and analogously map() 
+    on Series accept any Python function taking a single value and returning a single value.
+	
+
+=> PYTHON PANDAS-REINDEXING:-
+   ========================	
+      Reindexing changes the row labels and column labels of a DataFrame. To reindex means to conform the data to
+	  match a given set of labels along a particular axis.
+
+      Multiple operations can be accomplished through indexing like −
+
+          > Reorder the existing data to match a new set of labels.
+
+          > Insert missing value (NA) markers in label locations where no data for the label existed.
+    Reindex to Align with Other Objects:
+	-----------------------------------
+       You may wish to take an object and reindex its axes to be labeled the same as another object. 
+       Consider the following example to understand the same.	
+ 	
+	Note: − Here, the df1 DataFrame is altered and reindexed like df2. The column names should be matched or
+    -----    else NAN will be added for the entire column label. 
+
+	Filling while ReIndexing:
+	-----------------------
+         reindex() takes an optional parameter method which is a filling method with values as follows −
+
+         pad/ffill − Fill values forward
+
+         bfill/backfill − Fill values backward   
+
+         nearest − Fill from the nearest index values
+
+Example:
+
+        import pandas as pd
+        import numpy as np
+
+        df1 = pd.DataFrame(np.random.randn(6,3),columns=['col1','col2','col3'])
+        df2 = pd.DataFrame(np.random.randn(2,3),columns=['col1','col2','col3'])
+
+        # Padding NAN's
+        print df2.reindex_like(df1)
+
+        # Now Fill the NAN's with preceding Values
+        print ("Data Frame with Forward Fill:")
+        print df2.reindex_like(df1,method='ffill')
+
+		Its output is as follows −
+            ------
+         col1        col2       col3
+0    1.311620   -0.707176   0.599863
+1   -0.423455   -0.700265   1.133371
+2         NaN         NaN        NaN
+3         NaN         NaN        NaN
+4         NaN         NaN        NaN
+5         NaN         NaN        NaN
+
+Data Frame with Forward Fill:
+         col1        col2        col3
+0    1.311620   -0.707176    0.599863
+1   -0.423455   -0.700265    1.133371
+2   -0.423455   -0.700265    1.133371
+3   -0.423455   -0.700265    1.133371
+4   -0.423455   -0.700265    1.133371
+5   -0.423455   -0.700265    1.133371
+Note − The last four rows are padded.
+
+    Limits on Filling while Reindexing:
+	-----------------------------------
+       The limit argument provides additional control over filling while reindexing. Limit specifies the maximum 
+       count of consecutive matches.
+       Let us consider the following example to understand the same
+
+    Renaming:
+	--------
+        The rename() method allows you to relabel an axis based on some mapping (a dict or Series) or an arbitrary function.
+
+        Let us consider the following example to understand this −	   
+
+		
+=> Python Pandas - Iteration:-
+   =========================
+	The behavior of basic iteration over Pandas objects depends on the type. When iterating over a Series,
+	it is regarded as array-like, and basic iteration produces the values. Other data structures, like DataFrame and Panel, follow the dict-like convention of iterating over the keys of the objects.
+
+    In short, basic iteration (for i in object) produces −
+
+    Series − values
+
+    DataFrame − column labels
+
+    Panel − item labels
+
+    Iterating a DataFrame:
+    ----------------------
+    Iterating a DataFrame gives column names. Let us consider the following example to understand the same.
+	
+	To iterate over the rows of the DataFrame, we can use the following functions −
+
+        > iteritems() − to iterate over the (key,value) pairs
+
+        > iterrows() − iterate over the rows as (index,series) pairs
+
+        > itertuples() − iterate over the rows as namedtuples
+
+    iteritems(): Iterates over each column as key, value pair with label as key and column value as a Series object.
+	iterrows(): returns the iterator yielding each index value along with a series containing the data in each row.
+	itertuples():  method will return an iterator yielding a named tuple for each row in the DataFrame. 
+                   The first element of the tuple will be the row’s corresponding index value,
+                   while the remaining values are the row values.
+				   
+=> Python Pandas - Sorting:-
+   ========================
+   
+    There are two kinds of sorting available in Pandas. They are −
+
+       a) By label
+       b) By Actual Value
+	a) BY label:
+	------------
+               	 Using the sort_index() method, by passing the axis arguments and the
+	             order of sorting, DataFrame can be sorted. By default, sorting is done on row labels in ascending order.
+    b) By Actual Value:
+	------------------
+    	        ike index sorting, sort_values() is the method for sorting by values. 
+				It accepts a 'by' argument which will use the column name of the DataFrame with 
+				which the values are to be sorted.
+				
+    Sorting Algorithm:
+	-----------------
+	        sort_values() provides a provision to choose the algorithm from mergesort, heapsort and quicksort. Mergesort is the only stable algorithm.
+
+        import pandas as pd
+        import numpy as np
+
+         unsorted_df = pd.DataFrame({'col1':[2,1,1,1],'col2':[1,3,2,4]})
+         sorted_df = unsorted_df.sort_values(by='col1' ,kind='mergesort')
+
+         print sorted_df
+		 
+    Its output is as follows −
+	    -----
+
+       col1 col2
+    1    1    3
+    2    1    2
+    3    1    4
+    0    2    1
+	
+=>Python Pandas - Working with Text Data:-
+  ======================================
+  
+        In this chapter, we will discuss the string operations with our basic Series/Index. 
+		In the subsequent chapters, we will learn how to apply these string functions on the DataFrame.
+
+    Pandas provides a set of string functions which make it easy to operate on string data. 
+	Most importantly, these functions ignore (or exclude) missing/NaN values.
+
+    Almost, all of these methods work with Python string functions 
+	So, convert the Series Object to String Object and then perform the operation.
+	
+	
+S.No	Function	            Description
+----    --------                ------------
+1	    lower()	                Converts strings in the Series/Index to lower case.
+2	    upper()	                Converts strings in the Series/Index to upper case.
+3	    len()	                Computes String length().
+4	    strip()  	            Helps strip whitespace(including newline) from each string in the Series/index 
+                                from both the sides.
+5	    split(' ')	            Splits each string with the given pattern.
+6	    cat(sep=' ')	        Concatenates the series/index elements with given separator.
+7	    get_dummies()	        Returns the DataFrame with One-Hot Encoded values.
+8	    contains(pattern)	    Returns a Boolean value True for each element if the substring contains in the element, 
+                                else False.
+9	    replace(a,b)	        Replaces the value a with the value b.
+10	    repeat(value)	        Repeats each element with specified number of times.
+11	    count(pattern)	        Returns count of appearance of pattern in each element.
+12	    startswith(pattern)	    Returns true if the element in the Series/Index starts with the pattern.
+13	    endswith(pattern)	    Returns true if the element in the Series/Index ends with the pattern.
+14	    find(pattern)	        Returns the first position of the first occurrence of the pattern.
+15	    findall(pattern)	    Returns a list of all occurrence of the pattern.
+16	    swapcase	            Swaps the case lower/upper.
+17	    islower()	            Checks whether all characters in each string in the Series/Index in lower case or not.
+                                Returns Boolean
+18	    isupper()	            Checks whether all characters in each string in the Series/Index in upper case or not. 
+                                Returns Boolean.
+19	    isnumeric()	            Checks whether all characters in each string in the Series/Index are numeric. 
+                                Returns Boolean.
+      
+    for all simple example:
+	
+        import pandas as pd
+        import numpy as np
+        s = pd.Series(['Tom', 'William Rick', 'John', 'Alber@t', np.nan, '1234','SteveSmith'])
+        print s.str.lower()
+		
+	Its output is as follows −
+
+        0            tom
+        1   william rick
+        2           john
+        3        alber@t
+        4            NaN
+        5           1234
+        6    steve smith  
+        dtype: object
+		
+=> Python Pandas - Options and Customization:-		
+   ==========================================
+      Pandas provide API to customize some aspects of its behavior, display is being mostly used.
+
+    The API is composed of five relevant functions. They are −
+
+       > get_option()
+       > set_option()
+       > reset_option()
+       > describe_option()
+       > option_context()
+    Let us now understand how the functions operate.
+
+get_option(param):
+----------------
+get_option takes a single parameter and returns the value as given in the output below −
+
+display.max_rows
+Displays the default number of value. Interpreter reads this value and displays the rows with this value as upper limit to display.
+
+ import pandas as pd
+ print pd.get_option("display.max_rows")
+
+Its output is as follows −
+
+ 60
+display.max_columns:
+
+Displays the default number of value. Interpreter reads this value and displays the rows with this value as upper limit to display.
+
+import pandas as pd
+print pd.get_option("display.max_columns")
+Its output is as follows −
+
+20
+Here, 60 and 20 are the default configuration parameter values.
+
+set_option(param,value):
+-----------------------
+set_option takes two arguments and sets the value to the parameter as shown below −
+
+display.max_rows
+Using set_option(), we can change the default number of rows to be displayed.
+
+import pandas as pd
+
+pd.set_option("display.max_rows",80)
+
+print pd.get_option("display.max_rows")
+Its output is as follows −
+
+80
+display.max_rows
+Using set_option(), we can change the default number of rows to be displayed.
+
+import pandas as pd
+
+pd.set_option("display.max_columns",30)
+
+print pd.get_option("display.max_columns")
+Its output is as follows −
+
+30
+reset_option(param):
+-------------------
+reset_option takes an argument and sets the value back to the default value.
+
+display.max_rows
+Using reset_option(), we can change the value back to the default number of rows to be displayed.
+
+import pandas as pd
+
+pd.reset_option("display.max_rows")
+print pd.get_option("display.max_rows")
+Its output is as follows −
+
+60
+describe_option(param):
+----------------------
+describe_option prints the description of the argument.
+
+display.max_rows
+Using reset_option(), we can change the value back to the default number of rows to be displayed.
+
+import pandas as pd
+pd.describe_option("display.max_rows")
+Its output is as follows −
+
+display.max_rows : int
+   If max_rows is exceeded, switch to truncate view. Depending on
+   'large_repr', objects are either centrally truncated or printed as
+   a summary view. 'None' value means unlimited.
+
+   In case python/IPython is running in a terminal and `large_repr`
+   equals 'truncate' this can be set to 0 and pandas will auto-detect
+   the height of the terminal and print a truncated object which fits
+   the screen height. The IPython notebook, IPython qtconsole, or
+   IDLE do not run in a terminal and hence it is not possible to do
+   correct auto-detection.
+   [default: 60] [currently: 60]
+option_context():
+-----------------
+option_context context manager is used to set the option in with statement temporarily. Option values are restored automatically when you exit the with block −
+
+display.max_rows
+Using option_context(), we can set the value temporarily.
+
+import pandas as pd
+with pd.option_context("display.max_rows",10):
+   print(pd.get_option("display.max_rows"))
+   print(pd.get_option("display.max_rows"))
+Its output is as follows −
+
+10
+10
+See, the difference between the first and the second print statements. The first statement prints the value set by option_context() which is temporary within the with context itself. After the with context, the second print statement prints the configured value.
+
+Frequently used Parameters:
+--------------------------
+S.No	Parameter	              Description
+----    ---------                 -----------
+1	display.max_rows	        Displays maximum number of rows to display
+2	2 display.max_columns	    Displays maximum number of columns to display
+3	display.expand_frame_repr	Displays DataFrames to Stretch Pages
+4	display.max_colwidth	    Displays maximum column width
+5	display.precision	        Displays precision for decimal numbers
+	  
+
+=> 
+
+   The Python and NumPy indexing operators "[ ]" and attribute operator "." provide quick and easy access to 
+   Pandas data structures across a wide range of use cases. However, since the type of the data to be accessed isn’t
+   known in advance, directly using standard operators has some optimization limits. For production code,
+   we recommend that you take advantage of the optimized pandas data access methods.
+
+   Pandas now supports three types of Multi-axes indexing; the three types are mentioned in the following table −
+
+       Indexing	     Description
+	   --------      -----------
+       .loc()	    Label based
+       .iloc()	    Integer based
+       .ix()	    Both Label and Integer based
+   .loc():
+   -------
+          Pandas provide various methods to have purely label based indexing. When slicing, 
+		  the start bound is also included. Integers are valid labels, but they refer to 
+		  the label and not the position.
+
+     .loc() has multiple access methods like −
+
+        >  A single scalar label
+        >  A list of labels
+        >  A slice object
+        >  A Boolean array
+      loc takes two single/list/range operator separated by ','. The first one indicates the row and
+	  the second one indicates columns.	 
+   
+    .iloc():
+	--------
+            Pandas provide various methods in order to get purely integer based indexing. 
+			Like python and numpy, these are 0-based indexing.
+
+        The various access methods are as follows −
+
+            > An Integer
+            > A list of integers
+            > A range of values
+Example 1:
+
+      # import the pandas library and aliasing as pd
+      import pandas as pd
+      import numpy as np
+
+      df = pd.DataFrame(np.random.randn(8, 4), columns = ['A', 'B', 'C', 'D'])
+
+      # select all rows for a specific column
+      print df.iloc[:4]
+
+	Its output is as follows −
+
+           A          B           C           D
+    0   0.699435   0.256239   -1.270702   -0.645195
+    1  -0.685354   0.890791   -0.813012    0.631615
+    2  -0.783192  -0.531378    0.025070    0.230806
+    3   0.539042  -1.284314    0.826977   -0.026251   
+
+
+    .ix():
+    -------
+          Besides pure label based and integer based, Pandas provides a hybrid method for selections and subsetting
+		  the object using the .ix() operator.
+
+Example 1:
+       import pandas as pd
+       import numpy as np
+
+       df = pd.DataFrame(np.random.randn(8, 4), columns = ['A', 'B', 'C', 'D'])
+
+       # Integer slicing
+       print df.ix[:4]
+    Its output is as follows −
+
+           A          B           C           D
+    0   0.699435   0.256239   -1.270702   -0.645195
+    1  -0.685354   0.890791   -0.813012    0.631615
+    2  -0.783192  -0.531378    0.025070    0.230806
+    3   0.539042  -1.284314    0.826977   -0.026251
+    
+	Use of Notations:
+	----------------
+                Getting values from the Pandas object with Multi-axes indexing uses the following notation −
+
+         Object	         Indexers	                                     Return Type
+         Series	         s.loc[indexer]	                            Scalar value
+         DataFrame	     df.loc[row_index,col_index]	            Series object
+         Panel	         p.loc[item_index,major_index, minor_index]	p.loc[item_index,major_index, minor_index]
+
+		 Note − .iloc() & .ix() applies the same indexing options and Return value.
+        ------
+        Let us now see how each operation can be performed on the DataFrame object. 
+		We will use the basic indexing operator '[ ]' −
+		
+=> Python Pandas - Statistical Functions:-
+=========================================
+		
+        Statistical methods help in the understanding and analyzing the behavior of data. 
+		We will now learn a few statistical functions, which we can apply on Pandas objects.
+
+    Percent_change
+          Series, DatFrames and Panel, all have the function pct_change(). 
+		  This function compares every element with its prior element and computes the change percentage.
+
+    import pandas as pd
+    import numpy as np
+    s = pd.Series([1,2,3,4,5,4])
+    print s.pct_change()
+
+    df = pd.DataFrame(np.random.randn(5, 2))
+    print df.pct_change()
+  
+  Its output is as follows −
+
+0        NaN
+1   1.000000
+2   0.500000
+3   0.333333
+4   0.250000
+5  -0.200000
+dtype: float64
+
+            0          1
+0         NaN        NaN
+1  -15.151902   0.174730
+2  -0.746374   -1.449088
+3  -3.582229   -3.165836
+4   15.601150  -1.860434
+By default, the pct_change() operates on columns; if you want to apply the same row wise, then use axis=1() argument.
+
+Covariance:
+----------
+           Covariance is applied on series data. The Series object has a method cov to compute covariance 
+		   between series objects. NA will be excluded automatically.
+
+Cov Series:
+
+import pandas as pd
+import numpy as np
+s1 = pd.Series(np.random.randn(10))
+s2 = pd.Series(np.random.randn(10))
+print s1.cov(s2)
+
+Its output is as follows −
+
+-0.12978405324
+           Covariance method when applied on a DataFrame, computes cov between all the columns.
+
+import pandas as pd
+import numpy as np
+frame = pd.DataFrame(np.random.randn(10, 5), columns=['a', 'b', 'c', 'd', 'e'])
+print frame['a'].cov(frame['b'])
+print frame.cov()
+
+Its output is as follows −
+
+-0.58312921152741437
+
+           a           b           c           d            e
+a   1.780628   -0.583129   -0.185575    0.003679    -0.136558
+b  -0.583129    1.297011    0.136530   -0.523719     0.251064
+c  -0.185575    0.136530    0.915227   -0.053881    -0.058926
+d   0.003679   -0.523719   -0.053881    1.521426    -0.487694
+e  -0.136558    0.251064   -0.058926   -0.487694     0.960761
+     Note: − Observe the cov between a and b column in the first statement and the same is the value returned by cov on DataFrame.
+
+Correlation:
+------------
+            Correlation shows the linear relationship between any two array of values (series). 
+			There are multiple methods to compute the correlation like pearson(default), spearman and kendall.
+
+import pandas as pd
+import numpy as np
+frame = pd.DataFrame(np.random.randn(10, 5), columns=['a', 'b', 'c', 'd', 'e'])
+
+print frame['a'].corr(frame['b'])
+
+print frame.corr()
+
+   Its output is as follows −
+
+   -0.383712785514
+
+           a          b          c          d           e
+a   1.000000  -0.383713  -0.145368   0.002235   -0.104405
+b  -0.383713   1.000000   0.125311  -0.372821    0.224908
+c  -0.145368   0.125311   1.000000  -0.045661   -0.062840
+d   0.002235  -0.372821  -0.045661   1.000000   -0.403380
+e  -0.104405   0.224908  -0.062840  -0.403380    1.000000
+           If any non-numeric column is present in the DataFrame, it is excluded automatically.
+
+Data Ranking:
+------------
+         Data Ranking produces ranking for each element in the array of elements. In case of ties, assigns the mean rank.
+
+import pandas as pd
+import numpy as np
+s = pd.Series(np.random.np.random.randn(5), index=list('abcde'))
+
+s['d'] = s['b'] # so there's a tie
+
+print s.rank()
+
+  Its output is as follows −
+
+a  1.0
+b  3.5
+c  2.0
+d  3.5
+e  5.0
+dtype: float64
+     Rank optionally takes a parameter ascending which by default is true; when false, data is reverse-ranked, with larger values assigned a smaller rank.
+
+     Rank supports different tie-breaking methods, specified with the method parameter −
+
+average − average rank of tied group
+
+min     − lowest rank in the group
+
+max     − highest rank in the group
+
+first   − ranks assigned in the order they appear in the array	
+
+=> Python Pandas - Window Functions:-
+   ================================
+   
+           For working on numerical data, Pandas provide few variants like rolling, expanding and exponentially
+		   moving weights for window statistics. Among these are sum, mean, median, variance, covariance, correlation, etc.
+		   
+
+        We will now learn how each of these can be applied on DataFrame objects.
+
+.rolling() Function:
+-------------------
+        This function can be applied on a series of data. Specify the window=n argument and apply the appropriate 
+        statistical function on top of it.
+    Note:− Since the window size is 3, for first two elements there are nulls and from third the value 
+	----   will be the average of the n, n-1 and n-2 elements. Thus we can also apply various functions as mentioned above.
+    
+.expanding() Function:
+---------------------
+        This function can be applied on a series of data. Specify the min_periods=n argument and 
+		apply the appropriate statistical function on top of it.
+
+.ewm() Function:
+----------------
+        ewm is applied on a series of data. Specify any of the com, span, halflife argument and apply 
+        the appropriate statistical function on top of it. It assigns the weights exponentially.
+		
+=> Python Pandas - Aggregations:-
+   ============================
+
+        Once the rolling, expanding and ewm objects are created, several methods are available to perform aggregations on data.
+
+Applying Aggregations on DataFrame:
+-----------------------------------
+      Let us create a DataFrame and apply aggregations on it.
+
+      import pandas as pd
+      import numpy as np
+
+      df = pd.DataFrame(np.random.randn(10, 4),
+      index = pd.date_range('1/1/2000', periods=10),
+      columns = ['A', 'B', 'C', 'D'])
+
+      print df
+
+      r = df.rolling(window=3,min_periods=1)
+      print r
+
+	Its output is as follows −
+
+                    A           B           C           D
+2000-01-01   1.088512   -0.650942   -2.547450   -0.566858
+2000-01-02   0.790670   -0.387854   -0.668132    0.267283
+2000-01-03  -0.575523   -0.965025    0.060427   -2.179780
+2000-01-04   1.669653    1.211759   -0.254695    1.429166
+2000-01-05   0.100568   -0.236184    0.491646   -0.466081
+2000-01-06   0.155172    0.992975   -1.205134    0.320958
+2000-01-07   0.309468   -0.724053   -1.412446    0.627919
+2000-01-08   0.099489   -1.028040    0.163206   -1.274331
+2000-01-09   1.639500   -0.068443    0.714008   -0.565969
+2000-01-10   0.326761    1.479841    0.664282   -1.361169
+
+Rolling [window=3,min_periods=1,center=False,axis=0]                  
+	
+
+=> Python Pandas - Missing Data:-
+   ============================	
+   
+        Missing data is always a problem in real life scenarios. Areas like machine learning and data mining 
+        face severe issues in the accuracy of their model predictions because of poor quality of data caused
+        by missing values. In these areas, missing value treatment is a major point of focus to make their models 
+        more accurate and valid.
+
+When and Why Is Data Missed?:
+----------------------------
+        Let us consider an online survey for a product. Many a times, people do not share 
+		all the information related to them. Few people share their experience, but not 
+		how long they are using the product; few people share how long they are using the product, 
+		their experience but not their contact information. Thus, in some or the other way a part of 
+		data is always missing, and this is very common in real time.
+
+    Let us now see how we can handle missing values (say NA or NaN) using Pandas.
+
+    # import the pandas library
+    import pandas as pd
+    import numpy as np
+
+    df = pd.DataFrame(np.random.randn(5, 3), index=['a', 'c', 'e', 'f',
+         'h'],columns=['one', 'two', 'three'])
+
+    df = df.reindex(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'])
+
+    print df
+	
+  Its output is as follows −
+
+         one        two      three
+    a   0.077988   0.476149   0.965836
+    b        NaN        NaN        NaN
+    c  -0.390208  -0.551605  -2.301950
+    d        NaN        NaN        NaN
+    e  -2.000303  -0.788201   1.510072
+    f  -0.930230  -0.670473   1.146615
+    g        NaN        NaN        NaN
+    h   0.085100   0.532791   0.887415
+  Using reindexing, we have created a DataFrame with missing values. In the output, NaN means Not a Number .
+	
+Check for Missing Values:
+-------------------------
+        To make detecting missing values easier (and across different array dtypes), 
+		Pandas provides the isnull() and notnull() functions, which are also methods on Series and DataFrame objects −
+        
+Calculations with Missing Data:
+------------------------------
+        When summing data, NA will be treated as Zero
+        If the data are all NA, then the result will be NA
+		
+Cleaning / Filling Missing Data:
+-------------------------------
+        Pandas provides various methods for cleaning the missing values. 
+		The fillna function can “fill in” NA values with non-null data in a couple of ways, 
+		which we have illustrated in the following sections.
+
+Replace NaN with a Scalar Value:
+--------------------------------
+        The following program shows how you can replace "NaN" with "0".
+
+Fill NA Forward and Backward:
+----------------------------
+         Using the concepts of filling discussed in the ReIndexing Chapter we will fill the missing values.
+
+         Method	             Action
+		 ------              ------
+         pad/fill	        Fill methods Forward
+         bfill/backfill  	Fill methods Backward
+		 
+Drop Missing Values:
+-------------------
+       If you want to simply exclude the missing values, then use the dropna function along with the axis argument. 
+       By default, axis=0, i.e., along row, which means that if any value within a row is NA then the whole row is excluded.
+
+Replace Missing (or) Generic Values:
+-----------------------------------
+        Many times, we have to replace a generic value with some specific value. 
+		We can achieve this by applying the replace method.
+
+       Replacing NA with a scalar value is equivalent behavior of the fillna() function.
+	   
+=> Python Pandas - GroupBy:-
+   ========================
+         Any groupby operation involves one of the following operations on the original object. They are −
+
+        > Splitting the Object
+
+        > Applying a function
+
+        > Combining the results
+
+     In many situations, we split the data into sets and we apply some functionality on each subset. 
+	 In the apply functionality, we can perform the following operations −
+
+       > Aggregation    − computing a summary statistic
+
+       > Transformation − perform some group-specific operation
+
+       > Filtration     − discarding the data with some condition
+	  
+   Split Data into Groups:
+    ----------------------
+          Pandas object can be split into any of their objects. There are multiple ways to split an object like −
+
+        obj.groupby('key')
+        obj.groupby(['key1','key2'])
+        obj.groupby(key,axis=1)
+    Let us now see how the grouping objects can be applied to the DataFrame object
+	
+	Select a Group:
+	--------------
+        Using the get_group() method, we can select a single group
+		
+	Aggregations:
+	------------
+          An aggregated function returns a single aggregated value for each group. 
+          Once the group by object is created, several aggregation operations can be performed on the grouped data.
+	   
+	Transformations:
+	----------------
+          Transformation on a group or a column returns an object that is indexed the same size of that is being grouped.
+          Thus, the transform should return a result that is the same size as that of a group chunk.
+          
+    Filtration:
+	----------
+          Filtration filters the data on a defined criteria and returns the subset of data. The filter() function is used to 
+          filter the data.
+
+=> Python Pandas - Merging/Joining:-
+   ===============================
+   
+        Pandas has full-featured, high performance in-memory join operations idiomatically very similar to 
+		relational databases like SQL.
+
+        Pandas provides a single function, merge, as the entry point for all standard database join operations 
+		between DataFrame objects −
+
+                     pd.merge(left, right, how='inner', on=None, left_on=None, right_on=None,
+                     left_index=False, right_index=False, sort=True)
+    
+	Here, we have used the following parameters −
+
+  left        − A DataFrame object.
+
+  right       − Another DataFrame object.
+
+  on          − Columns (names) to join on. Must be found in both the left and right DataFrame objects.
+
+  left_on     − Columns from the left DataFrame to use as keys. Can either be column names or arrays
+                with length equal to the length of the DataFrame.
+
+  right_on    − Columns from the right DataFrame to use as keys. Can either be column names or arrays with 
+                length equal to the length of the DataFrame.
+
+  left_index  − If True, use the index (row labels) from the left DataFrame as its join key(s). 
+                In case of a DataFrame with a MultiIndex (hierarchical), the number of levels must match the number of 
+                join keys from the right DataFrame.
+
+  right_index − Same usage as left_index for the right DataFrame.
+
+  how         − One of 'left', 'right', 'outer', 'inner'. Defaults to inner. Each method has been described below.
+
+  sort        − Sort the result DataFrame by the join keys in lexicographical order. 
+                Defaults to True, setting to False will improve the performance substantially in many cases.
+		  
+
+   Merge Using 'how' Argument:
+   --------------------------
+     The how argument to merge specifies how to determine which keys are to be included in the resulting table.
+	 If a key combination does not appear in either the left or the right tables, 
+	 the values in the joined table will be NA.
+
+     Here is a summary of the how options and their SQL equivalent names −
+
+          MergeMethod	   SQLEquivalent	      Description
+		  ----------      --------------        --------------
+          left	         LEFT OUTER JOIN	  Use keys from left object
+          right	         RIGHT OUTER JOIN	  Use keys from right object
+          outer	         FULL OUTER JOIN	  Use union of keys
+          inner	         INNER JOIN	          Use intersection of keys
+
+    Inner Join:
+	-----------
+        Joining will be performed on index. Join operation honors the object on which it is called. 
+		So, a.join(b) is not equal to b.join(a).
+
+=> Python Pandas - Concatenation:-
+   =============================
+  
+           Pandas provides various facilities for easily combining together Series, DataFrame, and Panel objects.
+
+                 pd.concat(objs,axis=0,join='outer',join_axes=None,
+                           ignore_index=False)
+objs − This is a   sequence or mapping of Series, DataFrame, or Panel objects.
+
+axis − {0, 1, ...}, default 0. This is the axis to concatenate along.
+
+join − {‘inner’, ‘outer’}, default ‘outer’. How to handle indexes on other axis(es).
+         Outer for union and inner for intersection.
+
+            ignore_index − boolean, default False. If True, do not use the index values on the concatenation axis. 
+			The resulting axis will be labeled 0, ..., n - 1.
+
+join_axes − This is the list of Index objects. Specific indexes to use for the other (n-1) 
+            axes instead of performing inner/outer set logic.
+
+Concatenating Objects:
+---------------------
+            The concat function does all of the heavy lifting of performing concatenation operations along an axis. Let us create different objects and do concatenation. 
+		  
+Concatenating Using append:
+---------------------------
+        A useful shortcut to concat are the append instance methods on Series and DataFrame. 
+		These methods actually predated concat. They concatenate along axis=0, namely the index −
+		  
+Time Series:
+------------
+     Pandas provide a robust tool for working time with Time series data, especially in the financial sector. 
+	 While working with time series data, we frequently come across the following −
+
+       > Generating sequence of time
+       > Convert the time series to different frequencies
+Pandas provides a relatively compact and self-contained set of tools for performing the above tasks.
+
+Get Current Time:
+-----------------
+datetime.now() gives you the current date and time.		
+		
+		
+Create a TimeStamp:
+------------------
+Time-stamped data is the most basic type of timeseries data that associates values with points in time. 
+For pandas objects, it means using the points in time. Let’s take an example −
+
+import pandas as pd
+print pd.Timestamp('2017-03-01')
+
+Its output is as follows −
+
+2017-03-01 00:00:00
+    
+Converting to Timestamps:
+------------------------
+To convert a Series or list-like object of date-like objects, for example strings, epochs, or a mixture, 
+you can use the to_datetime function. When passed, this returns a Series (with the same index),
+ while a list-like is converted to a DatetimeIndex. Take a look at the following example −
+
+
+=> Python Pandas - Date Functionality:-
+   ==================================
+
+Extending the Time series, Date functionalities play major role in financial data analysis. While working with Date data, we will frequently come across the following −
+
+Generating sequence of dates
+Convert the date series to different frequencies
+
+Create a Range of Dates:
+------------------------
+Using the date.range() function by specifying the periods and the frequency, we can create the date series. By default, the frequency of range is Days.
+
+import pandas as pd
+print pd.date_range('1/1/2011', periods=5)
+Its output is as follows −
+
+DatetimeIndex(['2011-01-01', '2011-01-02', '2011-01-03', '2011-01-04', '2011-01-05'],
+dtype='datetime64[ns]', freq='D')
+
+Change the Date Frequency:
+-------------------------
+import pandas as pd
+print pd.date_range('1/1/2011', periods=5,freq='M')
+Its output is as follows −
+
+DatetimeIndex(['2011-01-31', '2011-02-28', '2011-03-31', '2011-04-30', '2011-05-31'],
+dtype='datetime64[ns]', freq='M')
+
+bdate_range:
+------------
+bdate_range() stands for business date ranges. Unlike date_range(), it excludes Saturday and Sunday.
+
+import pandas as pd
+print pd.date_range('1/1/2011', periods=5)
+Its output is as follows −
+
+DatetimeIndex(['2011-01-01', '2011-01-02', '2011-01-03', '2011-01-04', '2011-01-05'],
+dtype='datetime64[ns]', freq='D')
+Observe, after 3rd March, the date jumps to 6th march excluding 4th and 5th. Just check your calendar for the days.
+
+Convenience functions like date_range and bdate_range utilize a variety of frequency aliases. The default frequency for date_range is a calendar day while the default for bdate_range is a business day.
+
+import pandas as pd
+start = pd.datetime(2011, 1, 1)
+end = pd.datetime(2011, 1, 5)
+print pd.date_range(start, end)
+Its output is as follows −
+
+DatetimeIndex(['2011-01-01', '2011-01-02', '2011-01-03', '2011-01-04', '2011-01-05'],
+dtype='datetime64[ns]', freq='D')
+
+Offset Aliases:
+--------------
+A number of string aliases are given to useful common time series frequencies. We will refer to these aliases as offset aliases.
+
+Alias	Description	                  Alias	                              Description
+B	    business day frequency	       BQS	         business quarter start frequency
+D	    calendar day frequency	       A	         annual(Year) end frequency
+W	    weekly frequency	           BA	         business year end frequency
+M	    month end frequency	           BAS	         business year start frequency
+SM	    semi-month end frequency	   BH	         business hour frequency
+BM	    business month end frequency	H	         hourly frequency
+MS	    month start frequency	        T, min	     minutely frequency
+SMS	    SMS semi month start frequency	S	         secondly frequency
+BMS	    business month start frequency	L, ms      	 milliseconds
+Q	    quarter end frequency	        U, us	     microseconds
+BQ	    business quarter end frequency	N	         nanoseconds
+QS	    quarter start frequency		
+
+=> Python Pandas - Timedelta:-
+   =========================
+  
+    Timedeltas are differences in times, expressed in difference units, for example, days, hours, minutes, seconds.
+	They can be both positive and negative.
+
+    We can create Timedelta objects using various arguments as shown below −
+
+String:
+------
+       By passing a string literal, we can create a timedelta object.
+
+import pandas as pd
+
+print pd.Timedelta('2 days 2 hours 15 minutes 30 seconds')
+Its output is as follows −
+
+2 days 02:15:30
+
+Integer:
+-------
+By passing an integer value with the unit, an argument creates a Timedelta object.
+
+import pandas as pd
+
+print pd.Timedelta(6,unit='h')
+Its output is as follows −
+
+0 days 06:00:00
+
+Data Offsets:
+------------
+Data offsets such as - weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds 
+can also be used in construction.
+
+import pandas as pd
+
+print pd.Timedelta(days=2)
+Its output is as follows −
+
+2 days 00:00:00
+to_timedelta()
+ Using the top-level pd.to_timedelta, you can convert a scalar, array, list, or series from a recognized
+ timedelta format/ value into a Timedelta type. It will construct Series if the input is a Series,
+ a scalar if the input is scalar-like, otherwise will output a TimedeltaIndex.
+
+import pandas as pd
+
+print pd.Timedelta(days=2)
+Its output is as follows −
+
+2 days 00:00:00
+
+Operations:
+----------
+          You can operate on Series/ DataFrames and construct timedelta64[ns] Series through subtraction operations
+		  on datetime64[ns] Series, or Timestamps.
+
+           Let us now create a DataFrame with Timedelta and datetime objects and perform some 
+		   arithmetic operations on 
+		        > Addition operation
+				> Substraction operation
+				
+=> Python Pandas - Categorical Data:-
+   ================================
+Often in real-time, data includes the text columns, which are repetitive. Features like gender, country, 
+and codes are always repetitive. These are the examples for categorical data.
+
+Categorical variables can take on only a limited, and usually fixed number of possible values. 
+Besides the fixed length, categorical data might have an order but cannot perform numerical operation. 
+Categorical are a Pandas data type.
+
+The categorical data type is useful in the following cases: −
+-----------------------------------------------------------
+
+> A string variable consisting of only a few different values. Converting such a string variable to a
+  categorical variable will save some memory.
+
+> The lexical order of a variable is not the same as the logical order (“one”, “two”, “three”).
+  By converting to a categorical and specifying an order on the categories, sorting and min/max will 
+  use the logical order instead of the lexical order.
+
+> As a signal to other python libraries that this column should be treated as a categorical variable 
+ (e.g. to use suitable statistical methods or plot types).
+
+Object Creation:
+--------------
+Categorical object can be created in multiple ways.
+  1. category      : By specifying the dtype as "category" in pandas object creation. 
+  2. pd.Categorical: Using the standard pandas Categorical constructor, we can create a category object. 
+  3. Renaming Categories: Renaming categories is done by assigning new values to 
+                         the series.cat.categoriesseries.cat.categories property.
+  4. Appending New Categories:  Using the Categorical.add.categories() method, new categories can be appended.
+  5. Removing Categories: Using the Categorical.remove_categories() method, unwanted categories can be removed.
+  6. Comparison of Categorical Data:
+                    Comparing categorical data with other objects is possible in three cases −
+
+               > comparing equality (== and !=) to a list-like object (list, Series, array, ...) 
+                 of the same length as the categorical data.
+
+               > all comparisons (==, !=, >, >=, <, and <=) of categorical data to another categorical Series,
+				 when ordered==True and the categories are the same.
+
+               > all comparisons of a categorical data to a scalar.
+
+=> Python Pandas - Visualization:-
+    ============================== 
+		Basic Plotting: plot
+        This functionality on Series and DataFrame is just a simple wrapper around the matplotlib libraries plot() method.
+
+import pandas as pd
+import numpy as np
+
+df = pd.DataFrame(np.random.randn(10,4),index=pd.date_range('1/1/2000',
+   periods=10), columns=list('ABCD'))
+
+df.plot()
+
+Its output is as follows −    draw " BARS FIG"
+
+Basic Plotting:
+--------------
+If the index consists of dates, it calls gct().autofmt_xdate() to format the x-axis as shown in the above illustration.
+
+We can plot one column versus another using the x and y keywords.
+
+Plotting methods allow a handful of plot styles other than the default line plot. 
+These methods can be provided as the kind keyword argument to plot(). These include −
+
+    > bar or barh for bar plots
+    > hist for histogram
+    > box for boxplot
+    > 'area' for area plots
+    > 'scatter' for scatter plots
+
+Bar Plot:
+---------
+Let us now see what a Bar Plot is by creating one. A bar plot can be created in the following way
+               "DRAW − BARS fig
+
+Histograms:
+----------
+Histograms can be plotted using the plot.hist() method. We can specify number of bins.			   
+		 
+Box Plots:
+----------
+Boxplot can be drawn calling Series.box.plot() and DataFrame.box.plot(), or DataFrame.boxplot() 
+to visualize the distribution of values within each column.
+
+For instance, here is a boxplot representing five trials of 10 observations of a uniform random variable on [0,1).
+
+Scatter Plot:
+------------
+Scatter plot can be created using the DataFrame.plot.scatter() methods.
+
+Pie Chart:
+----------
+Pie chart can be created using the DataFrame.plot.pie() method.
+		 
+=>Python Pandas - IO Tools:-
+   =======================	
+        The Pandas I/O API is a set of top level reader functions accessed like pd.read_csv() 
+		that generally return a Pandas object.
+
+      The two workhorse functions for reading text files (or the flat files) are read_csv() and read_table(). 
+      They both use the same parsing code to intelligently convert tabular data into a DataFrame object −   
+
+read.csv:
+---------
+     read.csv reads data from the csv files and creates a DataFrame object.
+		 
+=> Python Pandas - Sparse Data:-
+   ===========================
+
+    Sparse objects are “compressed” when any data matching a specific value (NaN / missing value, 
+	though any value can be chosen) is omitted. A special SparseIndex object tracks where data has been
+	“sparsified”. This will make much more sense in an example. All of the standard Pandas data structures 
+	apply the to_sparse method −   
+
+Sparse Dtypes:
+-------------
+Sparse data should have the same dtype as its dense representation. Currently, float64, int64 and booldtypes are supported.
+Depending on the original dtype, fill_value default changes −
+
+  > float64 − np.nan
+
+  > int64 − 0
+
+  > bool − False
+
+=> Python Pandas - Caveats & Gotchas:-
+   =================================
+   
+    Using If/Truth Statement with Pandas:
+	--------------------------------------
+    Pandas follows the numpy convention of raising an error when you try to convert something to a bool. 
+	This happens in an if or when using the Boolean operations, and, or, or not. It is not clear what 
+	the result should be. Should it be True because it is not zerolength? False because there are False values?
+	It is unclear, so instead, Pandas raises a ValueError −
+   
+Bitwise Boolean:
+---------------
+Bitwise Boolean operators like == and != will return a Boolean series, which is almost always what is required anyways.
+
+isin Operation:
+---------------
+This returns a Boolean series showing whether each element in the Series is exactly contained in 
+the passed sequence of values.
+
+Reindexing vs ix Gotcha:
+-----------------------
+Many users will find themselves using the ix indexing capabilities as a concise means of selecting data 
+from a Pandas object 
+
+=> Python Pandas - Comparison with SQL:-
+   ===================================
+   
+           Since many potential Pandas users have some familiarity with SQL, this page is meant to provide 
+         some examples of how various SQL operations can be performed using pandas.
+   
+   
+SELECT:
+-------
+   In SQL, selection is done using a comma-separated list of columns that you select (or a * to select all columns) −
+
+     syntax: SELECT total_bill, tip, smoker, time
+             FROM tips
+             LIMIT 5;   
+   
+WHERE:
+------
+Filtering in SQL is done via a WHERE clause.
+
+    syntax: SELECT * FROM tips WHERE time = 'Dinner' LIMIT 5;
+
+	         DataFrames can be filtered in multiple ways; the most intuitive of which is using Boolean indexing.
+
+    ex:      tips[tips['time'] == 'Dinner'].head(5) 
+
+GroupBy:
+-------
+        This operation fetches the count of records in each group throughout a dataset. 
+		For instance, a query fetching us the number of tips left by sex −
+
+    sybtax: SELECT sex, count(*)
+            FROM tips
+            GROUP BY sex;
+The Pandas equivalent would be −
+
+     Ex: tips.groupby('sex').size()
+	 
+Top N rows:
+-----------
+         SQL returns the top n rows using LIMIT −
+
+    syntax: SELECT * FROM tips
+            LIMIT 5 ;
+The Pandas equivalent would be −
+
+    Ex:    tips.head(5)
+	
+============================================================================================================================	
+		 
+		 
+		                          ####### INTERVIEW QUESTIONS  ########
+		  
+1Q).What is Pandas/Python Pandas?
+--------------------------------
+     Pandas is a Python package providing fast, flexible, and expressive data structures designed to make working with
+     “relational” or “labeled” data both easy and intuitive. It aims to be the fundamental high-level building block for doing 
+     practical, real world data analysis in Python.
+
+2Q). What is Python pandas used for?
+------------------------------------
+     pandas is a software library written for the Python programming language for data manipulation and analysis.
+	 In particular, it offers data structures and operations for manipulating numerical tables and time series. 
+	 pandas is free software released under the three-clause BSD license.
+
+3Q). What is a pandas DataFrame?
+ --------------------------------
+      DataFrame is a 2-dimensional labeled data structure with columns of potentially different types. 
+	  You can think of it like a spreadsheet or SQL table, or a dict of Series objects. It is generally 
+	  the most commonly used pandas object.
+
+Q4). What is NP Python?
+-----------------------
+     NumPy (pronounced /ˈnʌmpaɪ/ (NUM-py) or sometimes /ˈnʌmpi/ (NUM-pee)) is an extension to the Python programming language,
+	 adding support for large, multi-dimensional arrays and matrices, along with a large library of high-level 
+	 mathematical functions to operate on these arrays.
+
+Q5).What is Matplotlib?
+----------------------
+     matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy. 
+     It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits 
+     like wxPython, Qt, or GTK+.
+	 
+Q6).What can I import from NumPy?
+---------------------------------
+     numpy is the top package name, and doing import numpy doesn’timport submodule numpy.f2py . 
+	 The link is established when you do import numpy.f2py. 
+	 In your above code: import numpy as np # np is an alias pointing tonumpy, but at this point numpy is not linked to numpy.
+	 f2py import numpy.
+	
+Q7).What is Scipy?
+-----------------
+     SciPy (pronounced “Sigh Pie”) is open-source software for mathematics, science, and engineering. 
+	 It is also the name of a very popular conference on scientific programming with Python. 
+	 The SciPy library depends on NumPy, which provides convenient and fast N-dimensional array manipulation.
+
+Q8).What is plot ly?
+-------------------
+     Plotly, also known by its URL, Plot.ly, is an online analytics and data visualization tool, headquartered in Montreal,
+	 Quebec.
+
+Q9).What is PIP for Python?
+---------------------------
+     pip is a package management system used to install and manage software packages written in Python.
+	 Many packages can be found in the Python Package Index (PyPI). Python 2.7.9 and later (on the python2 series), 
+	 and Python 3.4 and later include pip (pip3 for Python 3) by default.
+
+Q10).What is Sympy?
+-------------------
+     SymPy is a Python library for symbolic mathematics. It aims to become a full-featured computer algebra system (CAS) 
+	 while keeping the code as simple as possible in order to be comprehensible and easily extensible.
+	 
+Q11.Important things you should know about Numpy and Pandas?
+-----------------------------------------------------------
+
+    > The data manipulation capabilities of pandas are built on top of the numpy library. In a way, numpy is a dependency of 
+	  the pandas library.
+    > Pandas is best at handling tabular data sets comprising different variable types (integer, float, double, etc.).
+	  In addition, the pandas library can also be used to perform even the most naive of tasks such as loading 
+	  data or doing feature engineering on time series data.
+     
+	> Numpy is most suitable for performing basic numerical computations such as mean, median, range, etc. 
+	  Alongside, it also supports the creation of multi-dimensional arrays.
+    > Numpy library can also be used to integrate C/C++ and Fortran code.
+      Remember, python is a zero indexing language unlike R where indexing starts at one.
+    > The best part of learning pandas and numpy is the strong active community support you'll get from around the world.
+		
+Q12.Table of Contents?
+----------------------
+    > Top of 5 points also..
+    > Starting with Numpy
+    > tarting with Pandas
+    > Exploring an ML Data Set
+    > Building a Random Forest Model
+	
+
+Q13.This set of Data Science Multiple Choice Questions & Answers (MCQs) focuses on “Pandas Data Structure”.
+
+1. Which of the following thing can be data in Pandas ?
+a) a python dict
+b) an ndarray
+c) a scalar value
+
+Q14.Point out the correct statement:?
+
+    NaN is the standard missing data marker used in pandas
+
+===============================================================================================================================
+
+
+
+===> Important MySQL Commands
+=============================
+ 
+
+Here I am trying to give a full instant guide to Mysql commands that will help people for their easy usage.
+
+To login (from unix shell) use -h only if needed.
+# [mysql dir]/bin/mysql -h hostname -u username -ppassword
+
+To login (from windows)
+#mysql dir/bin/mysql.exe -h hostname -u username -ppassword
+
+Create a database.
+------------------
+mysql> create database [databasename];
+
+
+List all databases on the server.
+--------------------------------
+mysql> show databases;
+
+
+Switch to a database
+--------------------
+mysql> use [db name];
+
+
+To see all the tables in the db.
+-------------------------------
+mysql> show tables;
+
+
+To see table's field formats.
+----------------------------
+mysql> describe [table name];
+
+
+To delete a db.
+--------------
+mysql> drop database [database name];
+
+
+To delete a table.
+-----------------
+mysql> drop table [table name];
+
+
+Show all data from a table.
+---------------------------
+mysql> SELECT * FROM [table name];
+
+
+To return columns and column information.
+-----------------------------------------
+mysql> show columns from [table name];
+
+
+Show particular rows with the given value.
+------------------------------------------
+mysql> SELECT * FROM [table name] WHERE [field name] = "value";
+
+
+Show all records containing the name "Something" AND the phone number '0123456789'.
+-----------------------------------------------------------------------------------
+mysql> SELECT * FROM [table name] WHERE name = "Something" AND phone_number = '0123456789';
+
+
+Show all records not containing the name "Something" AND the phone number '0123456789' order by the phone_number field.
+mysql> SELECT * FROM [table name] WHERE name != "Something" AND phone_number = '0123456789' order by phone_number;
+
+
+Show all records starting with the letters 'Something' AND the phone number '0123456789'.
+mysql> SELECT * FROM [table name] WHERE name like "Something%" AND phone_number = '0123456789';
+
+
+Show all records starting with letters 'Something' AND the phone number '0123456789' limit to records 1 through 5.
+mysql> SELECT * FROM [table name] WHERE name like "Something%" AND phone_number = '0123456789' limit 1,5;
+
+
+Use a regular expression to find records. Use "REGEXP BINARY" to force case-sensitivity. This finds any record beginning with a.
+mysql> SELECT * FROM [table name] WHERE rec RLIKE "^a";
+
+
+Show unique records.
+mysql> SELECT DISTINCT [column name] FROM [table name];
+
+
+Show selected records sorted in an ascending (asc) or descending (desc).
+mysql> SELECT [col1],[col2] FROM [table name] ORDER BY [col2] DESC;
+
+
+Return number of rows.
+mysql> SELECT COUNT(*) FROM [table name];
+
+
+Sum column.
+mysql> SELECT SUM(*) FROM [table name];
+
+
+Creating a new user. Login as root. Switch to the MySQL db. Make the user. Update privs.
+# mysql -u root -p
+mysql> use mysql;
+mysql> INSERT INTO user (Host,User,Password) VALUES('%','username',PASSWORD('password'));
+mysql> flush privileges;
+
+Change a users password from unix shell.
+# [mysql dir]/bin/mysqladmin -u username -h hostname -ppassword 'new-password'
+
+Change a users password from MySQL prompt. Login as root. Set the password. Update privileges.
+# mysql -u root -p
+mysql> SET PASSWORD FOR 'user'@'hostname' = PASSWORD('password');
+mysql> flush privileges;
+
+Recover a MySQL root password. Stop the MySQL server process. Start again with no grant tables. Login to MySQL as root. Set new password. Exit MySQL and restart MySQL server.
+# /etc/init.d/mysql stop
+# mysqld_safe --skip-grant-tables
+# mysql -u root
+mysql> use mysql;
+mysql> update user set password=PASSWORD("newpassword") where User='root';
+mysql> flush privileges;
+mysql> quit
+# /etc/init.d/mysql stop
+# /etc/init.d/mysql start
+
+Set a root password if there is no root password.
+# mysqladmin -u root password newpassword
+
+Update a root password.
+# mysqladmin -u root -p oldpassword newpassword
+
+Allow the user "Someone" to connect to the server from localhost using the password "passwd". Login as root. Switch to the MySQL db. Give privs. Update privs.
+# mysql -u root -p
+mysql> use mysql;
+mysql> grant usage on *.* to Someone@localhost identified by 'passwd';
+mysql> flush privileges;
+
+Give user privilages for a db. Login as root. Switch to the MySQL db. Grant privs. Update privs.
+# mysql -u root -p
+mysql> use mysql;
+mysql>INSERT INTO user(Host,Db,User,Select_priv,Insert_priv,Update_priv,Delete_priv,Create_priv,Drop_priv)
+ VALUES ('%','databasename','username','Y','Y','Y','Y','Y','N');
+mysql> flush privileges;
+
+or
+
+mysql> grant all privileges on databasename.* to username@localhost;
+mysql> flush privileges;
+
+To update info already in a table.
+mysql> UPDATE [table name] SET Select_priv = 'Y',Insert_priv = 'Y',Update_priv = 'Y' where [field name] = 'user';
+
+Delete a row(s) from a table.
+mysql> DELETE from [table name] where [field name] = 'fieldvalue';
+
+Update database permissions/privilages.
+mysql> flush privileges;
+
+Delete a column.
+mysql> alter table [table name] drop column [column name];
+
+Add a new column to db.
+mysql> alter table [table name] add column [new column name] varchar (20);
+
+Change column name.
+mysql> alter table [table name] change [old column name] [new column name] varchar (50);
+
+Make a unique column so you get no dupes.
+mysql> alter table [table name] add unique ([column name]);
+
+Make a column bigger.
+mysql> alter table [table name] modify [column name] VARCHAR(3);
+
+Delete unique from table.
+mysql> alter table [table name] drop index [colmn name];
+
+Load a CSV file into a table.
+mysql> LOAD DATA INFILE '/tmp/filename.csv' replace INTO TABLE [table name] FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' (field1,field2,field3);
+
+Dump all databases for backup. Backup file is sql commands to recreate all db's.
+# mysqldump -u username -ppassword --opt > /tmp/alldatabases.sql
+
+Dump one database for backup.
+# mysqldump -u username -ppassword --databases databasename > /tmp/databasename.sql
+
+Dump a table from a database.
+# mysqldump -u username -ppassword databasename tablename > /tmp/databasename.tablename.sql
+
+Restore database (or database table) from backup.
+# mysql -u username -ppassword databasename < /tmp/databasename.sql
+
+Create Table Example 1.
+mysql> CREATE TABLE [table name] (name VARCHAR(20));
+
+Create Table Example 2.
+mysql> create table [table name] (personid int(50) not null auto_increment primary key,firstname varchar(35),middlename varchar(50),lastnamevarchar(50) default 'somethiing');
+
+Shobin Markose's blog Add new comment ShareThis
+
+
+============> 2
+
+
+
+
+Commands
+Access monitor: mysql -u [username] -p; (will prompt for password)
+
+Show all databases: show databases;
+
+Access database: mysql -u [username] -p [database] (will prompt for password)
+
+Create new database: create database [database];
+
+Select database: use [database];
+
+Determine what database is in use: select database();
+
+Show all tables: show tables;
+
+Show table structure: describe [table];
+
+List all indexes on a table: show index from [table];
+
+Create new table with columns: CREATE TABLE [table] ([column] VARCHAR(120), [another-column] DATETIME);
+
+Adding a column: ALTER TABLE [table] ADD COLUMN [column] VARCHAR(120);
+
+Adding a column with an unique, auto-incrementing ID: ALTER TABLE [table] ADD COLUMN [column] int NOT NULL AUTO_INCREMENT PRIMARY KEY;
+
+Inserting a record: INSERT INTO [table] ([column], [column]) VALUES ('[value]', [value]');
+
+MySQL function for datetime input: NOW()
+
+Selecting records: SELECT * FROM [table];
+
+Explain records: EXPLAIN SELECT * FROM [table];
+
+Selecting parts of records: SELECT [column], [another-column] FROM [table];
+
+Counting records: SELECT COUNT([column]) FROM [table];
+
+Counting and selecting grouped records: SELECT *, (SELECT COUNT([column]) FROM [table]) AS count FROM [table] GROUP BY [column];
+
+Selecting specific records: SELECT * FROM [table] WHERE [column] = [value]; (Selectors: <, >, !=; combine multiple selectors with AND, OR)
+
+Select records containing [value]: SELECT * FROM [table] WHERE [column] LIKE '%[value]%';
+
+Select records starting with [value]: SELECT * FROM [table] WHERE [column] LIKE '[value]%';
+
+Select records starting with val and ending with ue: SELECT * FROM [table] WHERE [column] LIKE '[val_ue]';
+
+Select a range: SELECT * FROM [table] WHERE [column] BETWEEN [value1] and [value2];
+
+Select with custom order and only limit: SELECT * FROM [table] WHERE [column] ORDER BY [column] ASC LIMIT [value]; (Order: DESC, ASC)
+
+Updating records: UPDATE [table] SET [column] = '[updated-value]' WHERE [column] = [value];
+
+Deleting records: DELETE FROM [table] WHERE [column] = [value];
+
+Delete all records from a table (without dropping the table itself): DELETE FROM [table]; (This also resets the incrementing counter for auto generated columns like an id column.)
+
+Delete all records in a table: truncate table [table];
+
+Removing table columns: ALTER TABLE [table] DROP COLUMN [column];
+
+Deleting tables: DROP TABLE [table];
+
+Deleting databases: DROP DATABASE [database];
+
+Custom column output names: SELECT [column] AS [custom-column] FROM [table];
+
+Export a database dump (more info here): mysqldump -u [username] -p [database] > db_backup.sql
+
+Use --lock-tables=false option for locked tables (more info here).
+
+Import a database dump (more info here): mysql -u [username] -p -h localhost [database] < db_backup.sql
+
+Logout: exit;
+
+Aggregate functions
+Select but without duplicates: SELECT distinct name, email, acception FROM owners WHERE acception = 1 AND date >= 2015-01-01 00:00:00
+
+Calculate total number of records: SELECT SUM([column]) FROM [table];
+
+Count total number of [column] and group by [category-column]: SELECT [category-column], SUM([column]) FROM [table] GROUP BY [category-column];
+
+Get largest value in [column]: SELECT MAX([column]) FROM [table];
+
+Get smallest value: SELECT MIN([column]) FROM [table];
+
+Get average value: SELECT AVG([column]) FROM [table];
+
+Get rounded average value and group by [category-column]: SELECT [category-column], ROUND(AVG([column]), 2) FROM [table] GROUP BY [category-column];
+
+Multiple tables
+Select from multiple tables: SELECT [table1].[column], [table1].[another-column], [table2].[column] FROM [table1], [table2];
+
+Combine rows from different tables: SELECT * FROM [table1] INNER JOIN [table2] ON [table1].[column] = [table2].[column];
+
+Combine rows from different tables but do not require the join condition: SELECT * FROM [table1] LEFT OUTER JOIN [table2] ON [table1].[column] = [table2].[column]; (The left table is the first table that appears in the statement.)
+
+Rename column or table using an alias: SELECT [table1].[column] AS '[value]', [table2].[column] AS '[value]' FROM [table1], [table2];
+
+Users functions
+List all users: SELECT User,Host FROM mysql.user;
+
+Create new user: CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
+
+Grant ALL access to user for * tables: GRANT ALL ON database.* TO 'user'@'localhost';
+
+Find out the IP Address of the Mysql Host
+SHOW VARIABLES WHERE Variable_name = 'hostname'; (source)
+
+
+
+====================> 
+
+==> MySQL Commands:
+===================
+
+To login (from unix shell) use -h only if needed.	[mysql dir]/bin/mysql -h hostname -u root -p
+
+>Create a database on the sql server.	
+ create database [databasename];
+
+>List all databases on the sql server.	
+ show databases;
+
+>Switch to a database.	                
+ use [db name];
+ 
+>To see all the tables in the db.	    
+ show tables;
+ 
+>To see database's field formats.	    
+ describe [table name];
+ 
+>To delete a db.	                        
+ drop database [database name];
+ 
+>To delete a table.	                    
+ drop table [table name];
+ 
+>Show all data in a table.	             
+ SELECT * FROM [table name];
+ 
+>Returns the columns and column information pertaining to the designated table.	      
+ show columns from [table name];
+ 
+>Show certain selected rows with the value "whatever".	                              
+ SELECT * FROM [table name] WHERE [field name] = "whatever";	
+
+>Show all records containing the name "Bob" AND the phone number '3444444'.	      
+ SELECT * FROM [table name] WHERE name = "Bob" AND phone_number = '3444444';	
+
+>Show all records not containing the name "Bob" AND the phone number '3444444' order by the phone_number field.	
+ SELECT * FROM [table name] WHERE name != "Bob" AND phone_number = '3444444' order by phone_number;	
+
+>Show all records starting with the letters 'bob' AND the phone number '3444444'.	
+ SELECT * FROM [table name] WHERE name like "Bob%" AND phone_number = '3444444';	
+
+>Use a regular expression to find records. Use "REGEXP BINARY" to force case-sensitivity. This finds any record beginning with a.	
+ SELECT * FROM [table name] WHERE rec RLIKE "^a$";	
+
+>Show unique records.	
+ SELECT DISTINCT [column name] FROM [table name];
+
+>Show selected records sorted in an ascending (asc) or descending (desc).	
+ SELECT [col1],[col2] FROM [table name] ORDER BY [col2] DESC;
+
+>Count rows.	
+ SELECT COUNT(*) FROM [table name];	
+
+>Join tables on common columns.	
+ select lookup.illustrationid, lookup.personid,person.birthday from lookup
+
+>left join person on lookup.personid=person.personid=statement to join birthday in person table with primary illustration id;
+
+>Switch to the mysql db. Create a new user.	
+ INSERT INTO [table name] (Host,User,Password) VALUES('%','user',PASSWORD('password'));
+
+>Change a users password.(from unix shell).	
+ [mysql dir]/bin/mysqladmin -u root -h hostname.blah.org -p password 'new-password'
+
+>Change a users password.(from MySQL prompt).	
+ SET PASSWORD FOR 'user'@'hostname' = PASSWORD('passwordhere');
+
+>Switch to mysql db.Give user privilages for a db.	
+ INSERT INTO [table name] (Host,Db,User,Select_priv,Insert_priv,Update_priv,Delete_priv,Create_priv,Drop_priv) 
+      VALUES ('%','db','user','Y','Y','Y','Y','Y','N');
+
+>To update info already in a table.	
+ UPDATE [table name] SET Select_priv = 'Y',Insert_priv = 'Y',Update_priv = 'Y' where [field name] = 'user';
+
+>Delete a row(s) from a table.	
+ DELETE from [table name] where [field name] = 'whatever';
+
+>Update database permissions/privilages.	
+ FLUSH PRIVILEGES;
+
+>Delete a column.	
+ alter table [table name] drop column [column name];
+
+>Add a new column to db.	
+ alter table [table name] add column [new column name] varchar (20);
+
+>Change column name.	
+ alter table [table name] change [old column name] [new column name] varchar (50);
+
+>Make a unique column so you get no dupes.	
+ alter table [table name] add unique ([column name]);
+
+>Make a column bigger.	
+ alter table [table name] modify [column name] VARCHAR(3);
+
+>Delete unique from table.	
+ alter table [table name] drop index [colmn name];
+
+>Load a CSV file into a table.	
+ LOAD DATA INFILE '/tmp/filename.csv' replace INTO TABLE [table name] FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' (field1,field2,field3);
+
+>Dump all databases for backup. 
+ Backup file is sql commands to recreate all db's.	[mysql dir]/bin/mysqldump -u root -ppassword --opt >/tmp/alldatabases.sql
+
+>Dump one database for backup.	
+[mysql dir]/bin/mysqldump -u username -ppassword --databases databasename >/tmp/databasename.sql
+
+>Dump a table from a database.	
+ [mysql dir]/bin/mysqldump -c -u username -ppassword databasename tablename > /tmp/databasename.tablename.sql
+
+>Restore database (or database table) from backup.	
+ [mysql dir]/bin/mysql -u username -ppassword databasename < /tmp/databasename.sql
+
+ Create Table Example 1:
+ 
+ CREATE TABLE [table name] (firstname VARCHAR(20), middleinitial VARCHAR(3), lastname VARCHAR(35),suffix VARCHAR(3),
+         officeid VARCHAR(10),userid VARCHAR(15),username VARCHAR(8),email VARCHAR(35),phone VARCHAR(25), groups 
+         VARCHAR(15),datestamp DATE,timestamp time,pgpemail VARCHAR(255));
+
+ Create Table Example 2:
+ create table [table name] (personid int(50) not null auto_increment primary key,firstname varchar(35),middlename varchar(50),
+  lastname varchar(50) default 'bato');
+
+
+
+
+
+	
+	
+	
+
+		
