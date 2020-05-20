@@ -22,7 +22,7 @@
                #mkdir -p Grandfather/Father/son/child
                #mkdir -p Movies/{Telugu,English/{Action,comedy}}
 
-4.LIST -(#ls, #ls -l, #ls -a, #ls -ltr)
+4.LIST -(#ls, #ls -l, #ls -a, #ls -ltr) 
 
 5.COPY- (#cp Oldfile to Newfile
               #cp Olddir to Newdir)
