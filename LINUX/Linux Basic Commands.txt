@@ -2,10 +2,11 @@
 => Linux Basic commands:
 -----------------------------
 
-1. Basics -(#ssh -i, #sudo -i, #man -h, $-user, #-rootuser, #history, #pwd, #time, #date, #cal, #uptime, #uname -a, #tree, #wc -l
-                #df -h, du -sh, #free, #top, #umstat, #cat etc/passwd, #cat etc/shadow, #cat proc/meminfo,
-                #poweroff, #reboot, #shutdown -h now (or) 09:00, #shutdown -h +10 "Please save your work" 
-                               Important   ( # rm -rf .git/ (:- This command is used to remove the master in git bash )
+1. Basics - (#ssh -i, #sudo -i, #man -h, $-user, #-rootuser, #history, #pwd, #time, #date, #cal, #uptime, #uname -a, #tree, #wc -l
+            #df -h, du -sh, #free, #top, #umstat, #cat etc/passwd, #cat etc/shadow, #cat proc/meminfo,
+            #poweroff, #reboot, #shutdown -h now (or) 09:00, #shutdown -h +10 "Please save your work" 
+            Important  ( # rm -rf .git/ (:- This command is used to remove the master in git bash )
+            #hostnamectl set-hostname shaik - It is used for change the host name(#root@ip-172.2.5.27)
 
 2.TOUCH-(#touch filename
                #touch filename{1..5}
