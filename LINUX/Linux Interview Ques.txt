@@ -3,6 +3,15 @@
 ==================
 
 1. Check If a Process is Running ?? If not Make it Run otherwise "Print Process is Running" ??
+
+   # ps -ef|grep "process name"
+   # #! /bin/bash
+     if pgrep -x "process name" > /dev/null
+   then
+      echo "Running"
+   else
+      echo "Stopped"
+   fi
  
 2. Delete files older than 10 days using shell script in Unix [duplicate] ??
  
@@ -127,7 +136,7 @@
 29. Inode means??
 
     > An inode is a data structure on a filesystem on Linux
-    > Every Linux file or directory has an inode, and this inode contains all of the file’s metadata.
+    > Every Linux file or directory has an inode, and this inode contains all of the fileâ€™s metadata.
 
 30. How to start the service automatically when the server got reboot ??
 
@@ -168,10 +177,10 @@ Ex:- FTP, Telnet
 
 37.Multi leyer docker ?? or How to reduce the docker image size ??
 
-     Tip #1?—?Use a smaller base image
-     Tip #2?—?Don’t install debug tools like vim/curl
-     Tip #3?—?Minimize Layers
-     Tip #4 Use?—?no-install-recommends on apt-get install
+     Tip #1?â€”?Use a smaller base image
+     Tip #2?â€”?Donâ€™t install debug tools like vim/curl
+     Tip #3?â€”?Minimize Layers
+     Tip #4 Use?â€”?no-install-recommends on apt-get install
      Tip #5 Add rm -rf /var/lib/apt/lists/* to same layer as apt-get installs
      Tip #6 Use FromLatest.io
 
