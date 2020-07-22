@@ -2,27 +2,35 @@
 => Linux Basic commands:
 -----------------------------
 
-1. Basics - (#ssh -i, #sudo -i, #man -h, $-user, #-rootuser, #history, #pwd, #time, #date, #cal, #uptime, #uname -a, #tree, #wc -l
+1. Basics - (#ssh -i "Shaik_Key.pem" centos@18.212.115.115)
+             #sudo -i, #man -h, $-user, #-rootuser, #history, #pwd, #time, #date, #cal, #uptime, #uname -a, #tree, #wc -l
             #df -h, du -sh, #free, #top, #umstat, #cat etc/passwd, #cat etc/shadow, #cat proc/meminfo,
             #poweroff, #reboot, #shutdown -h now (or) 09:00, #shutdown -h +10 "Please save your work" 
             Important  ( # rm -rf .git/ (:- This command is used to remove the master in git bash )
             #hostnamectl set-hostname shaik - It is used for change the host name(#root@ip-172.2.5.27)
             #service jenkins start (service start, service status, service stop)
 
-2.TOUCH-(#touch filename
+2.TOUCH-(#touch filename  -> To create empty files unlimited
                #touch filename{1..5}
                #touch dir/file{1..5})
-   CAT     -(#cat > filename
+   CAT     -(#cat > filename  ->  create file with data inside a file
                #cat >>filename(edit existing file)
-               #cat filename)
-   ECHO   -(#echo "something" filename)
-   VI        -(#Vi filename
+               #cat filename) -> To show the inside file data
+   ECHO   -(#echo "something" filename) -> It is used to show the output data using in shell scripting
+                                           It is used to display line of text/string that are passed as an argument .
+   VI        -(#Vi filename) ->this command mode editor for files, It is by default in command mode only
 
-3.MKDIR- (#mkdir dir
-               #mkdir -p Grandfather/Father/son/child
+3.MKDIR- (#mkdir dir -> this command is used for to create a directory,and multiple directories
+               #mkdir -p Grandfather/Father/son/child ->The "-p" flag tells the mkdir command to create the main directory first if it doesn’t already exist. 
                #mkdir -p Movies/{Telugu,English/{Action,comedy}}
 
-4.LIST -(#ls, #ls -l, #ls -a, #ls -ltr) 
+4.LIST -(#ls,    -> lists directory contents of files and directories.
+         #ls -l, -> shows file or directory, size, modified date and time, file or folder name and owner of file and its permission.
+         #ls -a, -> List all files including hidden file starting with ‘.‘.
+         #ls -ltr-> It will shows latest modification file or directory date as last.
+         #ls -R  -> It will list very long listing directory trees.
+         #ls -lS -> It displays file size in order, will display big in size first.
+         #ls -lS -> It display files and directories in reverse order.
 
 5.COPY- (#cp Oldfile to Newfile
               #cp Olddir to Newdir)
