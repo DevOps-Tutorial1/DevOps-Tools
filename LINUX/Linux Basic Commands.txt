@@ -30,7 +30,7 @@
          #ls -ltr-> It will shows latest modification file or directory date as last.
          #ls -R  -> It will list very long listing directory trees.
          #ls -lS -> It displays file size in order, will display big in size first.
-         #ls -lS -> It display files and directories in reverse order.
+         #ls -r  -> It display files and directories in reverse order.
 
 5.COPY- (#cp Oldfile to Newfile
               #cp Olddir to Newdir)
@@ -38,9 +38,10 @@
 6.MOVE- (#mv Oldfile to Newfile
                #mv Olddir to Newdir)
 
-7.REMOVE-(#rm -rf file
-                 #rm -rf dir
-                 #rm file*
+7.REMOVE-(#rm file -> Normally removed
+                 #rm -f file ->Forcefully Removed
+                 #rm -rf dir ->Recursive Forcefully Removed
+                 #rm file*   ->Remove all (wildcard *)
 
 8.RENAME-(mv oldfilename to Newfilename)
                (mv olddirname to Newdirname)
@@ -49,11 +50,33 @@
                                   #cd ..
                                   #cd .. /.. )
 
-10.VI & VIM -(#vi filename.txt,  (Command mode(yy,p,dd), Insert mode(i), Extend mode(Esc:wq!)
-                    #vim filename.txt
-
-11.LINKS- (Soft link-# ln -s filename linkfile.slink, 
-                Hard link-# ln filename linkfile.hlink)
+10.VI -(#vi filename.txt, --> 1.Command mode:-gg - beginnng of the page   ,                            yy & nyy - Copy a line
+                                               G - end of the page ,                                   p        - paste the below cursor position
+                                               w & nw - cursor forword, word by word(:n means no.of)   P        - Paste the Above cursor position
+                                               b & nb - Cursor Backword                                ddnnnnnn - delete entire line
+                                               u - last change(word)
+                              2.Insert mode:-  i - Insert the cursor position
+                                               I - Insert the entire line
+                                               A - Append the rnd of line
+                                               a - Append the next's words letter
+                                               o - To insert new line below cursor position
+                                               O - To insert new line Above cursor position
+                              3.Extend mode:-  Esc+:W  - To Save 
+                                               Esc+:q  - To Quit
+                                               Esc+:Wq - Save and Quit
+                                               Esc+:Wq!- Save and forcefully quit
+                                               Esc+:x  - Save and Quit
+                                               Esc+:X  - To give paaswd to the file and remove passwd
+                                               Esc+:senu-To set the line numbers
+   . VIM-(#vim filename.txt)                            
+    
+11.LINKS- ( Soft link-# ln -s filename linkfile.slink -> if original file is deleted, link is broken and data is lost, SHORTCUT FILE
+            Hard link-# ln filename linkfile.hlink)   -> If original file is deleted then also link will contain data, BACKUP FILE
+-> Types of Files:-
+                   1. - - Normal file
+                   2. d - Directory
+                   3. l - Link file(shortcut)
+                   4. b - block file(Hard, Floppy disk)
 
 12.GREP- (#grep  - grep command 
                # |      - Pipe command
