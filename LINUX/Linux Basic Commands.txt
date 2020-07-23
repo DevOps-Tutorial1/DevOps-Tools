@@ -68,7 +68,7 @@
                                                Esc+:x  - Save and Quit
                                                Esc+:X  - To give paaswd to the file and remove passwd
                                                Esc+:senu-To set the line numbers
-   . VIM-(#vim filename.txt)                            
+   . VIM-(#vim filename.txt)                             
     
 11.LINKS- ( Soft link-# ln -s filename linkfile.slink -> if original file is deleted, link is broken and data is lost, SHORTCUT FILE
             Hard link-# ln filename linkfile.hlink)   -> If original file is deleted then also link will contain data, BACKUP FILE
@@ -78,11 +78,11 @@
                    3. l - Link file(shortcut)
                    4. b - block file(Hard, Floppy disk)
 
-12.GREP- (#grep  - grep command 
-               # |      - Pipe command
-               #> >> - I/o Operations)
+12.GREP- (#grep  - grep command -> Grep stands for Global Regular Expression Print. It is used to pick out the required expression from the file and print the output.
+               # |      - Pipe command -> combine two commands
+               #> >> - I/o Operations) ->
 
-13.FILTER-(#less filename, #more, #tail, #head, #sort, #cut, #Sed
+13.FILTER-(#less filename, #more, #tail, #head, #sort, #cut, #Sed) - Filter commands are used to filter the output so that the required things can easily be picked up.
 
 14.Find   -(# find -name filename, -inum,-user,-group,-type)
   
